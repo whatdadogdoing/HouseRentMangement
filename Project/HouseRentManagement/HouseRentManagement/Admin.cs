@@ -17,9 +17,11 @@ namespace HouseRentManagement
             
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void btnLogOut_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Login loginForm = new Login();
+            loginForm.Show();
+            this.Hide();
         }
     }
     

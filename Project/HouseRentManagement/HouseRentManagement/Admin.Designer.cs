@@ -87,7 +87,7 @@
             this.btnProfile.AppearancePressed.Options.UseBorderColor = true;
             this.btnProfile.AppearancePressed.Options.UseFont = true;
             this.btnProfile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProfile.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.ImageOptions.Image")));
+            this.btnProfile.ImageOptions.Image = global::HouseRentManagement.Properties.Resources.btnProfile;
             this.btnProfile.Location = new System.Drawing.Point(6, 76);
             this.btnProfile.LookAndFeel.SkinMaskColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.btnProfile.LookAndFeel.UseDefaultLookAndFeel = false;
@@ -117,7 +117,7 @@
             this.btnHomepage.AppearancePressed.Options.UseBackColor = true;
             this.btnHomepage.AppearancePressed.Options.UseBorderColor = true;
             this.btnHomepage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHomepage.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnHomepage.ImageOptions.Image")));
+            this.btnHomepage.ImageOptions.Image = global::HouseRentManagement.Properties.Resources.btnHomepage;
             this.btnHomepage.Location = new System.Drawing.Point(6, 33);
             this.btnHomepage.LookAndFeel.SkinMaskColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.btnHomepage.LookAndFeel.UseDefaultLookAndFeel = false;
@@ -168,7 +168,7 @@
             this.btnPrice.AppearancePressed.Options.UseBorderColor = true;
             this.btnPrice.AppearancePressed.Options.UseFont = true;
             this.btnPrice.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPrice.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPrice.ImageOptions.Image")));
+            this.btnPrice.ImageOptions.Image = global::HouseRentManagement.Properties.Resources.btnPrice;
             this.btnPrice.Location = new System.Drawing.Point(6, 248);
             this.btnPrice.LookAndFeel.SkinMaskColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.btnPrice.LookAndFeel.UseDefaultLookAndFeel = false;
@@ -202,7 +202,7 @@
             this.btnCondo.AppearancePressed.Options.UseBorderColor = true;
             this.btnCondo.AppearancePressed.Options.UseFont = true;
             this.btnCondo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCondo.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCondo.ImageOptions.Image")));
+            this.btnCondo.ImageOptions.Image = global::HouseRentManagement.Properties.Resources.btnCondo;
             this.btnCondo.Location = new System.Drawing.Point(6, 205);
             this.btnCondo.LookAndFeel.SkinMaskColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.btnCondo.LookAndFeel.UseDefaultLookAndFeel = false;
@@ -236,7 +236,7 @@
             this.btnContract.AppearancePressed.Options.UseBorderColor = true;
             this.btnContract.AppearancePressed.Options.UseFont = true;
             this.btnContract.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnContract.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnContract.ImageOptions.Image")));
+            this.btnContract.ImageOptions.Image = global::HouseRentManagement.Properties.Resources.btnContract;
             this.btnContract.Location = new System.Drawing.Point(6, 162);
             this.btnContract.LookAndFeel.SkinMaskColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.btnContract.LookAndFeel.UseDefaultLookAndFeel = false;
@@ -270,7 +270,7 @@
             this.btnVehicleCard.AppearancePressed.Options.UseBorderColor = true;
             this.btnVehicleCard.AppearancePressed.Options.UseFont = true;
             this.btnVehicleCard.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVehicleCard.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnVehicleCard.ImageOptions.Image")));
+            this.btnVehicleCard.ImageOptions.Image = global::HouseRentManagement.Properties.Resources.btnVehicleCard;
             this.btnVehicleCard.Location = new System.Drawing.Point(6, 119);
             this.btnVehicleCard.LookAndFeel.SkinMaskColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.btnVehicleCard.LookAndFeel.UseDefaultLookAndFeel = false;
@@ -304,7 +304,7 @@
             this.btnResidentCard.AppearancePressed.Options.UseBorderColor = true;
             this.btnResidentCard.AppearancePressed.Options.UseFont = true;
             this.btnResidentCard.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnResidentCard.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnResidentCard.ImageOptions.Image")));
+            this.btnResidentCard.ImageOptions.Image = global::HouseRentManagement.Properties.Resources.btnResidentCard;
             this.btnResidentCard.Location = new System.Drawing.Point(6, 76);
             this.btnResidentCard.LookAndFeel.SkinMaskColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.btnResidentCard.LookAndFeel.UseDefaultLookAndFeel = false;
@@ -334,7 +334,7 @@
             this.btnEmployee.AppearancePressed.Options.UseBackColor = true;
             this.btnEmployee.AppearancePressed.Options.UseBorderColor = true;
             this.btnEmployee.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEmployee.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployee.ImageOptions.Image")));
+            this.btnEmployee.ImageOptions.Image = global::HouseRentManagement.Properties.Resources.btnEmployee;
             this.btnEmployee.Location = new System.Drawing.Point(6, 33);
             this.btnEmployee.LookAndFeel.SkinMaskColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.btnEmployee.LookAndFeel.UseDefaultLookAndFeel = false;
@@ -381,7 +381,7 @@
             this.btnExport.AppearancePressed.Options.UseBorderColor = true;
             this.btnExport.AppearancePressed.Options.UseFont = true;
             this.btnExport.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnExport.ImageOptions.Image")));
+            this.btnExport.ImageOptions.Image = global::HouseRentManagement.Properties.Resources.btnExport;
             this.btnExport.Location = new System.Drawing.Point(6, 76);
             this.btnExport.LookAndFeel.SkinMaskColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.btnExport.LookAndFeel.UseDefaultLookAndFeel = false;
@@ -411,7 +411,7 @@
             this.btnReport.AppearancePressed.Options.UseBackColor = true;
             this.btnReport.AppearancePressed.Options.UseBorderColor = true;
             this.btnReport.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnReport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnReport.ImageOptions.Image")));
+            this.btnReport.ImageOptions.Image = global::HouseRentManagement.Properties.Resources.btnReport;
             this.btnReport.Location = new System.Drawing.Point(6, 33);
             this.btnReport.LookAndFeel.SkinMaskColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.btnReport.LookAndFeel.UseDefaultLookAndFeel = false;
@@ -449,6 +449,7 @@
             this.btnLogOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnLogOut.TabIndex = 18;
             this.btnLogOut.TabStop = false;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // Admin
             // 

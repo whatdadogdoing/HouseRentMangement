@@ -97,3 +97,6 @@ C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRent
 C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.Admin.resources
 C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.User.resources
 C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Guna.UI2.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.ProfileUser.resources
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.Homepage.resources
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.Payment.resources
