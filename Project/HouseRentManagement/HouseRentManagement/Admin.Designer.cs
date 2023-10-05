@@ -57,9 +57,11 @@
             this.grbMain.Controls.Add(this.btnProfile);
             this.grbMain.Controls.Add(this.btnHomepage);
             this.grbMain.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbMain.Location = new System.Drawing.Point(12, 12);
+            this.grbMain.Location = new System.Drawing.Point(10, 10);
+            this.grbMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbMain.Name = "grbMain";
-            this.grbMain.Size = new System.Drawing.Size(192, 127);
+            this.grbMain.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbMain.Size = new System.Drawing.Size(165, 103);
             this.grbMain.TabIndex = 2;
             this.grbMain.TabStop = false;
             this.grbMain.Text = "Main";
@@ -88,15 +90,17 @@
             this.btnProfile.AppearancePressed.Options.UseFont = true;
             this.btnProfile.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnProfile.ImageOptions.Image = global::HouseRentManagement.Properties.Resources.btnProfile;
-            this.btnProfile.Location = new System.Drawing.Point(6, 76);
+            this.btnProfile.Location = new System.Drawing.Point(5, 62);
             this.btnProfile.LookAndFeel.SkinMaskColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.btnProfile.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.btnProfile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnProfile.Name = "btnProfile";
             this.btnProfile.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.btnProfile.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.btnProfile.Size = new System.Drawing.Size(180, 37);
+            this.btnProfile.Size = new System.Drawing.Size(154, 30);
             this.btnProfile.TabIndex = 0;
             this.btnProfile.Text = "Profile";
+            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
             // btnHomepage
             // 
@@ -118,13 +122,14 @@
             this.btnHomepage.AppearancePressed.Options.UseBorderColor = true;
             this.btnHomepage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHomepage.ImageOptions.Image = global::HouseRentManagement.Properties.Resources.btnHomepage;
-            this.btnHomepage.Location = new System.Drawing.Point(6, 33);
+            this.btnHomepage.Location = new System.Drawing.Point(5, 27);
             this.btnHomepage.LookAndFeel.SkinMaskColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.btnHomepage.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.btnHomepage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHomepage.Name = "btnHomepage";
             this.btnHomepage.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.btnHomepage.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.btnHomepage.Size = new System.Drawing.Size(180, 37);
+            this.btnHomepage.Size = new System.Drawing.Size(154, 30);
             this.btnHomepage.TabIndex = 0;
             this.btnHomepage.Text = "Homepage";
             // 
@@ -138,9 +143,11 @@
             this.grbList.Controls.Add(this.btnResidentCard);
             this.grbList.Controls.Add(this.btnEmployee);
             this.grbList.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbList.Location = new System.Drawing.Point(12, 145);
+            this.grbList.Location = new System.Drawing.Point(10, 118);
+            this.grbList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbList.Name = "grbList";
-            this.grbList.Size = new System.Drawing.Size(192, 300);
+            this.grbList.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbList.Size = new System.Drawing.Size(165, 244);
             this.grbList.TabIndex = 2;
             this.grbList.TabStop = false;
             this.grbList.Text = "List";
@@ -169,13 +176,14 @@
             this.btnPrice.AppearancePressed.Options.UseFont = true;
             this.btnPrice.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPrice.ImageOptions.Image = global::HouseRentManagement.Properties.Resources.btnPrice;
-            this.btnPrice.Location = new System.Drawing.Point(6, 248);
+            this.btnPrice.Location = new System.Drawing.Point(5, 202);
             this.btnPrice.LookAndFeel.SkinMaskColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.btnPrice.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.btnPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPrice.Name = "btnPrice";
             this.btnPrice.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.btnPrice.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.btnPrice.Size = new System.Drawing.Size(180, 37);
+            this.btnPrice.Size = new System.Drawing.Size(154, 30);
             this.btnPrice.TabIndex = 0;
             this.btnPrice.Text = "Price";
             // 
@@ -203,13 +211,14 @@
             this.btnCondo.AppearancePressed.Options.UseFont = true;
             this.btnCondo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCondo.ImageOptions.Image = global::HouseRentManagement.Properties.Resources.btnCondo;
-            this.btnCondo.Location = new System.Drawing.Point(6, 205);
+            this.btnCondo.Location = new System.Drawing.Point(5, 167);
             this.btnCondo.LookAndFeel.SkinMaskColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.btnCondo.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.btnCondo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCondo.Name = "btnCondo";
             this.btnCondo.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.btnCondo.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.btnCondo.Size = new System.Drawing.Size(180, 37);
+            this.btnCondo.Size = new System.Drawing.Size(154, 30);
             this.btnCondo.TabIndex = 0;
             this.btnCondo.Text = "Condo";
             // 
@@ -237,13 +246,14 @@
             this.btnContract.AppearancePressed.Options.UseFont = true;
             this.btnContract.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnContract.ImageOptions.Image = global::HouseRentManagement.Properties.Resources.btnContract;
-            this.btnContract.Location = new System.Drawing.Point(6, 162);
+            this.btnContract.Location = new System.Drawing.Point(5, 132);
             this.btnContract.LookAndFeel.SkinMaskColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.btnContract.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.btnContract.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnContract.Name = "btnContract";
             this.btnContract.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.btnContract.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.btnContract.Size = new System.Drawing.Size(180, 37);
+            this.btnContract.Size = new System.Drawing.Size(154, 30);
             this.btnContract.TabIndex = 0;
             this.btnContract.Text = "Contract";
             // 
@@ -271,13 +281,14 @@
             this.btnVehicleCard.AppearancePressed.Options.UseFont = true;
             this.btnVehicleCard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVehicleCard.ImageOptions.Image = global::HouseRentManagement.Properties.Resources.btnVehicleCard;
-            this.btnVehicleCard.Location = new System.Drawing.Point(6, 119);
+            this.btnVehicleCard.Location = new System.Drawing.Point(5, 97);
             this.btnVehicleCard.LookAndFeel.SkinMaskColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.btnVehicleCard.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.btnVehicleCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVehicleCard.Name = "btnVehicleCard";
             this.btnVehicleCard.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.btnVehicleCard.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.btnVehicleCard.Size = new System.Drawing.Size(180, 37);
+            this.btnVehicleCard.Size = new System.Drawing.Size(154, 30);
             this.btnVehicleCard.TabIndex = 0;
             this.btnVehicleCard.Text = "Vehicle Card";
             // 
@@ -305,13 +316,14 @@
             this.btnResidentCard.AppearancePressed.Options.UseFont = true;
             this.btnResidentCard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnResidentCard.ImageOptions.Image = global::HouseRentManagement.Properties.Resources.btnResidentCard;
-            this.btnResidentCard.Location = new System.Drawing.Point(6, 76);
+            this.btnResidentCard.Location = new System.Drawing.Point(5, 62);
             this.btnResidentCard.LookAndFeel.SkinMaskColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.btnResidentCard.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.btnResidentCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnResidentCard.Name = "btnResidentCard";
             this.btnResidentCard.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.btnResidentCard.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.btnResidentCard.Size = new System.Drawing.Size(180, 37);
+            this.btnResidentCard.Size = new System.Drawing.Size(154, 30);
             this.btnResidentCard.TabIndex = 0;
             this.btnResidentCard.Text = "Resident Card";
             // 
@@ -335,13 +347,14 @@
             this.btnEmployee.AppearancePressed.Options.UseBorderColor = true;
             this.btnEmployee.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEmployee.ImageOptions.Image = global::HouseRentManagement.Properties.Resources.btnEmployee;
-            this.btnEmployee.Location = new System.Drawing.Point(6, 33);
+            this.btnEmployee.Location = new System.Drawing.Point(5, 27);
             this.btnEmployee.LookAndFeel.SkinMaskColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.btnEmployee.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.btnEmployee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEmployee.Name = "btnEmployee";
             this.btnEmployee.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.btnEmployee.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.btnEmployee.Size = new System.Drawing.Size(180, 37);
+            this.btnEmployee.Size = new System.Drawing.Size(154, 30);
             this.btnEmployee.TabIndex = 0;
             this.btnEmployee.Text = "Employee";
             // 
@@ -351,9 +364,11 @@
             this.grbDashboard.Controls.Add(this.btnExport);
             this.grbDashboard.Controls.Add(this.btnReport);
             this.grbDashboard.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbDashboard.Location = new System.Drawing.Point(12, 451);
+            this.grbDashboard.Location = new System.Drawing.Point(10, 366);
+            this.grbDashboard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbDashboard.Name = "grbDashboard";
-            this.grbDashboard.Size = new System.Drawing.Size(192, 127);
+            this.grbDashboard.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbDashboard.Size = new System.Drawing.Size(165, 103);
             this.grbDashboard.TabIndex = 2;
             this.grbDashboard.TabStop = false;
             this.grbDashboard.Text = "Dashboard";
@@ -382,13 +397,14 @@
             this.btnExport.AppearancePressed.Options.UseFont = true;
             this.btnExport.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExport.ImageOptions.Image = global::HouseRentManagement.Properties.Resources.btnExport;
-            this.btnExport.Location = new System.Drawing.Point(6, 76);
+            this.btnExport.Location = new System.Drawing.Point(5, 62);
             this.btnExport.LookAndFeel.SkinMaskColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.btnExport.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.btnExport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExport.Name = "btnExport";
             this.btnExport.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.btnExport.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.btnExport.Size = new System.Drawing.Size(180, 37);
+            this.btnExport.Size = new System.Drawing.Size(154, 30);
             this.btnExport.TabIndex = 0;
             this.btnExport.Text = "Export";
             // 
@@ -412,13 +428,14 @@
             this.btnReport.AppearancePressed.Options.UseBorderColor = true;
             this.btnReport.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReport.ImageOptions.Image = global::HouseRentManagement.Properties.Resources.btnReport;
-            this.btnReport.Location = new System.Drawing.Point(6, 33);
+            this.btnReport.Location = new System.Drawing.Point(5, 27);
             this.btnReport.LookAndFeel.SkinMaskColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.btnReport.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.btnReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReport.Name = "btnReport";
             this.btnReport.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.btnReport.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-            this.btnReport.Size = new System.Drawing.Size(180, 37);
+            this.btnReport.Size = new System.Drawing.Size(154, 30);
             this.btnReport.TabIndex = 0;
             this.btnReport.Text = "Report";
             // 
@@ -434,8 +451,9 @@
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(111)))), ((int)(((byte)(109)))));
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(74)))), ((int)(((byte)(73)))));
             this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(235, 655);
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(201, 532);
             this.guna2GradientPanel1.TabIndex = 3;
             // 
             // btnLogOut
@@ -443,9 +461,10 @@
             this.btnLogOut.BackColor = System.Drawing.Color.Transparent;
             this.btnLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogOut.Image = global::HouseRentManagement.Properties.Resources.btnLogOut;
-            this.btnLogOut.Location = new System.Drawing.Point(18, 603);
+            this.btnLogOut.Location = new System.Drawing.Point(15, 490);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(40, 40);
+            this.btnLogOut.Size = new System.Drawing.Size(34, 32);
             this.btnLogOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnLogOut.TabIndex = 18;
             this.btnLogOut.TabStop = false;
@@ -455,13 +474,12 @@
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1193, 655);
+            this.ClientSize = new System.Drawing.Size(1023, 532);
             this.Controls.Add(this.guna2GradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("Admin.IconOptions.Image")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Admin";
             this.Text = "JungleUncles Rental House System";
             this.grbMain.ResumeLayout(false);
