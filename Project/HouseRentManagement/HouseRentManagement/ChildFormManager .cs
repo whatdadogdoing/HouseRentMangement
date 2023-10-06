@@ -1,39 +1,49 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HouseRentManagement
 {
     public class ChildFormManager
     {
-        private Form currentChildForm;
-
-        public Form CurrentChildForm
-        {
-            get { return currentChildForm; }
-        }
+        public Form CurrentChildForm;
+        public List<Form> currentChildForms = new List<Form>();
 
         public void ShowChildForm(Control parent, Form childForm)
         {
             CloseCurrentChildForm();
 
-            currentChildForm = childForm;
-
             childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
             parent.Controls.Add(childForm);
             childForm.Show();
+
+            CurrentChildForm = childForm;
+            currentChildForms.Add(childForm);
         }
 
         public void CloseCurrentChildForm()
         {
-            if (currentChildForm != null)
+            if (CurrentChildForm != null && !CurrentChildForm.IsDisposed)
             {
-                currentChildForm.Close();
+                CurrentChildForm.Close();
+                currentChildForms.Remove(CurrentChildForm);
             }
+            CurrentChildForm = null;
         }
 
+        public void CloseAllChildForms()
+        {
+            foreach (Form form in currentChildForms)
+            {
+                if (!form.IsDisposed)
+                {
+                    form.Close();
+                }
+            }
+            currentChildForms.Clear();
+            CurrentChildForm = null;
+        }
     }
 }

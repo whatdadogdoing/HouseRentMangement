@@ -202,8 +202,8 @@
             this.lblName.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblName.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblName.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
-            this.lblName.Location = new System.Drawing.Point(19, 380);
+            this.lblName.ForeColor = System.Drawing.Color.Black;
+            this.lblName.Location = new System.Drawing.Point(12, 375);
             this.lblName.Name = "lblName";
             this.lblName.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblName.Size = new System.Drawing.Size(296, 37);

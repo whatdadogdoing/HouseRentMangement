@@ -44,6 +44,7 @@
             this.btnReport = new DevExpress.XtraEditors.SimpleButton();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.btnLogOut = new System.Windows.Forms.PictureBox();
+            this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.grbMain.SuspendLayout();
             this.grbList.SuspendLayout();
             this.grbDashboard.SuspendLayout();
@@ -451,6 +452,21 @@
             this.btnLogOut.TabStop = false;
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
+            // bunifuPanel1
+            // 
+            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
+            this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel1.BorderRadius = 3;
+            this.bunifuPanel1.BorderThickness = 1;
+            this.bunifuPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuPanel1.Location = new System.Drawing.Point(235, 0);
+            this.bunifuPanel1.Name = "bunifuPanel1";
+            this.bunifuPanel1.ShowBorders = true;
+            this.bunifuPanel1.Size = new System.Drawing.Size(958, 655);
+            this.bunifuPanel1.TabIndex = 4;
+            // 
             // Admin
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
@@ -458,6 +474,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1193, 655);
+            this.Controls.Add(this.bunifuPanel1);
             this.Controls.Add(this.guna2GradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("Admin.IconOptions.Image")));
@@ -489,6 +506,7 @@
         private DevExpress.XtraEditors.SimpleButton btnReport;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private System.Windows.Forms.PictureBox btnLogOut;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
     }
 }
 

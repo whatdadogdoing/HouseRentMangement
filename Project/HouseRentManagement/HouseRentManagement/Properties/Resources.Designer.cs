@@ -223,6 +223,16 @@ namespace HouseRentManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnSearch {
+            get {
+                object obj = ResourceManager.GetObject("btnSearch", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnShowPassword {
             get {
                 object obj = ResourceManager.GetObject("btnShowPassword", resourceCulture);
