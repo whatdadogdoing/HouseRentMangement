@@ -25,12 +25,13 @@ namespace HouseRentManagement
 
         private void btnPayment_Click(object sender, EventArgs e)
         {
-            pnlPayment.Visible = !pnlPayment.Visible;
+            pnlAddPayment.Visible = !pnlAddPayment.Visible;
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            pnlPayment.Visible = false;
+            pnlAddPayment.Visible = false;
         }
+
     }
 }

@@ -69,7 +69,9 @@
             this.lblFullName = new Bunifu.UI.WinForms.BunifuLabel();
             this.txtBoxFullName = new Bunifu.UI.WinForms.BunifuTextBox();
             this.grbProfile = new System.Windows.Forms.GroupBox();
+            this.lblLinkDone = new DevExpress.XtraEditors.HyperlinkLabelControl();
             this.dtpDoB = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.lblLinkEdit = new DevExpress.XtraEditors.HyperlinkLabelControl();
             this.lblEmail = new Bunifu.UI.WinForms.BunifuLabel();
             this.txtBoxEmail = new Bunifu.UI.WinForms.BunifuTextBox();
             this.lblContactNumber = new Bunifu.UI.WinForms.BunifuLabel();
@@ -89,8 +91,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvResidentCard = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.lblResedentCard = new Bunifu.UI.WinForms.BunifuLabel();
-            this.lblLinkEdit = new DevExpress.XtraEditors.HyperlinkLabelControl();
-            this.lblLinkDone = new DevExpress.XtraEditors.HyperlinkLabelControl();
             this.pnlProfileUser.SuspendLayout();
             this.grbProfile.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -236,7 +236,9 @@
             // 
             // grbProfile
             // 
+            this.grbProfile.Controls.Add(this.lblLinkDone);
             this.grbProfile.Controls.Add(this.dtpDoB);
+            this.grbProfile.Controls.Add(this.lblLinkEdit);
             this.grbProfile.Controls.Add(this.lblEmail);
             this.grbProfile.Controls.Add(this.txtBoxEmail);
             this.grbProfile.Controls.Add(this.lblContactNumber);
@@ -249,6 +251,25 @@
             this.grbProfile.Size = new System.Drawing.Size(467, 246);
             this.grbProfile.TabIndex = 2;
             this.grbProfile.TabStop = false;
+            // 
+            // lblLinkDone
+            // 
+            this.lblLinkDone.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.lblLinkDone.Appearance.Font = new System.Drawing.Font("Yu Gothic UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLinkDone.Appearance.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(144)))), ((int)(((byte)(29)))));
+            this.lblLinkDone.Appearance.Options.UseBackColor = true;
+            this.lblLinkDone.Appearance.Options.UseFont = true;
+            this.lblLinkDone.Appearance.Options.UseLinkColor = true;
+            this.lblLinkDone.AppearancePressed.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(37)))));
+            this.lblLinkDone.AppearancePressed.Options.UseLinkColor = true;
+            this.lblLinkDone.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.lblLinkDone.Location = new System.Drawing.Point(366, 213);
+            this.lblLinkDone.Margin = new System.Windows.Forms.Padding(5);
+            this.lblLinkDone.Name = "lblLinkDone";
+            this.lblLinkDone.Size = new System.Drawing.Size(43, 25);
+            this.lblLinkDone.TabIndex = 25;
+            this.lblLinkDone.Text = "Done";
+            this.lblLinkDone.Click += new System.EventHandler(this.lblLinkDone_Click);
             // 
             // dtpDoB
             // 
@@ -267,6 +288,25 @@
             this.dtpDoB.TabIndex = 2;
             this.dtpDoB.UseTransparentBackground = true;
             this.dtpDoB.Value = new System.DateTime(2023, 10, 3, 0, 0, 0, 0);
+            // 
+            // lblLinkEdit
+            // 
+            this.lblLinkEdit.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.lblLinkEdit.Appearance.Font = new System.Drawing.Font("Yu Gothic UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLinkEdit.Appearance.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(144)))), ((int)(((byte)(29)))));
+            this.lblLinkEdit.Appearance.Options.UseBackColor = true;
+            this.lblLinkEdit.Appearance.Options.UseFont = true;
+            this.lblLinkEdit.Appearance.Options.UseLinkColor = true;
+            this.lblLinkEdit.AppearancePressed.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(37)))));
+            this.lblLinkEdit.AppearancePressed.Options.UseLinkColor = true;
+            this.lblLinkEdit.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.lblLinkEdit.Location = new System.Drawing.Point(429, 213);
+            this.lblLinkEdit.Margin = new System.Windows.Forms.Padding(5);
+            this.lblLinkEdit.Name = "lblLinkEdit";
+            this.lblLinkEdit.Size = new System.Drawing.Size(30, 25);
+            this.lblLinkEdit.TabIndex = 25;
+            this.lblLinkEdit.Text = "Edit";
+            this.lblLinkEdit.Click += new System.EventHandler(this.lblLinkEdit_Click);
             // 
             // lblEmail
             // 
@@ -993,7 +1033,7 @@
             this.dgvResidentCard.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.dgvResidentCard.HeaderBgColor = System.Drawing.Color.Empty;
             this.dgvResidentCard.HeaderForeColor = System.Drawing.Color.White;
-            this.dgvResidentCard.Location = new System.Drawing.Point(28, 66);
+            this.dgvResidentCard.Location = new System.Drawing.Point(14, 66);
             this.dgvResidentCard.Name = "dgvResidentCard";
             this.dgvResidentCard.ReadOnly = true;
             this.dgvResidentCard.RowHeadersVisible = false;
@@ -1020,44 +1060,6 @@
             this.lblResedentCard.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lblResedentCard.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // lblLinkEdit
-            // 
-            this.lblLinkEdit.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.lblLinkEdit.Appearance.Font = new System.Drawing.Font("Yu Gothic UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLinkEdit.Appearance.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(144)))), ((int)(((byte)(29)))));
-            this.lblLinkEdit.Appearance.Options.UseBackColor = true;
-            this.lblLinkEdit.Appearance.Options.UseFont = true;
-            this.lblLinkEdit.Appearance.Options.UseLinkColor = true;
-            this.lblLinkEdit.AppearancePressed.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(37)))));
-            this.lblLinkEdit.AppearancePressed.Options.UseLinkColor = true;
-            this.lblLinkEdit.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.lblLinkEdit.Location = new System.Drawing.Point(1105, 172);
-            this.lblLinkEdit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.lblLinkEdit.Name = "lblLinkEdit";
-            this.lblLinkEdit.Size = new System.Drawing.Size(30, 25);
-            this.lblLinkEdit.TabIndex = 24;
-            this.lblLinkEdit.Text = "Edit";
-            this.lblLinkEdit.Click += new System.EventHandler(this.lblLinkEdit_Click);
-            // 
-            // lblLinkDone
-            // 
-            this.lblLinkDone.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.lblLinkDone.Appearance.Font = new System.Drawing.Font("Yu Gothic UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLinkDone.Appearance.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(144)))), ((int)(((byte)(29)))));
-            this.lblLinkDone.Appearance.Options.UseBackColor = true;
-            this.lblLinkDone.Appearance.Options.UseFont = true;
-            this.lblLinkDone.Appearance.Options.UseLinkColor = true;
-            this.lblLinkDone.AppearancePressed.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(37)))));
-            this.lblLinkDone.AppearancePressed.Options.UseLinkColor = true;
-            this.lblLinkDone.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.lblLinkDone.Location = new System.Drawing.Point(1015, 172);
-            this.lblLinkDone.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.lblLinkDone.Name = "lblLinkDone";
-            this.lblLinkDone.Size = new System.Drawing.Size(43, 25);
-            this.lblLinkDone.TabIndex = 24;
-            this.lblLinkDone.Text = "Done";
-            this.lblLinkDone.Click += new System.EventHandler(this.lblLinkDone_Click);
-            // 
             // ProfileUser
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
@@ -1065,8 +1067,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 655);
-            this.Controls.Add(this.lblLinkDone);
-            this.Controls.Add(this.lblLinkEdit);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.grbProfile);
@@ -1075,7 +1075,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IconOptions.Image = global::HouseRentManagement.Properties.Resources.appLogo;
             this.Name = "ProfileUser";
-            this.Text = "ProfileUser";
+            this.Text = "Profile User";
             this.pnlProfileUser.ResumeLayout(false);
             this.pnlProfileUser.PerformLayout();
             this.grbProfile.ResumeLayout(false);
@@ -1087,7 +1087,6 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResidentCard)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
