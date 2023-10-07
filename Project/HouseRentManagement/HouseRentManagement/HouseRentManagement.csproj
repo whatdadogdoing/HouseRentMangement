@@ -140,15 +140,24 @@
     <Reference Include="DevExpress.XtraEditors.v22.2" />
     <Reference Include="DevExpress.Printing.v22.2.Core" />
     <Reference Include="DevExpress.Drawing.v22.2" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.3.4, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\Downloads\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -172,12 +181,44 @@
     <Compile Include="CondoServices.Designer.cs">
       <DependentUpon>CondoServices.cs</DependentUpon>
     </Compile>
+    <Compile Include="ForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.Designer.cs">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Homepage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Homepage.Designer.cs">
       <DependentUpon>Homepage.cs</DependentUpon>
     </Compile>
+    <Compile Include="HRMcontextDB\ADMINS.cs" />
+    <Compile Include="HRMcontextDB\BANGGIA.cs" />
+    <Compile Include="HRMcontextDB\BANQUANLY.cs" />
+    <Compile Include="HRMcontextDB\BIENLAI.cs" />
+    <Compile Include="HRMcontextDB\CANHO.cs" />
+    <Compile Include="HRMcontextDB\CHUCVU.cs" />
+    <Compile Include="HRMcontextDB\CHUSOHUU.cs" />
+    <Compile Include="HRMcontextDB\CTHDTT.cs" />
+    <Compile Include="HRMcontextDB\CTNTCB.cs" />
+    <Compile Include="HRMcontextDB\DANHSACHNHANKHAU.cs" />
+    <Compile Include="HRMcontextDB\HOADONTHANHTOAN.cs" />
+    <Compile Include="HRMcontextDB\HOPDONGTHUE.cs" />
+    <Compile Include="HRMcontextDB\LOAICANHO.cs" />
+    <Compile Include="HRMcontextDB\Model1.cs" />
+    <Compile Include="HRMcontextDB\NGUOITHUE.cs" />
+    <Compile Include="HRMcontextDB\NOITHATCOBAN.cs" />
+    <Compile Include="HRMcontextDB\PHIEUCHUYENDO.cs" />
+    <Compile Include="HRMcontextDB\PHIEUPHANHOI.cs" />
+    <Compile Include="HRMcontextDB\PHIEUPHAT.cs" />
+    <Compile Include="HRMcontextDB\PHIEUSUACHUA.cs" />
+    <Compile Include="HRMcontextDB\PHIEUTHICONG.cs" />
+    <Compile Include="HRMcontextDB\TANG.cs" />
+    <Compile Include="HRMcontextDB\THECUDAN.cs" />
+    <Compile Include="HRMcontextDB\THEXE.cs" />
+    <Compile Include="HRMcontextDB\USERS.cs" />
+    <Compile Include="HRMcontextDB\XE.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -212,6 +253,9 @@
       <DependentUpon>User.cs</DependentUpon>
     </Compile>
     <Compile Include="WindowTitleBar.cs" />
+    <EmbeddedResource Include="ForgotPassword.resx">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Homepage.resx">
       <DependentUpon>Homepage.cs</DependentUpon>
     </EmbeddedResource>
