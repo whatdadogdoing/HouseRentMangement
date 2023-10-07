@@ -436,7 +436,7 @@
             this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("Login.IconOptions.Image")));
             this.Name = "Login";
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.Login_Load);
+            //this.Load += new System.EventHandler(this.Login_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Login_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Login_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Login_MouseUp);

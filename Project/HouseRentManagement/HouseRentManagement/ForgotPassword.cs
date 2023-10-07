@@ -126,7 +126,7 @@ namespace HouseRentManagement
 
             if (user != null)
             {
-                ChangePassword cp = new ChangePassword();
+                ChangePassword cp = new ChangePassword(username);
                 cp.Show();
                 this.Hide();
             }
