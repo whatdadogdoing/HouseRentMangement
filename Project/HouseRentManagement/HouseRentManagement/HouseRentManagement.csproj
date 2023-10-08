@@ -212,7 +212,7 @@
     <Compile Include="HRMcontextDB\HOADONTHANHTOAN.cs" />
     <Compile Include="HRMcontextDB\HOPDONGTHUE.cs" />
     <Compile Include="HRMcontextDB\LOAICANHO.cs" />
-    <Compile Include="HRMcontextDB\Model1.cs" />
+    <Compile Include="HRMcontextDB\Model2.cs" />
     <Compile Include="HRMcontextDB\NGUOITHUE.cs" />
     <Compile Include="HRMcontextDB\NOITHATCOBAN.cs" />
     <Compile Include="HRMcontextDB\PHIEUCHUYENDO.cs" />

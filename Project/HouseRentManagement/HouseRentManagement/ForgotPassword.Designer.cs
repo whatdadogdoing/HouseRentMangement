@@ -344,6 +344,7 @@
             this.Controls.Add(this.txtBoxUsername);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ForgotPassword";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ForgotPassword";
             this.Load += new System.EventHandler(this.ForgotPassword_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxLogoApp)).EndInit();

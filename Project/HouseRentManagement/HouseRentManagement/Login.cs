@@ -32,7 +32,7 @@ namespace HouseRentManagement
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            var context = new Model1();
+            var context = new Model2();
 
             string username = txtBoxUsername.Text;
             string password = txtBoxPassword.Text;
@@ -118,7 +118,7 @@ namespace HouseRentManagement
             { 
                 txtBoxPassword.PasswordChar = '*';
             }
-        }
+        } 
 
         private void lblLinkForgotPass_Click(object sender, EventArgs e)
         {

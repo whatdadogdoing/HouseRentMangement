@@ -59,8 +59,8 @@ namespace HouseRentManagement
             g.DrawString(txt, font, sb, bt.Width / 2 - (txt.Length / 2) * font.Size, (bt.Height / 2) - font.Size);
 
             //Tạo hiệu ứng cho captcha
-            //vẽ dấu chấm
 
+            //vẽ dấu chấm
             int count = 0;
 
             Random rand = new Random();
@@ -71,6 +71,7 @@ namespace HouseRentManagement
                 count++;
             }
             count = 0;
+
             //vẽ đường gạch ngang
             while (count < 25)
             {
@@ -96,14 +97,14 @@ namespace HouseRentManagement
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        
+            Login lg = new Login();
+            lg.Show();
+            this.Hide();
+        }    
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            var context = new Model1();
+            var context = new Model2();
 
             string username = txtBoxUsername.Text;
 
@@ -132,7 +133,7 @@ namespace HouseRentManagement
             }
             else
             {
-                MessageBox.Show("Can't Find Username", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Wrong UserName", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
