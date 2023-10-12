@@ -342,13 +342,14 @@
             this.dgvCondoServices.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(125)))), ((int)(((byte)(122)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 7.8F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(162)))), ((int)(((byte)(158)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvCondoServices.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvCondoServices.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCondoServices.ColumnHeadersHeight = 42;
+            this.dgvCondoServices.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvCondoServices.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clhMaCanHo,
             this.clhBDChuyen,
@@ -369,7 +370,7 @@
             this.dgvCondoServices.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 7.8F);
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
@@ -391,7 +392,7 @@
             this.dgvCondoServices.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             this.dgvCondoServices.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvCondoServices.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvCondoServices.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCondoServices.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvCondoServices.ThemeStyle.HeaderStyle.Height = 42;
             this.dgvCondoServices.ThemeStyle.ReadOnly = true;
             this.dgvCondoServices.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -449,6 +450,7 @@
             this.IconOptions.Image = global::HouseRentManagement.Properties.Resources.appLogo;
             this.Name = "CondoServices";
             this.Text = "Condo Services";
+            this.Load += new System.EventHandler(this.CondoServices_Load);
             this.pnlCondoServices.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCondoServices)).EndInit();
             this.ResumeLayout(false);

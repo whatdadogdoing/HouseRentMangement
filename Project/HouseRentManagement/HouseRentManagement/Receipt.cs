@@ -17,5 +17,10 @@ namespace HouseRentManagement
         {
             InitializeComponent();
         }
+
+        private void Receipt_Load(object sender, EventArgs e)
+        {
+            this.ControlBox = false;
+        }
     }
 }

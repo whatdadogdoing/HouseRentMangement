@@ -141,5 +141,9 @@ namespace HouseRentManagement
 
         }
 
+        private void CondoServices_Load(object sender, EventArgs e)
+        {
+            this.ControlBox = false;
+        }
     }
 }

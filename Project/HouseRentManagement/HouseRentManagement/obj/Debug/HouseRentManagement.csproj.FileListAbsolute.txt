@@ -103,5 +103,6 @@ C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRent
 C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll
 C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.dll
 C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.Deprecated.dll
-C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.csproj.SuggestedBindingRedirects.cache
-C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.exe.config
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\ReaLTaiizor.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\ReaLTaiizor.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.About.resources

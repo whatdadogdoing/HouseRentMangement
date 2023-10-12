@@ -117,22 +117,50 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="lblNameApp.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Yu Gothic UI'; font-size: 16.2pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
-  </data>
-  <data name="lblUsername.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Yu Gothic UI'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
-  </data>
-  <data name="lblPassword.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Yu Gothic UI'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pnlLogin.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
   </data>
   <data name="lblSlogan.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Yu Gothic UI Light'; font-size: 9pt; width: 100%; height: 100%; font-style: italic; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
-  <metadata name="guna2AnimateWindow1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblPassword.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Yu Gothic UI'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="lblUsername.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Yu Gothic UI'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="lblNameApp.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Yu Gothic UI'; font-size: 16.2pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
   <data name="btnHideShowPass.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -573,21 +601,6 @@
         RK5CYII=
 </value>
   </data>
-  <data name="btnClose.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAFcAAAAoCAYAAACLvGZ4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAILSURBVGhD7do/S1tRGMfxDAZDYv6YLILg2oJuOtTiIG0X
-        FV+E0BLoKEV8DR0UHAodOggdOgiiyb2pgv/QgINpO5RGsGihDajoa3ia3700achj0Ht5pvyGz5STG/je
-        cO7hnhO5va4J2WBcQ4xriHENMa4hxjXUMe7N73M5ff9Ojl48l92RYSlls7IZiXQ1NECLg4mnUl1Zlquz
-        qtoO7oz789NHcTMZcZN96o9QRJxEQtx0Sn4svVUbtsXFnShPT4mbSqkXpHZOvdXe2Khcfv/a0rIlLsJu
-        DQ5KoadHvQh1hna1yrEeF/9Yhg0H83FbXG+O5VQQmhOPy5c38824WBXg4aUNpocr9WfkT/nAj4slBZ58
-        2kAKoD61VvKv/LhYs6mDKJCNuu2hIT/u54EBdRAFh4WBF7cYi6kDKBwvrvYBhce4hhjXEOMaYlxDjGuI
-        cQ15cfkmzIYXl9s3Nry4eIuufUjB4ZWCF/fb4oI4vb3qIAqmPDvjx8XWhJtOq4Po4dxUUs5WP/hxofI6
-        L0W+0w0vGpXDZ5Ot2zzYjdh5/Ej/At1bKZdrnGVoxAVsTXDlEBy2dy7W1xo9W+LCr1LB316P8QF3X4X6
-        VIB/7P9hoS0uYIo4eTnnnSbRLkZNOJG0P/5EPdakxv0HdwJLCieZVC/czbB7gzN0OEuntYOOcSkcxjXE
-        uIYY1xDjmqnJX2ZtqrRsSYBfAAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="btnReset.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFcAAAAoCAYAAACLvGZ4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -630,6 +643,19 @@
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABISURBVHhe7cNBDQAwCASw+TfFOQNM7EWb9AEAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPBVktqtXp8eoclL6u83A/0AAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="pnlLoginBar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAbcAAAAoCAYAAAB90LTJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADuSURBVHhe7dexjcMwFAVBhS7D4YUuxSU4dBmqXDrqxORK
+        4GIGeCDwG1hwA4Cs8zyfY7uZmdmi+5lJu43DawwAVveeafuL21U8AFjdPtMmbgBkiBsAOeIGQI64AZAj
+        bgDkiBsAOeIGQI64AZAjbgDkiBsAOeIGQI64AZAjbgDkiBsAOeIGQI64AZAjbgDkiBsAOeIGQI64AZAj
+        bgDkiBsAOeIGQI64AZAjbgDkiBsAOeIGQI64AZAjbgDkiBsAOeIGQI64AZAjbgDk/Ivb+74BwLqO4/jO
+        tN3G7TN2/eDMzMyW2xW28T5m1gCgZNt+Ab6OoY74i4NYAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="lblHeadLogin.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Yu Gothic UI'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
   <data name="Login.IconOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

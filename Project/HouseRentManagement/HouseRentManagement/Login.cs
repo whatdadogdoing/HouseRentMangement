@@ -37,6 +37,7 @@ namespace HouseRentManagement
             {
                 User userForm = new User();
                 userForm.Show();
+                Homepage homepage = new Homepage();
                 this.Hide();
             }
         }
@@ -65,5 +66,6 @@ namespace HouseRentManagement
                 isDragging = false;
             }
         }
+
     }
 }

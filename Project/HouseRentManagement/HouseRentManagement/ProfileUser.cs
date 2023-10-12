@@ -42,5 +42,10 @@ namespace HouseRentManagement
             txtBoxEmail.Enabled = false;
             dtpDoB.Enabled = false;
         }
+
+        private void ProfileUser_Load(object sender, EventArgs e)
+        {
+            this.ControlBox = false;
+        }
     }
 }
