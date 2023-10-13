@@ -1,0 +1,268 @@
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\HouseRentManagement.exe.config
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\HouseRentManagement.exe
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\DevExpress.BonusSkins.v22.2.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\DevExpress.Data.Desktop.v22.2.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\DevExpress.Data.v22.2.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\DevExpress.Drawing.v22.2.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\DevExpress.Printing.v22.2.Core.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\DevExpress.Sparkline.v22.2.Core.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\DevExpress.Utils.v22.2.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\DevExpress.XtraBars.v22.2.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\DevExpress.XtraEditors.v22.2.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\DevExpress.Pdf.v22.2.Core.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\DevExpress.Pdf.v22.2.Drawing.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuPages.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuRating.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\DevExpress.Data.Desktop.v22.2.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\DevExpress.Data.v22.2.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\DevExpress.Utils.v22.2.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\DevExpress.Sparkline.v22.2.Core.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\DevExpress.XtraBars.v22.2.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\DevExpress.XtraEditors.v22.2.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\DevExpress.Printing.v22.2.Core.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\DevExpress.Pdf.v22.2.Core.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\DevExpress.Pdf.v22.2.Drawing.xml
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.csproj.AssemblyReference.cache
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.CondoServices.resources
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.Homepage.resources
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.Login.resources
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.Payment.resources
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.ProfileUser.resources
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.Admin.resources
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.Properties.Resources.resources
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.TransferForm.resources
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.User.resources
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.csproj.GenerateResource.cache
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.exe.licenses
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.csproj.CoreCompileInputs.cache
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.csproj.CopyComplete
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.exe
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.pdb
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\HouseRentManagement.pdb
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.ReportForm.resources
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.ConstructionForm.resources
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.Receipt.resources
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuRating.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.Deprecated.dll
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.csproj.SuggestedBindingRedirects.cache
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.exe.config
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\HouseRentManagement.exe.config
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\HouseRentManagement.exe
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\HouseRentManagement.pdb
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuRating.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.Deprecated.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.BonusSkins.v22.2.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.Data.Desktop.v22.2.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.Data.v22.2.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.Drawing.v22.2.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.Printing.v22.2.Core.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.Sparkline.v22.2.Core.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.Utils.v22.2.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.XtraBars.v22.2.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.XtraEditors.v22.2.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.Pdf.v22.2.Core.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.Pdf.v22.2.Drawing.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuPages.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuRating.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.Data.Desktop.v22.2.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.Data.v22.2.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.Utils.v22.2.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.Sparkline.v22.2.Core.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.XtraBars.v22.2.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.XtraEditors.v22.2.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.Printing.v22.2.Core.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.Pdf.v22.2.Core.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.Pdf.v22.2.Drawing.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\obj\Debug\HouseRentManagement.csproj.AssemblyReference.cache
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\obj\Debug\HouseRentManagement.CondoServices.resources
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\obj\Debug\HouseRentManagement.ConstructionForm.resources
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\obj\Debug\HouseRentManagement.Homepage.resources
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\obj\Debug\HouseRentManagement.Login.resources
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\obj\Debug\HouseRentManagement.Payment.resources
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\obj\Debug\HouseRentManagement.ProfileUser.resources
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\obj\Debug\HouseRentManagement.Admin.resources
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\obj\Debug\HouseRentManagement.Properties.Resources.resources
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\obj\Debug\HouseRentManagement.Receipt.resources
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\obj\Debug\HouseRentManagement.ReportForm.resources
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\obj\Debug\HouseRentManagement.TransferForm.resources
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\obj\Debug\HouseRentManagement.User.resources
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\obj\Debug\HouseRentManagement.csproj.GenerateResource.cache
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\obj\Debug\HouseRentManagement.exe.licenses
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\obj\Debug\HouseRentManagement.csproj.CoreCompileInputs.cache
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\obj\Debug\HouseRentManagement.csproj.CopyComplete
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\obj\Debug\HouseRentManagement.exe
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\obj\Debug\HouseRentManagement.pdb
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\obj\Debug\HouseRentManagement.PriceAdmin.resources
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.Charts.v22.2.Core.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.Utils.v22.2.UI.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.XtraCharts.v22.2.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.XtraCharts.v22.2.UI.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.XtraCharts.v22.2.Wizard.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.XtraPrinting.v22.2.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.XtraTreeList.v22.2.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.XtraLayout.v22.2.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.XtraRichEdit.v22.2.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.XtraVerticalGrid.v22.2.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.RichEdit.v22.2.Core.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.DataAccess.v22.2.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.DataVisualization.v22.2.Core.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.XtraGrid.v22.2.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.XtraNavBar.v22.2.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.Office.v22.2.Core.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.Images.v22.2.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.Xpo.v22.2.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.CodeParser.v22.2.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.Charts.v22.2.Core.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.Utils.v22.2.UI.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.XtraCharts.v22.2.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.XtraCharts.v22.2.UI.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.XtraCharts.v22.2.Wizard.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.XtraPrinting.v22.2.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.XtraTreeList.v22.2.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.XtraLayout.v22.2.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.XtraRichEdit.v22.2.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.XtraVerticalGrid.v22.2.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.RichEdit.v22.2.Core.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.DataAccess.v22.2.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.XtraGrid.v22.2.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.XtraNavBar.v22.2.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.Office.v22.2.Core.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.Xpo.v22.2.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\obj\Debug\HouseRentManagement.ReportMoneyAdmin.resources
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\obj\Debug\HouseRentManagement.ReportRoomResidenceAdmin.resources
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\obj\Debug\HouseRentManagement.ReportAdminForm.resources
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\obj\Debug\HouseRentManagement.ExportAdmin.resources
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\EntityFramework.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\EntityFramework.SqlServer.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\EntityFramework.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\EntityFramework.SqlServer.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\obj\Debug\HouseRentManagement.ReportServiceAdmin.resources
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\BouncyCastle.Crypto.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\itextsharp.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\itextsharp.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.PivotGrid.v22.2.Core.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.RichEdit.v22.2.Export.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.XtraReports.v22.2.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.XtraGauges.v22.2.Core.dll
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.PivotGrid.v22.2.Core.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.XtraReports.v22.2.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\bin\Debug\DevExpress.XtraGauges.v22.2.Core.xml
+D:\New folder\HouseRentMangement\admin3cuoi\HouseRentManagement\obj\Debug\HouseRentManagement.Form1.resources
