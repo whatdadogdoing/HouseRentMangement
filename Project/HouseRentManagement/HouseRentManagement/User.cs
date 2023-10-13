@@ -19,12 +19,13 @@ namespace HouseRentManagement
         private CondoServices condoServices;
         private About about;
         private Login login;
-
-        public User()
+        private string username;
+        public User(string username)
         {
             InitializeComponent();
             InitializeCustomComponents();
             ShowHomepageForm();
+            this.username = username;
         }
         private void InitializeCustomComponents()
         {
@@ -42,7 +43,7 @@ namespace HouseRentManagement
         {
             if (profileUser == null)
             {
-                profileUser = new ProfileUser();
+                profileUser = new ProfileUser(username);
                 profileUser.FormClosed += ProfileUser_FormClosed;
                 profileUser.MdiParent = this;
                 profileUser.Dock = DockStyle.Fill;

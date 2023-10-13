@@ -163,6 +163,9 @@
   <data name="appLogo16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\appLogo16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="picBoxAltCondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picBoxAltCondo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="btnPayment" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnPayment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -208,7 +211,7 @@
   <data name="btnContract" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnContract.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="picBoxAltCondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\picBoxAltCondo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnShowPassword16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnShowPassword16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

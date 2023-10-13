@@ -38,25 +38,20 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.pnlLogin = new Bunifu.UI.WinForms.BunifuPanel();
+            this.btnClose = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnHideShowPass = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.txtBoxPassword = new Bunifu.UI.WinForms.BunifuTextBox();
             this.lblSlogan = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblLinkForgotPass = new DevExpress.XtraEditors.HyperlinkLabelControl();
             this.lblPassword = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblUsername = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblNameApp = new Bunifu.UI.WinForms.BunifuLabel();
-            this.btnHideShowPass = new Bunifu.UI.WinForms.BunifuImageButton();
             this.btnReset = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnLogin = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.txtBoxPassword = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtBoxUsername = new Bunifu.UI.WinForms.BunifuTextBox();
             this.picBoxLogoApp = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.pnlLoginBar = new Bunifu.UI.WinForms.BunifuPanel();
-            this.lblHeadLogin = new Bunifu.UI.WinForms.BunifuLabel();
-            this.picBoxControl = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.ctbClose = new Guna.UI2.WinForms.Guna2ControlBox();
             this.pnlLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxLogoApp)).BeginInit();
-            this.pnlLoginBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxControl)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlLogin
@@ -67,206 +62,81 @@
             this.pnlLogin.BorderColor = System.Drawing.Color.Transparent;
             this.pnlLogin.BorderRadius = 3;
             this.pnlLogin.BorderThickness = 1;
+            this.pnlLogin.Controls.Add(this.btnClose);
+            this.pnlLogin.Controls.Add(this.btnHideShowPass);
+            this.pnlLogin.Controls.Add(this.txtBoxPassword);
             this.pnlLogin.Controls.Add(this.lblSlogan);
             this.pnlLogin.Controls.Add(this.lblLinkForgotPass);
             this.pnlLogin.Controls.Add(this.lblPassword);
             this.pnlLogin.Controls.Add(this.lblUsername);
             this.pnlLogin.Controls.Add(this.lblNameApp);
-            this.pnlLogin.Controls.Add(this.btnHideShowPass);
             this.pnlLogin.Controls.Add(this.btnReset);
             this.pnlLogin.Controls.Add(this.btnLogin);
-            this.pnlLogin.Controls.Add(this.txtBoxPassword);
             this.pnlLogin.Controls.Add(this.txtBoxUsername);
             this.pnlLogin.Controls.Add(this.picBoxLogoApp);
             this.pnlLogin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlLogin.Font = new System.Drawing.Font("Yu Gothic UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlLogin.Location = new System.Drawing.Point(0, 40);
+            this.pnlLogin.Location = new System.Drawing.Point(0, 0);
             this.pnlLogin.Name = "pnlLogin";
             this.pnlLogin.ShowBorders = true;
-            this.pnlLogin.Size = new System.Drawing.Size(439, 370);
-            this.pnlLogin.TabIndex = 1;
+            this.pnlLogin.Size = new System.Drawing.Size(462, 376);
+            this.pnlLogin.TabIndex = 0;
+            this.pnlLogin.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Login_MouseDown);
+            this.pnlLogin.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Login_MouseMove);
+            this.pnlLogin.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Login_MouseUp);
             // 
-            // lblSlogan
+            // btnClose
             // 
-            this.lblSlogan.AllowParentOverrides = false;
-            this.lblSlogan.AutoEllipsis = false;
-            this.lblSlogan.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblSlogan.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lblSlogan.Font = new System.Drawing.Font("Yu Gothic UI Light", 9F, System.Drawing.FontStyle.Italic);
-            this.lblSlogan.Location = new System.Drawing.Point(60, 49);
-            this.lblSlogan.Name = "lblSlogan";
-            this.lblSlogan.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblSlogan.Size = new System.Drawing.Size(191, 20);
-            this.lblSlogan.TabIndex = 24;
-            this.lblSlogan.Text = "Elevate Your Living Experience";
-            this.lblSlogan.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lblSlogan.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // lblLinkForgotPass
-            // 
-            this.lblLinkForgotPass.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblLinkForgotPass.Appearance.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLinkForgotPass.Appearance.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(144)))), ((int)(((byte)(29)))));
-            this.lblLinkForgotPass.Appearance.Options.UseFont = true;
-            this.lblLinkForgotPass.Appearance.Options.UseLinkColor = true;
-            this.lblLinkForgotPass.AppearancePressed.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(37)))));
-            this.lblLinkForgotPass.AppearancePressed.Options.UseLinkColor = true;
-            this.lblLinkForgotPass.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.lblLinkForgotPass.Location = new System.Drawing.Point(43, 277);
-            this.lblLinkForgotPass.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.lblLinkForgotPass.Margin = new System.Windows.Forms.Padding(4);
-            this.lblLinkForgotPass.Name = "lblLinkForgotPass";
-            this.lblLinkForgotPass.Size = new System.Drawing.Size(110, 20);
-            this.lblLinkForgotPass.TabIndex = 22;
-            this.lblLinkForgotPass.Text = "Forgot Password";
-            // 
-            // lblPassword
-            // 
-            this.lblPassword.AllowParentOverrides = false;
-            this.lblPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblPassword.AutoEllipsis = false;
-            this.lblPassword.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblPassword.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lblPassword.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(43, 189);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblPassword.Size = new System.Drawing.Size(82, 28);
-            this.lblPassword.TabIndex = 14;
-            this.lblPassword.Text = "Password";
-            this.lblPassword.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lblPassword.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // lblUsername
-            // 
-            this.lblUsername.AllowParentOverrides = false;
-            this.lblUsername.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblUsername.AutoEllipsis = false;
-            this.lblUsername.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblUsername.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lblUsername.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(43, 108);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblUsername.Size = new System.Drawing.Size(87, 28);
-            this.lblUsername.TabIndex = 15;
-            this.lblUsername.Text = "Username";
-            this.lblUsername.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lblUsername.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // lblNameApp
-            // 
-            this.lblNameApp.AllowParentOverrides = false;
-            this.lblNameApp.AutoEllipsis = false;
-            this.lblNameApp.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblNameApp.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lblNameApp.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameApp.Location = new System.Drawing.Point(21, 6);
-            this.lblNameApp.Name = "lblNameApp";
-            this.lblNameApp.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblNameApp.Size = new System.Drawing.Size(282, 37);
-            this.lblNameApp.TabIndex = 16;
-            this.lblNameApp.Text = "JungleUncles Properties";
-            this.lblNameApp.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lblNameApp.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.btnClose.ActiveBorderThickness = 1;
+            this.btnClose.ActiveCornerRadius = 20;
+            this.btnClose.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnClose.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
+            this.btnClose.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
+            this.btnClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClose.BackgroundImage")));
+            this.btnClose.ButtonText = "Close";
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
+            this.btnClose.IdleBorderThickness = 1;
+            this.btnClose.IdleCornerRadius = 20;
+            this.btnClose.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnClose.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
+            this.btnClose.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnClose.Location = new System.Drawing.Point(354, 312);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(5);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(87, 40);
+            this.btnClose.TabIndex = 7;
+            this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnHideShowPass
             // 
-            this.btnHideShowPass.ActiveImage = global::HouseRentManagement.Properties.Resources.btnShowPassword;
-            this.btnHideShowPass.AllowAnimations = true;
-            this.btnHideShowPass.AllowBuffering = false;
-            this.btnHideShowPass.AllowToggling = true;
-            this.btnHideShowPass.AllowZooming = false;
-            this.btnHideShowPass.AllowZoomingOnFocus = false;
-            this.btnHideShowPass.BackColor = System.Drawing.Color.White;
+            this.btnHideShowPass.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnHideShowPass.BackColor = System.Drawing.Color.Transparent;
             this.btnHideShowPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnHideShowPass.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnHideShowPass.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btnHideShowPass.ErrorImage")));
-            this.btnHideShowPass.FadeWhenInactive = false;
-            this.btnHideShowPass.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.btnHideShowPass.CheckedState.Image = global::HouseRentManagement.Properties.Resources.btnShowPassword16x16;
+            this.btnHideShowPass.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHideShowPass.HoverState.Image = global::HouseRentManagement.Properties.Resources.btnShowPassword16x16;
             this.btnHideShowPass.Image = global::HouseRentManagement.Properties.Resources.btnHidePassword;
-            this.btnHideShowPass.ImageActive = global::HouseRentManagement.Properties.Resources.btnShowPassword;
-            this.btnHideShowPass.ImageLocation = null;
-            this.btnHideShowPass.ImageMargin = 0;
+            this.btnHideShowPass.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnHideShowPass.ImageRotate = 0F;
             this.btnHideShowPass.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnHideShowPass.ImageZoomSize = new System.Drawing.Size(20, 20);
-            this.btnHideShowPass.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnHideShowPass.InitialImage")));
-            this.btnHideShowPass.Location = new System.Drawing.Point(274, 233);
+            this.btnHideShowPass.Location = new System.Drawing.Point(273, 237);
+            this.btnHideShowPass.Margin = new System.Windows.Forms.Padding(0);
             this.btnHideShowPass.Name = "btnHideShowPass";
-            this.btnHideShowPass.Rotation = 0;
-            this.btnHideShowPass.ShowActiveImage = true;
-            this.btnHideShowPass.ShowCursorChanges = true;
-            this.btnHideShowPass.ShowImageBorders = false;
-            this.btnHideShowPass.ShowSizeMarkers = false;
+            this.btnHideShowPass.PressedState.Image = global::HouseRentManagement.Properties.Resources.btnShowPassword16x16;
             this.btnHideShowPass.Size = new System.Drawing.Size(20, 20);
-            this.btnHideShowPass.TabIndex = 23;
-            this.btnHideShowPass.ToolTipText = "";
-            this.btnHideShowPass.WaitOnLoad = false;
-            this.btnHideShowPass.Zoom = 0;
-            this.btnHideShowPass.ZoomSpeed = 10;
-            // 
-            // btnReset
-            // 
-            this.btnReset.ActiveBorderThickness = 1;
-            this.btnReset.ActiveCornerRadius = 20;
-            this.btnReset.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(104)))), ((int)(((byte)(136)))));
-            this.btnReset.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
-            this.btnReset.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(104)))), ((int)(((byte)(136)))));
-            this.btnReset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
-            this.btnReset.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnReset.BackgroundImage")));
-            this.btnReset.ButtonText = "Reset";
-            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnReset.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
-            this.btnReset.IdleBorderThickness = 1;
-            this.btnReset.IdleCornerRadius = 20;
-            this.btnReset.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(46)))), ((int)(((byte)(60)))));
-            this.btnReset.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
-            this.btnReset.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(46)))), ((int)(((byte)(60)))));
-            this.btnReset.Location = new System.Drawing.Point(140, 306);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(5);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(87, 40);
-            this.btnReset.TabIndex = 20;
-            this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.ActiveBorderThickness = 1;
-            this.btnLogin.ActiveCornerRadius = 20;
-            this.btnLogin.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(201)))), ((int)(((byte)(196)))));
-            this.btnLogin.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
-            this.btnLogin.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(201)))), ((int)(((byte)(196)))));
-            this.btnLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
-            this.btnLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogin.BackgroundImage")));
-            this.btnLogin.ButtonText = "Login";
-            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
-            this.btnLogin.IdleBorderThickness = 1;
-            this.btnLogin.IdleCornerRadius = 20;
-            this.btnLogin.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(125)))), ((int)(((byte)(122)))));
-            this.btnLogin.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
-            this.btnLogin.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(125)))), ((int)(((byte)(122)))));
-            this.btnLogin.Location = new System.Drawing.Point(43, 306);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(5);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(87, 40);
-            this.btnLogin.TabIndex = 21;
-            this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.btnHideShowPass.TabIndex = 4;
+            this.btnHideShowPass.UseTransparentBackground = true;
+            this.btnHideShowPass.MouseEnter += new System.EventHandler(this.btnHideShowPass_MouseEnterLeave);
+            this.btnHideShowPass.MouseLeave += new System.EventHandler(this.btnHideShowPass_MouseEnterLeave);
             // 
             // txtBoxPassword
             // 
             this.txtBoxPassword.AcceptsReturn = false;
             this.txtBoxPassword.AcceptsTab = false;
-            this.txtBoxPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
             this.txtBoxPassword.AnimationSpeed = 200;
             this.txtBoxPassword.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
             this.txtBoxPassword.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
@@ -290,7 +160,7 @@
             this.txtBoxPassword.IconRight = null;
             this.txtBoxPassword.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBoxPassword.Lines = new string[0];
-            this.txtBoxPassword.Location = new System.Drawing.Point(43, 223);
+            this.txtBoxPassword.Location = new System.Drawing.Point(43, 230);
             this.txtBoxPassword.MaxLength = 32767;
             this.txtBoxPassword.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtBoxPassword.Modified = false;
@@ -328,7 +198,7 @@
             this.txtBoxPassword.ShortcutsEnabled = true;
             this.txtBoxPassword.Size = new System.Drawing.Size(260, 40);
             this.txtBoxPassword.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
-            this.txtBoxPassword.TabIndex = 17;
+            this.txtBoxPassword.TabIndex = 2;
             this.txtBoxPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtBoxPassword.TextMarginBottom = 0;
             this.txtBoxPassword.TextMarginLeft = 3;
@@ -336,6 +206,149 @@
             this.txtBoxPassword.TextPlaceholder = "Enter your password";
             this.txtBoxPassword.UseSystemPasswordChar = false;
             this.txtBoxPassword.WordWrap = true;
+            this.txtBoxPassword.TextChange += new System.EventHandler(this.txtBoxPassword_TextChanged);
+            // 
+            // lblSlogan
+            // 
+            this.lblSlogan.AllowParentOverrides = false;
+            this.lblSlogan.AutoEllipsis = false;
+            this.lblSlogan.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblSlogan.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lblSlogan.Font = new System.Drawing.Font("Yu Gothic UI Light", 9F, System.Drawing.FontStyle.Italic);
+            this.lblSlogan.Location = new System.Drawing.Point(60, 49);
+            this.lblSlogan.Name = "lblSlogan";
+            this.lblSlogan.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblSlogan.Size = new System.Drawing.Size(191, 20);
+            this.lblSlogan.TabIndex = 0;
+            this.lblSlogan.Text = "Elevate Your Living Experience";
+            this.lblSlogan.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblSlogan.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // lblLinkForgotPass
+            // 
+            this.lblLinkForgotPass.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblLinkForgotPass.Appearance.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLinkForgotPass.Appearance.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(144)))), ((int)(((byte)(29)))));
+            this.lblLinkForgotPass.Appearance.Options.UseFont = true;
+            this.lblLinkForgotPass.Appearance.Options.UseLinkColor = true;
+            this.lblLinkForgotPass.AppearancePressed.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(37)))));
+            this.lblLinkForgotPass.AppearancePressed.Options.UseLinkColor = true;
+            this.lblLinkForgotPass.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.lblLinkForgotPass.Location = new System.Drawing.Point(43, 277);
+            this.lblLinkForgotPass.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.lblLinkForgotPass.Margin = new System.Windows.Forms.Padding(4);
+            this.lblLinkForgotPass.Name = "lblLinkForgotPass";
+            this.lblLinkForgotPass.Size = new System.Drawing.Size(110, 20);
+            this.lblLinkForgotPass.TabIndex = 6;
+            this.lblLinkForgotPass.Text = "Forgot Password";
+            this.lblLinkForgotPass.Click += new System.EventHandler(this.lblLinkForgotPass_Click);
+            // 
+            // lblPassword
+            // 
+            this.lblPassword.AllowParentOverrides = false;
+            this.lblPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblPassword.AutoEllipsis = false;
+            this.lblPassword.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblPassword.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lblPassword.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Location = new System.Drawing.Point(43, 189);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblPassword.Size = new System.Drawing.Size(82, 28);
+            this.lblPassword.TabIndex = 0;
+            this.lblPassword.Text = "Password";
+            this.lblPassword.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblPassword.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.AllowParentOverrides = false;
+            this.lblUsername.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblUsername.AutoEllipsis = false;
+            this.lblUsername.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblUsername.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lblUsername.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Location = new System.Drawing.Point(43, 108);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblUsername.Size = new System.Drawing.Size(87, 28);
+            this.lblUsername.TabIndex = 0;
+            this.lblUsername.Text = "Username";
+            this.lblUsername.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblUsername.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // lblNameApp
+            // 
+            this.lblNameApp.AllowParentOverrides = false;
+            this.lblNameApp.AutoEllipsis = false;
+            this.lblNameApp.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblNameApp.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lblNameApp.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameApp.Location = new System.Drawing.Point(21, 6);
+            this.lblNameApp.Name = "lblNameApp";
+            this.lblNameApp.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblNameApp.Size = new System.Drawing.Size(282, 37);
+            this.lblNameApp.TabIndex = 0;
+            this.lblNameApp.Text = "JungleUncles Properties";
+            this.lblNameApp.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblNameApp.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // btnReset
+            // 
+            this.btnReset.ActiveBorderThickness = 1;
+            this.btnReset.ActiveCornerRadius = 20;
+            this.btnReset.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(104)))), ((int)(((byte)(136)))));
+            this.btnReset.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
+            this.btnReset.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(104)))), ((int)(((byte)(136)))));
+            this.btnReset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
+            this.btnReset.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnReset.BackgroundImage")));
+            this.btnReset.ButtonText = "Reset";
+            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReset.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
+            this.btnReset.IdleBorderThickness = 1;
+            this.btnReset.IdleCornerRadius = 20;
+            this.btnReset.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(46)))), ((int)(((byte)(60)))));
+            this.btnReset.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
+            this.btnReset.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(46)))), ((int)(((byte)(60)))));
+            this.btnReset.Location = new System.Drawing.Point(140, 312);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(5);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(87, 40);
+            this.btnReset.TabIndex = 5;
+            this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.ActiveBorderThickness = 1;
+            this.btnLogin.ActiveCornerRadius = 20;
+            this.btnLogin.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(201)))), ((int)(((byte)(196)))));
+            this.btnLogin.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
+            this.btnLogin.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(201)))), ((int)(((byte)(196)))));
+            this.btnLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
+            this.btnLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogin.BackgroundImage")));
+            this.btnLogin.ButtonText = "Login";
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
+            this.btnLogin.IdleBorderThickness = 1;
+            this.btnLogin.IdleCornerRadius = 20;
+            this.btnLogin.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(125)))), ((int)(((byte)(122)))));
+            this.btnLogin.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
+            this.btnLogin.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(125)))), ((int)(((byte)(122)))));
+            this.btnLogin.Location = new System.Drawing.Point(43, 312);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(5);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(87, 40);
+            this.btnLogin.TabIndex = 3;
+            this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // txtBoxUsername
             // 
@@ -404,7 +417,7 @@
             this.txtBoxUsername.ShortcutsEnabled = true;
             this.txtBoxUsername.Size = new System.Drawing.Size(260, 40);
             this.txtBoxUsername.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
-            this.txtBoxUsername.TabIndex = 18;
+            this.txtBoxUsername.TabIndex = 1;
             this.txtBoxUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtBoxUsername.TextMarginBottom = 0;
             this.txtBoxUsername.TextMarginLeft = 3;
@@ -421,7 +434,7 @@
             this.picBoxLogoApp.BorderRadius = 50;
             this.picBoxLogoApp.Image = global::HouseRentManagement.Properties.Resources.appLogo;
             this.picBoxLogoApp.IsCircle = true;
-            this.picBoxLogoApp.Location = new System.Drawing.Point(318, 36);
+            this.picBoxLogoApp.Location = new System.Drawing.Point(341, 36);
             this.picBoxLogoApp.Name = "picBoxLogoApp";
             this.picBoxLogoApp.Size = new System.Drawing.Size(100, 100);
             this.picBoxLogoApp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -429,107 +442,40 @@
             this.picBoxLogoApp.TabStop = false;
             this.picBoxLogoApp.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // pnlLoginBar
-            // 
-            this.pnlLoginBar.BackgroundColor = System.Drawing.Color.White;
-            this.pnlLoginBar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlLoginBar.BackgroundImage")));
-            this.pnlLoginBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlLoginBar.BorderColor = System.Drawing.Color.Transparent;
-            this.pnlLoginBar.BorderRadius = 3;
-            this.pnlLoginBar.BorderThickness = 1;
-            this.pnlLoginBar.Controls.Add(this.lblHeadLogin);
-            this.pnlLoginBar.Controls.Add(this.picBoxControl);
-            this.pnlLoginBar.Controls.Add(this.ctbClose);
-            this.pnlLoginBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlLoginBar.Location = new System.Drawing.Point(0, 0);
-            this.pnlLoginBar.Name = "pnlLoginBar";
-            this.pnlLoginBar.ShowBorders = true;
-            this.pnlLoginBar.Size = new System.Drawing.Size(439, 40);
-            this.pnlLoginBar.TabIndex = 0;
-            this.pnlLoginBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Login_MouseDown);
-            this.pnlLoginBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Login_MouseMove);
-            this.pnlLoginBar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Login_MouseUp);
-            // 
-            // lblHeadLogin
-            // 
-            this.lblHeadLogin.AllowParentOverrides = false;
-            this.lblHeadLogin.AutoEllipsis = false;
-            this.lblHeadLogin.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblHeadLogin.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lblHeadLogin.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHeadLogin.Location = new System.Drawing.Point(43, 9);
-            this.lblHeadLogin.Name = "lblHeadLogin";
-            this.lblHeadLogin.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblHeadLogin.Size = new System.Drawing.Size(175, 20);
-            this.lblHeadLogin.TabIndex = 2;
-            this.lblHeadLogin.Text = "Rental Mangement | Login";
-            this.lblHeadLogin.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lblHeadLogin.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // picBoxControl
-            // 
-            this.picBoxControl.BackColor = System.Drawing.Color.White;
-            this.picBoxControl.Image = global::HouseRentManagement.Properties.Resources.appLogo16x16;
-            this.picBoxControl.ImageRotate = 0F;
-            this.picBoxControl.Location = new System.Drawing.Point(3, 2);
-            this.picBoxControl.Name = "picBoxControl";
-            this.picBoxControl.Size = new System.Drawing.Size(35, 35);
-            this.picBoxControl.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picBoxControl.TabIndex = 1;
-            this.picBoxControl.TabStop = false;
-            // 
-            // ctbClose
-            // 
-            this.ctbClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ctbClose.Dock = System.Windows.Forms.DockStyle.Right;
-            this.ctbClose.FillColor = System.Drawing.Color.White;
-            this.ctbClose.IconColor = System.Drawing.Color.Black;
-            this.ctbClose.Location = new System.Drawing.Point(394, 0);
-            this.ctbClose.Name = "ctbClose";
-            this.ctbClose.Size = new System.Drawing.Size(45, 40);
-            this.ctbClose.TabIndex = 0;
-            // 
             // Login
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(439, 410);
+            this.ClientSize = new System.Drawing.Size(462, 376);
             this.Controls.Add(this.pnlLogin);
-            this.Controls.Add(this.pnlLoginBar);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("Login.IconOptions.Image")));
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.pnlLogin.ResumeLayout(false);
             this.pnlLogin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxLogoApp)).EndInit();
-            this.pnlLoginBar.ResumeLayout(false);
-            this.pnlLoginBar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxControl)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Bunifu.UI.WinForms.BunifuPanel pnlLoginBar;
         private Bunifu.UI.WinForms.BunifuPanel pnlLogin;
         private Bunifu.UI.WinForms.BunifuLabel lblSlogan;
         private DevExpress.XtraEditors.HyperlinkLabelControl lblLinkForgotPass;
         private Bunifu.UI.WinForms.BunifuLabel lblPassword;
         private Bunifu.UI.WinForms.BunifuLabel lblUsername;
         private Bunifu.UI.WinForms.BunifuLabel lblNameApp;
-        private Bunifu.UI.WinForms.BunifuImageButton btnHideShowPass;
         private Bunifu.Framework.UI.BunifuThinButton2 btnReset;
         private Bunifu.Framework.UI.BunifuThinButton2 btnLogin;
-        private Bunifu.UI.WinForms.BunifuTextBox txtBoxPassword;
         private Bunifu.UI.WinForms.BunifuTextBox txtBoxUsername;
         private Bunifu.UI.WinForms.BunifuPictureBox picBoxLogoApp;
-        private Guna.UI2.WinForms.Guna2ControlBox ctbClose;
-        private Guna.UI2.WinForms.Guna2PictureBox picBoxControl;
-        private Bunifu.UI.WinForms.BunifuLabel lblHeadLogin;
+        private Bunifu.UI.WinForms.BunifuTextBox txtBoxPassword;
+        private Guna.UI2.WinForms.Guna2ImageButton btnHideShowPass;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnClose;
     }
 }

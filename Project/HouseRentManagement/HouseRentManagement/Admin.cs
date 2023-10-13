@@ -11,10 +11,11 @@ namespace HouseRentManagement
 {
     public partial class Admin : DevExpress.XtraEditors.XtraForm
     {
-        public Admin()
+        private string username;
+        public Admin(string username)
         {
             InitializeComponent();
-            
+            this.username = username;
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
