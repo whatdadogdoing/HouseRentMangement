@@ -69,6 +69,5 @@ namespace HouseRentManagement
             lg.Show();
             this.Hide();
         }
-
     }
 }

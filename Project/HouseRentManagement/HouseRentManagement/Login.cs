@@ -8,6 +8,7 @@ using System.Data.Entity;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Management.Instrumentation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.UI.HtmlControls;
@@ -20,6 +21,7 @@ namespace HouseRentManagement
     {
         private bool isDragging = false;
         private Point startPoint;
+
         public Login()
         {
             InitializeComponent();
@@ -90,6 +92,7 @@ namespace HouseRentManagement
         {
             if (isDragging)
             {
+                //Hàm cho phép user kéo thả form đến vị trí bất kì 
                 Point newPoint = PointToScreen(new Point(e.X, e.Y));
                 Location = new Point(newPoint.X - startPoint.X, newPoint.Y - startPoint.Y);
             }
@@ -123,8 +126,12 @@ namespace HouseRentManagement
         private void lblLinkForgotPass_Click(object sender, EventArgs e)
         {
             ForgotPassword fgpw = new ForgotPassword();
-            fgpw.Show();
             this.Hide();
+            fgpw.Show();
+        }
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
