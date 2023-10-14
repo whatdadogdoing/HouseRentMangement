@@ -73,9 +73,10 @@
             this.pnlHomepage.Controls.Add(this.bunifuTextBox1);
             this.pnlHomepage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlHomepage.Location = new System.Drawing.Point(0, 0);
+            this.pnlHomepage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlHomepage.Name = "pnlHomepage";
             this.pnlHomepage.ShowBorders = true;
-            this.pnlHomepage.Size = new System.Drawing.Size(958, 655);
+            this.pnlHomepage.Size = new System.Drawing.Size(982, 758);
             this.pnlHomepage.TabIndex = 23;
             // 
             // bunifuLabel2
@@ -84,10 +85,11 @@
             this.bunifuLabel2.AutoEllipsis = false;
             this.bunifuLabel2.CursorType = null;
             this.bunifuLabel2.Font = new System.Drawing.Font("Yu Gothic UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel2.Location = new System.Drawing.Point(734, 490);
+            this.bunifuLabel2.Location = new System.Drawing.Point(629, 398);
+            this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(191, 20);
+            this.bunifuLabel2.Size = new System.Drawing.Size(148, 15);
             this.bunifuLabel2.TabIndex = 21;
             this.bunifuLabel2.Text = "Elevate Your Living Experience";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -96,9 +98,10 @@
             // picBoxLogo
             // 
             this.picBoxLogo.Image = global::HouseRentManagement.Properties.Resources.appLogo;
-            this.picBoxLogo.Location = new System.Drawing.Point(734, 434);
+            this.picBoxLogo.Location = new System.Drawing.Point(629, 353);
+            this.picBoxLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picBoxLogo.Name = "picBoxLogo";
-            this.picBoxLogo.Size = new System.Drawing.Size(50, 50);
+            this.picBoxLogo.Size = new System.Drawing.Size(43, 41);
             this.picBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBoxLogo.TabIndex = 24;
             this.picBoxLogo.TabStop = false;
@@ -114,9 +117,10 @@
             this.hyperlinkLabelControl1.AppearancePressed.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(37)))));
             this.hyperlinkLabelControl1.AppearancePressed.Options.UseLinkColor = true;
             this.hyperlinkLabelControl1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.hyperlinkLabelControl1.Location = new System.Drawing.Point(737, 610);
+            this.hyperlinkLabelControl1.Location = new System.Drawing.Point(632, 496);
+            this.hyperlinkLabelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.hyperlinkLabelControl1.Name = "hyperlinkLabelControl1";
-            this.hyperlinkLabelControl1.Size = new System.Drawing.Size(197, 25);
+            this.hyperlinkLabelControl1.Size = new System.Drawing.Size(150, 19);
             this.hyperlinkLabelControl1.TabIndex = 23;
             this.hyperlinkLabelControl1.Text = "jungleuncles@gmail.com";
             // 
@@ -148,7 +152,8 @@
             this.bunifuTextBox3.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox3.Lines = new string[] {
         "JungleUncles Properties"};
-            this.bunifuTextBox3.Location = new System.Drawing.Point(770, 424);
+            this.bunifuTextBox3.Location = new System.Drawing.Point(660, 344);
+            this.bunifuTextBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuTextBox3.MaxLength = 32767;
             this.bunifuTextBox3.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBox3.Modified = false;
@@ -174,7 +179,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBox3.OnIdleState = stateProperties4;
-            this.bunifuTextBox3.Padding = new System.Windows.Forms.Padding(3);
+            this.bunifuTextBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuTextBox3.PasswordChar = '\0';
             this.bunifuTextBox3.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.bunifuTextBox3.PlaceholderText = "Enter text";
@@ -184,7 +189,7 @@
             this.bunifuTextBox3.SelectionLength = 0;
             this.bunifuTextBox3.SelectionStart = 0;
             this.bunifuTextBox3.ShortcutsEnabled = true;
-            this.bunifuTextBox3.Size = new System.Drawing.Size(175, 76);
+            this.bunifuTextBox3.Size = new System.Drawing.Size(150, 62);
             this.bunifuTextBox3.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.bunifuTextBox3.TabIndex = 20;
             this.bunifuTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -203,10 +208,11 @@
             this.lblName.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblName.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
-            this.lblName.Location = new System.Drawing.Point(19, 380);
+            this.lblName.Location = new System.Drawing.Point(16, 309);
+            this.lblName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblName.Name = "lblName";
             this.lblName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblName.Size = new System.Drawing.Size(296, 37);
+            this.lblName.Size = new System.Drawing.Size(241, 30);
             this.lblName.TabIndex = 18;
             this.lblName.Text = "Completed Communities";
             this.lblName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -218,8 +224,9 @@
             this.picBoxCondo.Dock = System.Windows.Forms.DockStyle.Top;
             this.picBoxCondo.Image = global::HouseRentManagement.Properties.Resources.picBoxCondo;
             this.picBoxCondo.Location = new System.Drawing.Point(0, 0);
+            this.picBoxCondo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picBoxCondo.Name = "picBoxCondo";
-            this.picBoxCondo.Size = new System.Drawing.Size(958, 424);
+            this.picBoxCondo.Size = new System.Drawing.Size(982, 344);
             this.picBoxCondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBoxCondo.TabIndex = 17;
             this.picBoxCondo.TabStop = false;
@@ -255,7 +262,8 @@
         "15, 14th Floor, Vinhome Grandpark, Nguyen Xien Street, District 9, Ho Chi Minh Ci" +
             "ty",
         ""};
-            this.txtBoxContact.Location = new System.Drawing.Point(715, 506);
+            this.txtBoxContact.Location = new System.Drawing.Point(613, 411);
+            this.txtBoxContact.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBoxContact.MaxLength = 32767;
             this.txtBoxContact.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtBoxContact.Modified = false;
@@ -281,7 +289,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtBoxContact.OnIdleState = stateProperties8;
-            this.txtBoxContact.Padding = new System.Windows.Forms.Padding(3);
+            this.txtBoxContact.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBoxContact.PasswordChar = '\0';
             this.txtBoxContact.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtBoxContact.PlaceholderText = "Enter text";
@@ -291,7 +299,7 @@
             this.txtBoxContact.SelectionLength = 0;
             this.txtBoxContact.SelectionStart = 0;
             this.txtBoxContact.ShortcutsEnabled = true;
-            this.txtBoxContact.Size = new System.Drawing.Size(246, 110);
+            this.txtBoxContact.Size = new System.Drawing.Size(211, 89);
             this.txtBoxContact.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtBoxContact.TabIndex = 20;
             this.txtBoxContact.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -332,7 +340,8 @@
             this.bunifuTextBox1.Lines = new string[] {
         "Explore the over 50 condominium developments JungleUncles Properties has proudly " +
             "completed across HoChiMinh, DaNang and HaNoi. "};
-            this.bunifuTextBox1.Location = new System.Drawing.Point(6, 430);
+            this.bunifuTextBox1.Location = new System.Drawing.Point(5, 349);
+            this.bunifuTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuTextBox1.MaxLength = 32767;
             this.bunifuTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBox1.Modified = false;
@@ -358,7 +367,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBox1.OnIdleState = stateProperties12;
-            this.bunifuTextBox1.Padding = new System.Windows.Forms.Padding(3);
+            this.bunifuTextBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuTextBox1.PasswordChar = '\0';
             this.bunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.bunifuTextBox1.PlaceholderText = "Enter text";
@@ -368,7 +377,7 @@
             this.bunifuTextBox1.SelectionLength = 0;
             this.bunifuTextBox1.SelectionStart = 0;
             this.bunifuTextBox1.ShortcutsEnabled = true;
-            this.bunifuTextBox1.Size = new System.Drawing.Size(660, 219);
+            this.bunifuTextBox1.Size = new System.Drawing.Size(566, 178);
             this.bunifuTextBox1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.bunifuTextBox1.TabIndex = 20;
             this.bunifuTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -381,12 +390,13 @@
             // 
             // Homepage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(958, 655);
+            this.ClientSize = new System.Drawing.Size(982, 758);
             this.Controls.Add(this.pnlHomepage);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Homepage";
             this.Text = "Homepage";
             this.pnlHomepage.ResumeLayout(false);

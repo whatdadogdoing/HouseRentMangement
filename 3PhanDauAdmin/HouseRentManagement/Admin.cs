@@ -9,9 +9,11 @@ using System.Windows.Forms;
 
 namespace HouseRentManagement
 {
-    public partial class Admin : DevExpress.XtraEditors.XtraForm
+    public partial class pnlAdmin : DevExpress.XtraEditors.XtraForm
     {
-        public Admin()
+  
+        private ChildFormManager formManager = new ChildFormManager();
+        public pnlAdmin()
         {
             InitializeComponent();
             
@@ -24,7 +26,9 @@ namespace HouseRentManagement
             this.Hide();
         }
 
-        private void btnProfile_Click(object sender, EventArgs e)
+      
+
+        private void pnlAdmin_Load(object sender, EventArgs e)
         {
 
         }

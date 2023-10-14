@@ -29,7 +29,7 @@ namespace HouseRentManagement
         {
             if (txtBoxUsername.Text == "admin" && txtBoxPassword.Text == "admin")
             {
-                Admin adminForm = new Admin();
+                pnlAdmin adminForm = new pnlAdmin();
                 adminForm.Show();
                 this.Hide();
             }

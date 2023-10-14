@@ -103,5 +103,10 @@ namespace HouseRentManagement
             loginForm.Show();
             this.Hide();
         }
+
+        private void btnCondoServices_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

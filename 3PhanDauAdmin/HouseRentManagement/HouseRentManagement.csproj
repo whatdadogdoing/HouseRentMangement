@@ -140,15 +140,24 @@
     <Reference Include="DevExpress.XtraEditors.v22.2" />
     <Reference Include="DevExpress.Printing.v22.2.Core" />
     <Reference Include="DevExpress.Drawing.v22.2" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.3.4, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\Downloads\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -172,6 +181,12 @@
     <Compile Include="CondoServices.Designer.cs">
       <DependentUpon>CondoServices.cs</DependentUpon>
     </Compile>
+    <Compile Include="Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Homepage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +206,12 @@
       <DependentUpon>Payment.cs</DependentUpon>
     </Compile>
     <Compile Include="ChildFormManager .cs" />
+    <Compile Include="ProfileAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileAdmin.Designer.cs">
+      <DependentUpon>ProfileAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProfileUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,11 +220,43 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyCanHoChungCu\ADMIN.cs" />
+    <Compile Include="QuanLyCanHoChungCu\BANGGIA.cs" />
+    <Compile Include="QuanLyCanHoChungCu\BANQUANLY.cs" />
+    <Compile Include="QuanLyCanHoChungCu\BIENLAI.cs" />
+    <Compile Include="QuanLyCanHoChungCu\CANHO.cs" />
+    <Compile Include="QuanLyCanHoChungCu\CHUCVU.cs" />
+    <Compile Include="QuanLyCanHoChungCu\CHUSOHUU.cs" />
+    <Compile Include="QuanLyCanHoChungCu\CTHDTT.cs" />
+    <Compile Include="QuanLyCanHoChungCu\CTNTCB.cs" />
+    <Compile Include="QuanLyCanHoChungCu\DANHSACHNHANKHAU.cs" />
+    <Compile Include="QuanLyCanHoChungCu\DBQuanLyCHCC.cs" />
+    <Compile Include="QuanLyCanHoChungCu\HOADONTHANHTOAN.cs" />
+    <Compile Include="QuanLyCanHoChungCu\HOPDONGTHUE.cs" />
+    <Compile Include="QuanLyCanHoChungCu\LOAICANHO.cs" />
+    <Compile Include="QuanLyCanHoChungCu\NGUOITHUE.cs" />
+    <Compile Include="QuanLyCanHoChungCu\NOITHATCOBAN.cs" />
+    <Compile Include="QuanLyCanHoChungCu\PHIEUCHUYENDO.cs" />
+    <Compile Include="QuanLyCanHoChungCu\PHIEUPHANHOI.cs" />
+    <Compile Include="QuanLyCanHoChungCu\PHIEUPHAT.cs" />
+    <Compile Include="QuanLyCanHoChungCu\PHIEUSUACHUA.cs" />
+    <Compile Include="QuanLyCanHoChungCu\PHIEUTHICONG.cs" />
+    <Compile Include="QuanLyCanHoChungCu\TANG.cs" />
+    <Compile Include="QuanLyCanHoChungCu\THECUDAN.cs" />
+    <Compile Include="QuanLyCanHoChungCu\THEXE.cs" />
+    <Compile Include="QuanLyCanHoChungCu\USER.cs" />
+    <Compile Include="QuanLyCanHoChungCu\XE.cs" />
     <Compile Include="Receipt.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Receipt.Designer.cs">
       <DependentUpon>Receipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resident_Card.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resident_Card.Designer.cs">
+      <DependentUpon>Resident_Card.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs">
       <SubType>Form</SubType>
@@ -212,6 +265,9 @@
       <DependentUpon>User.cs</DependentUpon>
     </Compile>
     <Compile Include="WindowTitleBar.cs" />
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Homepage.resx">
       <DependentUpon>Homepage.cs</DependentUpon>
     </EmbeddedResource>
@@ -220,6 +276,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Payment.resx">
       <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileAdmin.resx">
+      <DependentUpon>ProfileAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProfileUser.resx">
       <DependentUpon>ProfileUser.cs</DependentUpon>
@@ -238,6 +297,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Resident_Card.resx">
+      <DependentUpon>Resident_Card.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User.resx">
       <DependentUpon>User.cs</DependentUpon>
     </EmbeddedResource>

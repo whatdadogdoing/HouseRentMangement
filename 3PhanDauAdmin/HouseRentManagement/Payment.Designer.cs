@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Payment));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblTransactions = new Bunifu.UI.WinForms.BunifuLabel();
@@ -71,10 +71,11 @@
             this.bunifuPanel1.Controls.Add(this.lblTransactions);
             this.bunifuPanel1.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuPanel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuPanel1.Location = new System.Drawing.Point(12, 3);
+            this.bunifuPanel1.Location = new System.Drawing.Point(10, 2);
+            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(200, 90);
+            this.bunifuPanel1.Size = new System.Drawing.Size(171, 73);
             this.bunifuPanel1.TabIndex = 0;
             // 
             // bunifuLabel2
@@ -84,10 +85,11 @@
             this.bunifuLabel2.CursorType = null;
             this.bunifuLabel2.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel2.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel2.Location = new System.Drawing.Point(182, 50);
+            this.bunifuLabel2.Location = new System.Drawing.Point(156, 41);
+            this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(15, 37);
+            this.bunifuLabel2.Size = new System.Drawing.Size(12, 30);
             this.bunifuLabel2.TabIndex = 0;
             this.bunifuLabel2.Text = "0";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -101,10 +103,11 @@
             this.lblTransactions.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblTransactions.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTransactions.ForeColor = System.Drawing.Color.White;
-            this.lblTransactions.Location = new System.Drawing.Point(3, 3);
+            this.lblTransactions.Location = new System.Drawing.Point(3, 2);
+            this.lblTransactions.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblTransactions.Name = "lblTransactions";
             this.lblTransactions.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblTransactions.Size = new System.Drawing.Size(147, 37);
+            this.lblTransactions.Size = new System.Drawing.Size(119, 30);
             this.lblTransactions.TabIndex = 0;
             this.lblTransactions.Text = "Transactions";
             this.lblTransactions.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -122,10 +125,11 @@
             this.bunifuPanel2.Controls.Add(this.lblTotalAmount);
             this.bunifuPanel2.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuPanel2.ForeColor = System.Drawing.Color.White;
-            this.bunifuPanel2.Location = new System.Drawing.Point(227, 3);
+            this.bunifuPanel2.Location = new System.Drawing.Point(195, 2);
+            this.bunifuPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuPanel2.Name = "bunifuPanel2";
             this.bunifuPanel2.ShowBorders = true;
-            this.bunifuPanel2.Size = new System.Drawing.Size(200, 90);
+            this.bunifuPanel2.Size = new System.Drawing.Size(171, 73);
             this.bunifuPanel2.TabIndex = 0;
             // 
             // bunifuLabel3
@@ -135,10 +139,11 @@
             this.bunifuLabel3.CursorType = null;
             this.bunifuLabel3.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel3.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel3.Location = new System.Drawing.Point(182, 50);
+            this.bunifuLabel3.Location = new System.Drawing.Point(156, 41);
+            this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(15, 37);
+            this.bunifuLabel3.Size = new System.Drawing.Size(12, 30);
             this.bunifuLabel3.TabIndex = 0;
             this.bunifuLabel3.Text = "0";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -151,10 +156,11 @@
             this.lblTotalAmount.CursorType = null;
             this.lblTotalAmount.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalAmount.ForeColor = System.Drawing.Color.White;
-            this.lblTotalAmount.Location = new System.Drawing.Point(3, 3);
+            this.lblTotalAmount.Location = new System.Drawing.Point(3, 2);
+            this.lblTotalAmount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblTotalAmount.Name = "lblTotalAmount";
             this.lblTotalAmount.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblTotalAmount.Size = new System.Drawing.Size(162, 37);
+            this.lblTotalAmount.Size = new System.Drawing.Size(131, 30);
             this.lblTotalAmount.TabIndex = 0;
             this.lblTotalAmount.Text = "Total Amount";
             this.lblTotalAmount.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -179,9 +185,10 @@
             this.bunifuPanel3.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuPanel3.ForeColor = System.Drawing.Color.White;
             this.bunifuPanel3.Location = new System.Drawing.Point(0, 0);
+            this.bunifuPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuPanel3.Name = "bunifuPanel3";
             this.bunifuPanel3.ShowBorders = true;
-            this.bunifuPanel3.Size = new System.Drawing.Size(956, 613);
+            this.bunifuPanel3.Size = new System.Drawing.Size(986, 733);
             this.bunifuPanel3.TabIndex = 0;
             // 
             // pnlPayment
@@ -199,7 +206,8 @@
             this.pnlPayment.Controls.Add(this.lblAmount);
             this.pnlPayment.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.pnlPayment.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.pnlPayment.Location = new System.Drawing.Point(594, 68);
+            this.pnlPayment.Location = new System.Drawing.Point(676, 55);
+            this.pnlPayment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlPayment.Name = "pnlPayment";
             this.pnlPayment.PanelColor = System.Drawing.Color.WhiteSmoke;
             this.pnlPayment.PanelColor2 = System.Drawing.Color.WhiteSmoke;
@@ -208,24 +216,26 @@
             this.pnlPayment.ShadowDepth = 5;
             this.pnlPayment.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.pnlPayment.ShadowTopLeftVisible = false;
-            this.pnlPayment.Size = new System.Drawing.Size(350, 271);
+            this.pnlPayment.Size = new System.Drawing.Size(300, 220);
             this.pnlPayment.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.pnlPayment.TabIndex = 5;
             this.pnlPayment.Visible = false;
             // 
             // txtBoxAmount
             // 
-            this.txtBoxAmount.Location = new System.Drawing.Point(14, 45);
+            this.txtBoxAmount.Location = new System.Drawing.Point(12, 37);
+            this.txtBoxAmount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBoxAmount.Name = "txtBoxAmount";
-            this.txtBoxAmount.Size = new System.Drawing.Size(318, 34);
+            this.txtBoxAmount.Size = new System.Drawing.Size(273, 29);
             this.txtBoxAmount.TabIndex = 6;
             // 
             // txtBoxDescription
             // 
-            this.txtBoxDescription.Location = new System.Drawing.Point(14, 106);
+            this.txtBoxDescription.Location = new System.Drawing.Point(12, 86);
+            this.txtBoxDescription.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBoxDescription.Multiline = true;
             this.txtBoxDescription.Name = "txtBoxDescription";
-            this.txtBoxDescription.Size = new System.Drawing.Size(318, 104);
+            this.txtBoxDescription.Size = new System.Drawing.Size(273, 85);
             this.txtBoxDescription.TabIndex = 6;
             // 
             // btnCancel
@@ -247,11 +257,11 @@
             this.btnCancel.ColorContrastOnClick = 45;
             this.btnCancel.ColorContrastOnHover = 45;
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btnCancel.CustomizableEdges = borderEdges3;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnCancel.CustomizableEdges = borderEdges1;
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnCancel.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnCancel.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -275,7 +285,8 @@
             this.btnCancel.IdleIconLeftImage = null;
             this.btnCancel.IdleIconRightImage = null;
             this.btnCancel.IndicateFocus = false;
-            this.btnCancel.Location = new System.Drawing.Point(130, 216);
+            this.btnCancel.Location = new System.Drawing.Point(111, 176);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnCancel.OnDisabledState.BorderRadius = 1;
@@ -309,7 +320,7 @@
             this.btnCancel.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnCancel.OnPressedState.IconLeftImage = null;
             this.btnCancel.OnPressedState.IconRightImage = null;
-            this.btnCancel.Size = new System.Drawing.Size(98, 39);
+            this.btnCancel.Size = new System.Drawing.Size(84, 32);
             this.btnCancel.TabIndex = 5;
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnCancel.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -337,11 +348,11 @@
             this.btnPay.ColorContrastOnClick = 45;
             this.btnPay.ColorContrastOnHover = 45;
             this.btnPay.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.btnPay.CustomizableEdges = borderEdges4;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnPay.CustomizableEdges = borderEdges2;
             this.btnPay.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnPay.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnPay.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -365,7 +376,8 @@
             this.btnPay.IdleIconLeftImage = null;
             this.btnPay.IdleIconRightImage = null;
             this.btnPay.IndicateFocus = false;
-            this.btnPay.Location = new System.Drawing.Point(234, 216);
+            this.btnPay.Location = new System.Drawing.Point(201, 176);
+            this.btnPay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPay.Name = "btnPay";
             this.btnPay.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnPay.OnDisabledState.BorderRadius = 1;
@@ -399,7 +411,7 @@
             this.btnPay.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnPay.OnPressedState.IconLeftImage = null;
             this.btnPay.OnPressedState.IconRightImage = null;
-            this.btnPay.Size = new System.Drawing.Size(98, 39);
+            this.btnPay.Size = new System.Drawing.Size(84, 32);
             this.btnPay.TabIndex = 5;
             this.btnPay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnPay.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -414,10 +426,11 @@
             this.lblDescription.AutoEllipsis = false;
             this.lblDescription.CursorType = null;
             this.lblDescription.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescription.Location = new System.Drawing.Point(14, 79);
+            this.lblDescription.Location = new System.Drawing.Point(12, 64);
+            this.lblDescription.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblDescription.Name = "lblDescription";
             this.lblDescription.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblDescription.Size = new System.Drawing.Size(76, 20);
+            this.lblDescription.Size = new System.Drawing.Size(60, 15);
             this.lblDescription.TabIndex = 4;
             this.lblDescription.Text = "Description";
             this.lblDescription.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -430,10 +443,11 @@
             this.lblAmount.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblAmount.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblAmount.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAmount.Location = new System.Drawing.Point(14, 19);
+            this.lblAmount.Location = new System.Drawing.Point(12, 15);
+            this.lblAmount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblAmount.Name = "lblAmount";
             this.lblAmount.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblAmount.Size = new System.Drawing.Size(53, 20);
+            this.lblAmount.Size = new System.Drawing.Size(43, 15);
             this.lblAmount.TabIndex = 4;
             this.lblAmount.Text = "Amount";
             this.lblAmount.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -450,9 +464,10 @@
             this.btnPayment.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(199)))), ((int)(((byte)(21)))));
             this.btnPayment.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPayment.ForeColor = System.Drawing.Color.White;
-            this.btnPayment.Location = new System.Drawing.Point(742, 6);
+            this.btnPayment.Location = new System.Drawing.Point(636, 5);
+            this.btnPayment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPayment.Name = "btnPayment";
-            this.btnPayment.Size = new System.Drawing.Size(202, 56);
+            this.btnPayment.Size = new System.Drawing.Size(173, 46);
             this.btnPayment.TabIndex = 4;
             this.btnPayment.Text = "Add Payment";
             this.btnPayment.Click += new System.EventHandler(this.btnPayment_Click);
@@ -461,34 +476,35 @@
             // 
             this.guna2DataGridView1.AllowUserToAddRows = false;
             this.guna2DataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.guna2DataGridView1.ColumnHeadersHeight = 4;
             this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(12, 176);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(10, 143);
+            this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.ReadOnly = true;
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.RowTemplate.Height = 24;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(932, 425);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(799, 345);
             this.guna2DataGridView1.TabIndex = 3;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -519,10 +535,11 @@
             this.lblCondoPayment.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblCondoPayment.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblCondoPayment.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCondoPayment.Location = new System.Drawing.Point(12, 99);
+            this.lblCondoPayment.Location = new System.Drawing.Point(10, 80);
+            this.lblCondoPayment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblCondoPayment.Name = "lblCondoPayment";
             this.lblCondoPayment.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblCondoPayment.Size = new System.Drawing.Size(140, 28);
+            this.lblCondoPayment.Size = new System.Drawing.Size(111, 21);
             this.lblCondoPayment.TabIndex = 2;
             this.lblCondoPayment.Text = "Condo Payment";
             this.lblCondoPayment.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -539,22 +556,24 @@
             this.guna2ComboBox1.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2ComboBox1.ForeColor = System.Drawing.Color.Black;
             this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(12, 133);
+            this.guna2ComboBox1.Location = new System.Drawing.Point(10, 108);
+            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(200, 36);
+            this.guna2ComboBox1.Size = new System.Drawing.Size(172, 36);
             this.guna2ComboBox1.TabIndex = 1;
             // 
             // Payment
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(956, 613);
+            this.ClientSize = new System.Drawing.Size(986, 733);
             this.Controls.Add(this.bunifuPanel3);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IconOptions.Image = global::HouseRentManagement.Properties.Resources.appLogo;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Payment";
             this.Text = "Payment";
             this.bunifuPanel1.ResumeLayout(false);
