@@ -29,65 +29,76 @@ namespace HouseRentManagement
         {
             try
             {
-                if (txtID.Text == "" || txtName.Text == "" || txtUnit.Text == "" )
+                if (txtID.Text == "" || txtName.Text == "" || txtUnit.Text == "")
                     throw new Exception("Please enter all the information form");
-                int s = getselectedrow(txtID.Text);
-                if (s == -1)
+                float c = float.Parse(txtCost.Text);
+                if (c == 0)
                 {
-                    string a = txtStatus.Text;
-                    if (a.Equals("Đang sử dụng") || a.Equals("Ngừng sử dụng") || string.IsNullOrEmpty(a))
-                    {
-                        txtStatus.Text = a;
-                    }
-                    else
-                    {
-                        MessageBox.Show("Only enter 'Đang sử dụng' or 'Ngừng sử dụng' for data 'Status'",
-                            "Error", MessageBoxButtons.OK);
-                        txtStatus.Text = "";
-                    }
-
-                    var bg = new BANGGIA()
-                    {
-                        MaBangGia = txtID.Text,
-                        TenDichVu = txtName.Text,
-                        DonViTinh = txtUnit.Text,
-                        GiaTien = Convert.ToDecimal(txtCost.Text),
-                        TrangThai = string.IsNullOrEmpty(txtStatus.Text)?null:txtStatus.Text,
-                    };
-                    context.BANGGIAs.Add(bg);
-                    context.SaveChanges();
-                    s = dgvPrice.Rows.Add();
-                    insert(s);
-                    MessageBox.Show("Added data successfully", "Notification", MessageBoxButtons.OK);
+                    MessageBox.Show("The amount entered is invalid", "Error", MessageBoxButtons.OK);
+                    return;
                 }
                 else
                 {
 
-                    string a = txtStatus.Text;
-                    if (a.Equals("Đang sử dụng") || a.Equals("Ngừng sử dụng") || string.IsNullOrEmpty(a))
+
+                    int s = getselectedrow(txtID.Text);
+                    if (s == -1)
                     {
-                        txtStatus.Text = a;
+                        string a = txtStatus.Text;
+                        if (a.Equals("Đang sử dụng") || a.Equals("Ngừng sử dụng") || string.IsNullOrEmpty(a))
+                        {
+                            txtStatus.Text = a;
+                        }
+                        else
+                        {
+                            MessageBox.Show("Only enter 'Đang sử dụng' or 'Ngừng sử dụng' for data 'Status'",
+                                "Error", MessageBoxButtons.OK);
+                            txtStatus.Text = "";
+                        }
+
+                        var bg = new BANGGIA()
+                        {
+                            MaBangGia = txtID.Text,
+                            TenDichVu = txtName.Text,
+                            DonViTinh = txtUnit.Text,
+                            GiaTien = Convert.ToDecimal(txtCost.Text),
+                            TrangThai = string.IsNullOrEmpty(txtStatus.Text) ? null : txtStatus.Text,
+                        };
+                        context.BANGGIAs.Add(bg);
+                        context.SaveChanges();
+                        s = dgvPrice.Rows.Add();
+                        insert(s);
+                        MessageBox.Show("Added data successfully", "Notification", MessageBoxButtons.OK);
                     }
                     else
                     {
-                        MessageBox.Show("Only enter 'Đang sử dụng' or 'Ngừng sử dụng' for data 'Status'",
-                            "Error", MessageBoxButtons.OK);
-                        txtStatus.Text = "";
-                    }
-                    BANGGIA dbUpdate = context.BANGGIAs.FirstOrDefault(p => p.MaBangGia == txtID.Text);
-                    if(dbUpdate != null)
-                    {
-                        dbUpdate.TenDichVu = txtName.Text;
-                        dbUpdate.DonViTinh = txtUnit.Text;
-                        dbUpdate.GiaTien = Convert.ToDecimal(txtCost.Text);
-                        dbUpdate.TrangThai = string.IsNullOrEmpty(txtStatus.Text) ? null : txtStatus.Text;
 
-                        context.SaveChanges();
+                        string a = txtStatus.Text;
+                        if (a.Equals("Đang sử dụng") || a.Equals("Ngừng sử dụng") || string.IsNullOrEmpty(a))
+                        {
+                            txtStatus.Text = a;
+                        }
+                        else
+                        {
+                            MessageBox.Show("Only enter 'Đang sử dụng' or 'Ngừng sử dụng' for data 'Status'",
+                                "Error", MessageBoxButtons.OK);
+                            txtStatus.Text = "";
+                        }
+                        BANGGIA dbUpdate = context.BANGGIAs.FirstOrDefault(p => p.MaBangGia == txtID.Text);
+                        if (dbUpdate != null)
+                        {
+                            dbUpdate.TenDichVu = txtName.Text;
+                            dbUpdate.DonViTinh = txtUnit.Text;
+                            dbUpdate.GiaTien = Convert.ToDecimal(txtCost.Text);
+                            dbUpdate.TrangThai = string.IsNullOrEmpty(txtStatus.Text) ? null : txtStatus.Text;
+
+                            context.SaveChanges();
+                        }
+                        insert(s);
+                        MessageBox.Show("Updated data successfully", "Notification", MessageBoxButtons.OK);
                     }
-                    insert(s);
-                    MessageBox.Show("Updated data successfully", "Notification", MessageBoxButtons.OK);
+                    txtID.Text = txtName.Text = txtUnit.Text = txtStatus.Text = txtCost.Text = "";
                 }
-                txtID.Text = txtName.Text = txtUnit.Text = txtStatus.Text = txtCost.Text = "";
             }
             catch (Exception ex)
             {
@@ -125,17 +136,9 @@ namespace HouseRentManagement
             dgvPrice.Rows[row].Cells[0].Value = txtID.Text;
             dgvPrice.Rows[row].Cells[1].Value = txtName.Text;
             dgvPrice.Rows[row].Cells[2].Value = txtUnit.Text;
+            dgvPrice.Rows[row].Cells["clCost"].Value = float.Parse(txtCost.Text);
             dgvPrice.Rows[row].Cells[4].Value = txtStatus.Text;
-            float c = float.Parse(txtCost.Text);
-            if ( c == 0)
-            {
-                MessageBox.Show("The amount entered is invalid", "Error", MessageBoxButtons.OK);
-                return;
-            }
-            else
-            {
-                dgvPrice.Rows[row].Cells["clCost"].Value = c.ToString();
-            }
+            
             
         }
         private void EnterData()

@@ -65,7 +65,7 @@
             this.pnlReport.Location = new System.Drawing.Point(0, 0);
             this.pnlReport.Name = "pnlReport";
             this.pnlReport.ShowBorders = true;
-            this.pnlReport.Size = new System.Drawing.Size(801, 627);
+            this.pnlReport.Size = new System.Drawing.Size(801, 491);
             this.pnlReport.TabIndex = 0;
             // 
             // toolStrip1
@@ -175,7 +175,7 @@
             this.pnlExport.Location = new System.Drawing.Point(0, -20);
             this.pnlExport.Name = "pnlExport";
             this.pnlExport.ShowBorders = false;
-            this.pnlExport.Size = new System.Drawing.Size(800, 485);
+            this.pnlExport.Size = new System.Drawing.Size(800, 468);
             this.pnlExport.TabIndex = 13;
             // 
             // btnExcel
@@ -196,7 +196,7 @@
             this.btnExcel.IdleFillColor = System.Drawing.Color.DarkGreen;
             this.btnExcel.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.btnExcel.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(125)))), ((int)(((byte)(122)))));
-            this.btnExcel.Location = new System.Drawing.Point(444, 493);
+            this.btnExcel.Location = new System.Drawing.Point(443, 455);
             this.btnExcel.Margin = new System.Windows.Forms.Padding(4);
             this.btnExcel.Name = "btnExcel";
             this.btnExcel.Size = new System.Drawing.Size(165, 32);
@@ -221,7 +221,7 @@
             this.btnPdf.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnPdf.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.btnPdf.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(125)))), ((int)(((byte)(122)))));
-            this.btnPdf.Location = new System.Drawing.Point(228, 493);
+            this.btnPdf.Location = new System.Drawing.Point(227, 455);
             this.btnPdf.Margin = new System.Windows.Forms.Padding(4);
             this.btnPdf.Name = "btnPdf";
             this.btnPdf.Size = new System.Drawing.Size(154, 32);
@@ -247,12 +247,13 @@
             this.btnPrint.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnPrint.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.btnPrint.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(125)))), ((int)(((byte)(122)))));
-            this.btnPrint.Location = new System.Drawing.Point(72, 493);
+            this.btnPrint.Location = new System.Drawing.Point(71, 455);
             this.btnPrint.Margin = new System.Windows.Forms.Padding(4);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(92, 32);
             this.btnPrint.TabIndex = 26;
             this.btnPrint.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // btnClose
             // 
@@ -272,7 +273,7 @@
             this.btnClose.IdleFillColor = System.Drawing.Color.Red;
             this.btnClose.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.btnClose.IdleLineColor = System.Drawing.Color.Red;
-            this.btnClose.Location = new System.Drawing.Point(661, 492);
+            this.btnClose.Location = new System.Drawing.Point(660, 454);
             this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 33);
@@ -283,8 +284,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 627);
+            this.ClientSize = new System.Drawing.Size(800, 486);
             this.Controls.Add(this.pnlReport);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ExportAdmin";
             this.Text = "ExportAdmin";
             this.pnlReport.ResumeLayout(false);
