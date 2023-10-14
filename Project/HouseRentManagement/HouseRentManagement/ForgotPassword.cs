@@ -144,26 +144,36 @@ namespace HouseRentManagement
                         return;
                     }
 
-                    string query = "SELECT * FROM USERS WHERE MaTheCuDan = @username AND Captcha = @captcha";
+                    string query = @"SELECT * FROM USERS WHERE MaTheCuDan = @username";
                     SqlCommand command = new SqlCommand(query, connection);
                     command.Parameters.AddWithValue("@username", username);
-                    command.Parameters.AddWithValue("@captcha", captcha);
 
-                    SqlDataReader reader = command.ExecuteReader();
-                    if (reader.Read())
+                    using (SqlDataReader reader = command.ExecuteReader())
                     {
-                        string userId = reader["UserId"].ToString();
-                        ChangePassword cp = new ChangePassword(userId);
-                        cp.Show();
-                        this.Hide();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Wrong UserName", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return;
-                    }
+                        if (reader.Read())
+                        {
+                            string storedUsername = reader["MaTheCuDan"].ToString();
 
-                    reader.Close();
+                            if (storedUsername != null && int.Parse(txtBoxGetOTP.Text) == otp && txtBoxCaptcha.Text == captchaText)
+                            {
+                                MessageBox.Show("Successful confirmation", "Notice");
+                                ChangePassword cp = new ChangePassword(username);
+                                cp.Show();
+                                this.Hide();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Wrong UserName", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                return;
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("User not found", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
+                        reader.Close();
+                    }
                 }
             }
             catch (Exception ex)
@@ -198,6 +208,7 @@ namespace HouseRentManagement
                 btnGetOTP.Enabled = true;
                 btnGetOTP.Text = "Get OTP";
                 btnCountDown.Visible = false;
+                otp = 0;
             }
             else
             {

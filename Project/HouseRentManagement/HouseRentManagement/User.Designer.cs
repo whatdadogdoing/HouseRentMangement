@@ -47,9 +47,9 @@
             this.pnlReceipt = new System.Windows.Forms.Panel();
             this.btnReceipt = new System.Windows.Forms.Button();
             this.pnlAbout = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAbout = new System.Windows.Forms.Button();
             this.pnlLogout = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.menuTransition = new System.Windows.Forms.Timer(this.components);
             this.pnlUserBar = new Bunifu.UI.WinForms.BunifuPanel();
             this.ctbClose = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -307,7 +307,7 @@
             // 
             // pnlAbout
             // 
-            this.pnlAbout.Controls.Add(this.button2);
+            this.pnlAbout.Controls.Add(this.btnAbout);
             this.pnlAbout.Cursor = System.Windows.Forms.Cursors.Default;
             this.pnlAbout.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlAbout.Location = new System.Drawing.Point(0, 108);
@@ -316,27 +316,27 @@
             this.pnlAbout.Size = new System.Drawing.Size(255, 54);
             this.pnlAbout.TabIndex = 25;
             // 
-            // button2
+            // btnAbout
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(31)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::HouseRentManagement.Properties.Resources.btnAboutWhite16x16;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(-26, -29);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(323, 117);
-            this.button2.TabIndex = 23;
-            this.button2.Text = "          About";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnAbout.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnAbout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(31)))));
+            this.btnAbout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAbout.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAbout.ForeColor = System.Drawing.Color.White;
+            this.btnAbout.Image = global::HouseRentManagement.Properties.Resources.btnAboutWhite16x16;
+            this.btnAbout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAbout.Location = new System.Drawing.Point(-26, -29);
+            this.btnAbout.Name = "btnAbout";
+            this.btnAbout.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnAbout.Size = new System.Drawing.Size(323, 117);
+            this.btnAbout.TabIndex = 23;
+            this.btnAbout.Text = "          About";
+            this.btnAbout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAbout.UseVisualStyleBackColor = false;
             // 
             // pnlLogout
             // 
-            this.pnlLogout.Controls.Add(this.button3);
+            this.pnlLogout.Controls.Add(this.btnLogout);
             this.pnlLogout.Cursor = System.Windows.Forms.Cursors.Default;
             this.pnlLogout.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlLogout.Location = new System.Drawing.Point(0, 162);
@@ -345,24 +345,24 @@
             this.pnlLogout.Size = new System.Drawing.Size(255, 54);
             this.pnlLogout.TabIndex = 25;
             // 
-            // button3
+            // btnLogout
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(31)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = global::HouseRentManagement.Properties.Resources.btnLogoutWhite16x16;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(-26, -29);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(323, 117);
-            this.button3.TabIndex = 23;
-            this.button3.Text = "          Logout";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.btnLogOut_Click);
+            this.btnLogout.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(31)))));
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogout.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.Image = global::HouseRentManagement.Properties.Resources.btnLogoutWhite16x16;
+            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogout.Location = new System.Drawing.Point(-26, -29);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnLogout.Size = new System.Drawing.Size(323, 117);
+            this.btnLogout.TabIndex = 23;
+            this.btnLogout.Text = "          Logout";
+            this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // menuTransition
             // 
@@ -477,11 +477,11 @@
         private System.Windows.Forms.Panel pnlReceipt;
         private System.Windows.Forms.Button btnReceipt;
         private System.Windows.Forms.Panel pnlLogout;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Timer menuTransition;
         private Bunifu.UI.WinForms.BunifuPanel pnlUserBar;
         private System.Windows.Forms.Panel pnlAbout;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAbout;
         private System.Windows.Forms.Label lblHeadUser;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnUser;

@@ -1,11 +1,8 @@
 ﻿using DevExpress.XtraEditors;
-using DevExpress.XtraSplashScreen;
 using System;
-using System.Collections.Generic;
-using System.Windows.Forms;
 using System.Drawing;
 using System.Linq;
-using System.Reflection;
+using System.Windows.Forms;
 
 namespace HouseRentManagement
 {
@@ -20,6 +17,9 @@ namespace HouseRentManagement
         private About about;
         private Login login;
         private string username;
+        bool menuExpand = true;
+        private bool isDragging = false;
+        private Point startPoint;
         public User(string username)
         {
             InitializeComponent();
@@ -34,11 +34,8 @@ namespace HouseRentManagement
             if (mdiClient != null)
                 mdiClient.BackColor = Color.FromArgb(237, 234, 229);
         }
-        bool menuExpand = true;
-        bool sidebarExpand = true;
-        private bool isDragging = false;
-        private Point startPoint;
         
+
         private void ShowProfileForm()
         {
             if (profileUser == null)
