@@ -140,24 +140,33 @@
     <Reference Include="DevExpress.XtraEditors.v22.2" />
     <Reference Include="DevExpress.Printing.v22.2.Core" />
     <Reference Include="DevExpress.Drawing.v22.2" />
+<<<<<<< HEAD
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+=======
+>>>>>>> 42b9e71cf20aaf26e54db22f78b2643de5ef1b1d
     <Reference Include="Guna.UI2, Version=2.0.3.4, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\Downloads\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
+<<<<<<< HEAD
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+=======
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+>>>>>>> 42b9e71cf20aaf26e54db22f78b2643de5ef1b1d
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -175,12 +184,15 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Contract.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Contract.Designer.cs">
       <DependentUpon>Contract.cs</DependentUpon>
     </Compile>
+=======
+>>>>>>> 42b9e71cf20aaf26e54db22f78b2643de5ef1b1d
     <Compile Include="CondoServices.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,6 +205,7 @@
     <Compile Include="ConstructionForm.Designer.cs">
       <DependentUpon>ConstructionForm.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="CondoAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,6 +238,8 @@
     <Compile Include="dbQLCC\THEXE.cs" />
     <Compile Include="dbQLCC\USER.cs" />
     <Compile Include="dbQLCC\XE.cs" />
+=======
+>>>>>>> 42b9e71cf20aaf26e54db22f78b2643de5ef1b1d
     <Compile Include="FormVisibilityManager.cs" />
     <Compile Include="Homepage.cs">
       <SubType>Form</SubType>
@@ -277,6 +292,7 @@
     <Compile Include="User.Designer.cs">
       <DependentUpon>User.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="VehicleCard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -286,15 +302,20 @@
     <EmbeddedResource Include="Contract.resx">
       <DependentUpon>Contract.cs</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> 42b9e71cf20aaf26e54db22f78b2643de5ef1b1d
     <EmbeddedResource Include="CondoServices.resx">
       <DependentUpon>CondoServices.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConstructionForm.resx">
       <DependentUpon>ConstructionForm.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="CondoAdmin.resx">
       <DependentUpon>CondoAdmin.cs</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> 42b9e71cf20aaf26e54db22f78b2643de5ef1b1d
     <EmbeddedResource Include="Homepage.resx">
       <DependentUpon>Homepage.cs</DependentUpon>
     </EmbeddedResource>
@@ -333,9 +354,12 @@
     <EmbeddedResource Include="User.resx">
       <DependentUpon>User.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="VehicleCard.resx">
       <DependentUpon>VehicleCard.cs</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> 42b9e71cf20aaf26e54db22f78b2643de5ef1b1d
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -44,7 +44,11 @@
             this.btnReport = new DevExpress.XtraEditors.SimpleButton();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.btnLogOut = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
             this.pnlAdmin = new Bunifu.UI.WinForms.BunifuPanel();
+=======
+            this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+>>>>>>> 42b9e71cf20aaf26e54db22f78b2643de5ef1b1d
             this.grbMain.SuspendLayout();
             this.grbList.SuspendLayout();
             this.grbDashboard.SuspendLayout();
@@ -128,7 +132,10 @@
             this.btnHomepage.Size = new System.Drawing.Size(180, 37);
             this.btnHomepage.TabIndex = 0;
             this.btnHomepage.Text = "Homepage";
+<<<<<<< HEAD
             this.btnHomepage.Click += new System.EventHandler(this.btnHomepage_Click);
+=======
+>>>>>>> 42b9e71cf20aaf26e54db22f78b2643de5ef1b1d
             // 
             // grbList
             // 
@@ -214,7 +221,10 @@
             this.btnCondo.Size = new System.Drawing.Size(180, 37);
             this.btnCondo.TabIndex = 0;
             this.btnCondo.Text = "Condo";
+<<<<<<< HEAD
             this.btnCondo.Click += new System.EventHandler(this.btnCondo_Click);
+=======
+>>>>>>> 42b9e71cf20aaf26e54db22f78b2643de5ef1b1d
             // 
             // btnContract
             // 
@@ -249,7 +259,10 @@
             this.btnContract.Size = new System.Drawing.Size(180, 37);
             this.btnContract.TabIndex = 0;
             this.btnContract.Text = "Contract";
+<<<<<<< HEAD
             this.btnContract.Click += new System.EventHandler(this.btnContract_Click);
+=======
+>>>>>>> 42b9e71cf20aaf26e54db22f78b2643de5ef1b1d
             // 
             // btnVehicleCard
             // 
@@ -284,7 +297,10 @@
             this.btnVehicleCard.Size = new System.Drawing.Size(180, 37);
             this.btnVehicleCard.TabIndex = 0;
             this.btnVehicleCard.Text = "Vehicle Card";
+<<<<<<< HEAD
             this.btnVehicleCard.Click += new System.EventHandler(this.btnVehicleCard_Click);
+=======
+>>>>>>> 42b9e71cf20aaf26e54db22f78b2643de5ef1b1d
             // 
             // btnResidentCard
             // 
@@ -456,6 +472,7 @@
             this.btnLogOut.TabStop = false;
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
+<<<<<<< HEAD
             // pnlAdmin
             // 
             this.pnlAdmin.BackgroundColor = System.Drawing.Color.Transparent;
@@ -471,6 +488,22 @@
             this.pnlAdmin.Size = new System.Drawing.Size(958, 655);
             this.pnlAdmin.TabIndex = 4;
             this.pnlAdmin.Click += new System.EventHandler(this.bunifuPanel1_Click);
+=======
+            // bunifuPanel1
+            // 
+            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
+            this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel1.BorderRadius = 3;
+            this.bunifuPanel1.BorderThickness = 1;
+            this.bunifuPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuPanel1.Location = new System.Drawing.Point(235, 0);
+            this.bunifuPanel1.Name = "bunifuPanel1";
+            this.bunifuPanel1.ShowBorders = true;
+            this.bunifuPanel1.Size = new System.Drawing.Size(958, 655);
+            this.bunifuPanel1.TabIndex = 4;
+>>>>>>> 42b9e71cf20aaf26e54db22f78b2643de5ef1b1d
             // 
             // Admin
             // 
@@ -479,7 +512,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1193, 655);
+<<<<<<< HEAD
             this.Controls.Add(this.pnlAdmin);
+=======
+            this.Controls.Add(this.bunifuPanel1);
+>>>>>>> 42b9e71cf20aaf26e54db22f78b2643de5ef1b1d
             this.Controls.Add(this.guna2GradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("Admin.IconOptions.Image")));
@@ -511,7 +548,11 @@
         private DevExpress.XtraEditors.SimpleButton btnReport;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private System.Windows.Forms.PictureBox btnLogOut;
+<<<<<<< HEAD
         private Bunifu.UI.WinForms.BunifuPanel pnlAdmin;
+=======
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
+>>>>>>> 42b9e71cf20aaf26e54db22f78b2643de5ef1b1d
     }
 }
 

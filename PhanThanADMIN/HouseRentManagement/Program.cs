@@ -18,7 +18,11 @@ namespace HouseRentManagement
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new Admin());
+=======
+            Application.Run(new Login());
+>>>>>>> 42b9e71cf20aaf26e54db22f78b2643de5ef1b1d
         }
     }
 }

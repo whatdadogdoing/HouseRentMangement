@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 ﻿using HouseRentManagement.dbQLCC;
 using System;
+=======
+﻿using System;
+>>>>>>> 42b9e71cf20aaf26e54db22f78b2643de5ef1b1d
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +16,17 @@ namespace HouseRentManagement
 {
     public partial class Admin : DevExpress.XtraEditors.XtraForm
     {
+<<<<<<< HEAD
         private ChildFormManager formManager = new ChildFormManager();
         public Admin()
         {
             InitializeComponent();
             showHomepageForm();
+=======
+        public Admin()
+        {
+            InitializeComponent();
+>>>>>>> 42b9e71cf20aaf26e54db22f78b2643de5ef1b1d
             
         }
 
@@ -26,6 +36,7 @@ namespace HouseRentManagement
             loginForm.Show();
             this.Hide();
         }
+<<<<<<< HEAD
 
         private void bunifuPanel1_Click(object sender, EventArgs e)
         {
@@ -95,6 +106,8 @@ namespace HouseRentManagement
         {
            
         }
+=======
+>>>>>>> 42b9e71cf20aaf26e54db22f78b2643de5ef1b1d
     }
     
 }

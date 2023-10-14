@@ -33,9 +33,12 @@ namespace HouseRentManagement
             pnlAddPayment.Visible = false;
         }
 
+<<<<<<< HEAD
         private void pnlPayment_Click(object sender, EventArgs e)
         {
 
         }
+=======
+>>>>>>> 42b9e71cf20aaf26e54db22f78b2643de5ef1b1d
     }
 }

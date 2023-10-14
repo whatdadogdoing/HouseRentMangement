@@ -105,6 +105,7 @@ C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRent
 C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\bin\Debug\Bunifu.UI.WinForms.Deprecated.dll
 C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.csproj.SuggestedBindingRedirects.cache
 C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.exe.config
+<<<<<<< HEAD
 C:\QLCHUNGCUCAOCAP\HouseRentMangement\PhanThanADMIN\HouseRentManagement\bin\Debug\HouseRentManagement.exe.config
 C:\QLCHUNGCUCAOCAP\HouseRentMangement\PhanThanADMIN\HouseRentManagement\bin\Debug\HouseRentManagement.exe
 C:\QLCHUNGCUCAOCAP\HouseRentMangement\PhanThanADMIN\HouseRentManagement\bin\Debug\HouseRentManagement.pdb
@@ -202,3 +203,5 @@ C:\QLCHUNGCUCAOCAP\HouseRentMangement\PhanThanADMIN\HouseRentManagement\obj\Debu
 C:\QLCHUNGCUCAOCAP\HouseRentMangement\PhanThanADMIN\HouseRentManagement\obj\Debug\HouseRentManagement.CondoAdmin.resources
 C:\QLCHUNGCUCAOCAP\HouseRentMangement\PhanThanADMIN\HouseRentManagement\obj\Debug\HouseRentManagement.listVehicleCardForm.resources
 C:\QLCHUNGCUCAOCAP\HouseRentMangement\PhanThanADMIN\HouseRentManagement\obj\Debug\HouseRentManagement.listCondoAdminForm.resources
+=======
+>>>>>>> 42b9e71cf20aaf26e54db22f78b2643de5ef1b1d

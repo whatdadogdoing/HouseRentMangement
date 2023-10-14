@@ -259,7 +259,10 @@
             this.graPanel.Name = "graPanel";
             this.graPanel.Size = new System.Drawing.Size(235, 653);
             this.graPanel.TabIndex = 7;
+<<<<<<< HEAD
             this.graPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.graPanel_Paint);
+=======
+>>>>>>> 42b9e71cf20aaf26e54db22f78b2643de5ef1b1d
             // 
             // btnLogOut
             // 
