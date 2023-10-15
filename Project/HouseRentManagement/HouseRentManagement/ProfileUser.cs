@@ -13,7 +13,7 @@ namespace HouseRentManagement
         private string username;
         private bool isEditing = false;
 
-        private string connString = ConfigurationManager.ConnectionStrings["Model_QLCHCC"].ConnectionString;
+        private string connString = ConfigurationManager.ConnectionStrings["HRMContextDB"].ConnectionString;
 
         public ProfileUser(string username)
         {
@@ -51,7 +51,12 @@ namespace HouseRentManagement
         private void lblLinkDone_Click(object sender, EventArgs e)
         {
             bool isValidEmail = true;
-
+            string sdt = txtBoxContactNumber.Text;
+            if (sdt.Length != 10 || IsAllDigitsSame(sdt))
+            {
+                MessageBox.Show("Wrong format!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             if (!string.IsNullOrEmpty(txtBoxEmail.Text))
             {
                 if (!IsValidEmail(txtBoxEmail.Text))
@@ -69,6 +74,17 @@ namespace HouseRentManagement
                 }
             }
             isEditing = !isEditing;
+        }
+        private bool IsAllDigitsSame(string text)
+        {
+            for (int i = 1; i < text.Length; i++)
+            {
+                if (text[i] != text[0])
+                {
+                    return false;
+                }
+            }
+            return true;
         }
 
         private void ProfileUser_Load(object sender, EventArgs e)
@@ -243,5 +259,24 @@ namespace HouseRentManagement
                 }
             }
         }
+
+        private void BunifuTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                MessageBox.Show("Number only!","Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                e.Handled = true; // Từ chối ký tự không phải số
+            }
+
+            // Kiểm tra chiều dài có đủ 10 chữ số hay không
+            TextBox textBox = (TextBox)sender;
+            if (textBox.Text.Length >= 10 && !char.IsControl(e.KeyChar))
+            {
+                MessageBox.Show("Wrong format!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                e.Handled = true; // Từ chối thêm ký tự khi đạt đủ 9 chữ số
+            }
+        }
+
+        
     }
 }

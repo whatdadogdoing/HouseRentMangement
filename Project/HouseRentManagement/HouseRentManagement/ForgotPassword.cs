@@ -22,7 +22,7 @@ namespace HouseRentManagement
         private string captchaText;
         private bool isDragging = false;
         private Point startPoint;
-        private string connString = ConfigurationManager.ConnectionStrings["Model_QLCHCC"].ConnectionString;
+        private string connString = ConfigurationManager.ConnectionStrings["HRMContextDB"].ConnectionString;
         private int atick = 90;
         int otp = 0;
         DateTime date;

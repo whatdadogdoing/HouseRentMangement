@@ -14,14 +14,14 @@ namespace HouseRentManagement
         private bool isDragging = false;
         private Point startPoint;
         private bool isPasswordMasked = true;
-        private Model_QLCHCC context;
-        private string connString = ConfigurationManager.ConnectionStrings["Model_QLCHCC"].ConnectionString;
+        private HRMContextDB context;
+        private string connString = ConfigurationManager.ConnectionStrings["HRMContextDB"].ConnectionString;
         
         public Login()
         {
             InitializeComponent();
             InitializeUI();
-            context = new Model_QLCHCC();
+            context = new HRMContextDB();
         }
 
         private void InitializeUI()
@@ -154,6 +154,14 @@ namespace HouseRentManagement
             ForgotPassword fgpw = new ForgotPassword(username);
             fgpw.Show();
             this.Hide();
+        }
+
+        private void txtBoxPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnLogin_Click(sender, e);
+            }
         }
     }
 }

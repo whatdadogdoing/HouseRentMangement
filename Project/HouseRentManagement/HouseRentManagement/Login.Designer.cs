@@ -207,6 +207,7 @@
             this.txtBoxPassword.UseSystemPasswordChar = false;
             this.txtBoxPassword.WordWrap = true;
             this.txtBoxPassword.TextChange += new System.EventHandler(this.txtBoxPassword_TextChanged);
+            this.txtBoxPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBoxPassword_KeyDown);
             // 
             // lblSlogan
             // 

@@ -56,7 +56,7 @@ namespace HouseRentManagement
 
         private void btnResetPw_Click(object sender, EventArgs e)
         {
-            var context = new Model_QLCHCC();
+            var context = new HRMContextDB();
             //định dạng mật khẩu phải có từ 8-16 kí tự và phải có ít nhất 1 số 
             string pattern = @"^(?=.*?[0-9])(?=.*?[a-zA-Z]).{8,16}$";
             Regex rg = new Regex(pattern);

@@ -85,7 +85,7 @@ namespace HouseRentManagement
         {
             if (payment == null)
             {
-                payment = new Payment();
+                payment = new Payment(username);
                 payment.FormClosed += Payment_FormClosed;
                 payment.MdiParent = this;
                 payment.Dock = DockStyle.Fill;
@@ -106,7 +106,7 @@ namespace HouseRentManagement
         {
             if (condoServices == null)
             {
-                condoServices = new CondoServices();
+                condoServices = new CondoServices(username);
                 condoServices.FormClosed += CondoServices_FormClosed;
                 condoServices.MdiParent = this;
                 condoServices.Dock = DockStyle.Fill;
@@ -127,7 +127,7 @@ namespace HouseRentManagement
         {
             if (receipt == null)
             {
-                receipt = new Receipt();
+                receipt = new Receipt(username);
                 receipt.FormClosed += Receipt_FormClosed;
                 receipt.MdiParent = this;
                 receipt.Dock = DockStyle.Fill;

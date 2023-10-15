@@ -477,7 +477,6 @@
     <Compile Include="HRMcontextDB\ADMIN.cs" />
     <Compile Include="HRMcontextDB\BANGGIA.cs" />
     <Compile Include="HRMcontextDB\BANQUANLY.cs" />
-    <Compile Include="HRMcontextDB\BIENLAI.cs" />
     <Compile Include="HRMcontextDB\CANHO.cs" />
     <Compile Include="HRMcontextDB\CHUCVU.cs" />
     <Compile Include="HRMcontextDB\CHUSOHUU.cs" />
@@ -486,8 +485,8 @@
     <Compile Include="HRMcontextDB\DANHSACHNHANKHAU.cs" />
     <Compile Include="HRMcontextDB\HOADONTHANHTOAN.cs" />
     <Compile Include="HRMcontextDB\HOPDONGTHUE.cs" />
+    <Compile Include="HRMcontextDB\HRMContextDB.cs" />
     <Compile Include="HRMcontextDB\LOAICANHO.cs" />
-    <Compile Include="HRMcontextDB\Model_QLCHCC.cs" />
     <Compile Include="HRMcontextDB\NGUOITHUE.cs" />
     <Compile Include="HRMcontextDB\NOITHATCOBAN.cs" />
     <Compile Include="HRMcontextDB\PHIEUCHUYENDO.cs" />
@@ -495,7 +494,6 @@
     <Compile Include="HRMcontextDB\PHIEUPHAT.cs" />
     <Compile Include="HRMcontextDB\PHIEUSUACHUA.cs" />
     <Compile Include="HRMcontextDB\PHIEUTHICONG.cs" />
-    <Compile Include="HRMcontextDB\sysdiagram.cs" />
     <Compile Include="HRMcontextDB\TANG.cs" />
     <Compile Include="HRMcontextDB\THECUDAN.cs" />
     <Compile Include="HRMcontextDB\THEXE.cs" />
@@ -651,6 +649,7 @@
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
