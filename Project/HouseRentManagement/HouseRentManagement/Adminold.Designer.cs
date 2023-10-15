@@ -44,7 +44,7 @@
             this.btnReport = new DevExpress.XtraEditors.SimpleButton();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.btnLogOut = new System.Windows.Forms.PictureBox();
-            this.pnlAdmin = new Bunifu.UI.WinForms.BunifuPanel();
+            this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.grbMain.SuspendLayout();
             this.grbList.SuspendLayout();
             this.grbDashboard.SuspendLayout();
@@ -98,7 +98,6 @@
             this.btnProfile.Size = new System.Drawing.Size(180, 37);
             this.btnProfile.TabIndex = 0;
             this.btnProfile.Text = "Profile";
-            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
             // btnHomepage
             // 
@@ -129,7 +128,6 @@
             this.btnHomepage.Size = new System.Drawing.Size(180, 37);
             this.btnHomepage.TabIndex = 0;
             this.btnHomepage.Text = "Homepage";
-            this.btnHomepage.Click += new System.EventHandler(this.btnHomepage_Click);
             // 
             // grbList
             // 
@@ -181,7 +179,6 @@
             this.btnPrice.Size = new System.Drawing.Size(180, 37);
             this.btnPrice.TabIndex = 0;
             this.btnPrice.Text = "Price";
-            this.btnPrice.Click += new System.EventHandler(this.btnPrice_Click);
             // 
             // btnCondo
             // 
@@ -216,7 +213,6 @@
             this.btnCondo.Size = new System.Drawing.Size(180, 37);
             this.btnCondo.TabIndex = 0;
             this.btnCondo.Text = "Condo";
-            this.btnCondo.Click += new System.EventHandler(this.btnCondo_Click);
             // 
             // btnContract
             // 
@@ -251,7 +247,6 @@
             this.btnContract.Size = new System.Drawing.Size(180, 37);
             this.btnContract.TabIndex = 0;
             this.btnContract.Text = "Contract";
-            this.btnContract.Click += new System.EventHandler(this.btnContract_Click);
             // 
             // btnVehicleCard
             // 
@@ -286,7 +281,6 @@
             this.btnVehicleCard.Size = new System.Drawing.Size(180, 37);
             this.btnVehicleCard.TabIndex = 0;
             this.btnVehicleCard.Text = "Vehicle Card";
-            this.btnVehicleCard.Click += new System.EventHandler(this.btnVehicleCard_Click);
             // 
             // btnResidentCard
             // 
@@ -321,7 +315,6 @@
             this.btnResidentCard.Size = new System.Drawing.Size(180, 37);
             this.btnResidentCard.TabIndex = 0;
             this.btnResidentCard.Text = "Resident Card";
-            this.btnResidentCard.Click += new System.EventHandler(this.btnResidentCard_Click);
             // 
             // btnEmployee
             // 
@@ -352,7 +345,6 @@
             this.btnEmployee.Size = new System.Drawing.Size(180, 37);
             this.btnEmployee.TabIndex = 0;
             this.btnEmployee.Text = "Employee";
-            this.btnEmployee.Click += new System.EventHandler(this.btnEmployee_Click);
             // 
             // grbDashboard
             // 
@@ -400,7 +392,6 @@
             this.btnExport.Size = new System.Drawing.Size(180, 37);
             this.btnExport.TabIndex = 0;
             this.btnExport.Text = "Export";
-            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
             // btnReport
             // 
@@ -431,7 +422,6 @@
             this.btnReport.Size = new System.Drawing.Size(180, 37);
             this.btnReport.TabIndex = 0;
             this.btnReport.Text = "Report";
-            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
             // guna2GradientPanel1
             // 
@@ -442,8 +432,8 @@
             this.guna2GradientPanel1.Controls.Add(this.grbList);
             this.guna2GradientPanel1.Controls.Add(this.grbMain);
             this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
-            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+            this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(111)))), ((int)(((byte)(109)))));
+            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(74)))), ((int)(((byte)(73)))));
             this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(235, 655);
@@ -462,21 +452,20 @@
             this.btnLogOut.TabStop = false;
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
-            // pnlAdmin
+            // bunifuPanel1
             // 
-            this.pnlAdmin.AllowDrop = true;
-            this.pnlAdmin.BackgroundColor = System.Drawing.Color.Transparent;
-            this.pnlAdmin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlAdmin.BackgroundImage")));
-            this.pnlAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlAdmin.BorderColor = System.Drawing.Color.Transparent;
-            this.pnlAdmin.BorderRadius = 3;
-            this.pnlAdmin.BorderThickness = 1;
-            this.pnlAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlAdmin.Location = new System.Drawing.Point(235, 0);
-            this.pnlAdmin.Name = "pnlAdmin";
-            this.pnlAdmin.ShowBorders = true;
-            this.pnlAdmin.Size = new System.Drawing.Size(958, 655);
-            this.pnlAdmin.TabIndex = 4;
+            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
+            this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel1.BorderRadius = 3;
+            this.bunifuPanel1.BorderThickness = 1;
+            this.bunifuPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuPanel1.Location = new System.Drawing.Point(235, 0);
+            this.bunifuPanel1.Name = "bunifuPanel1";
+            this.bunifuPanel1.ShowBorders = true;
+            this.bunifuPanel1.Size = new System.Drawing.Size(958, 655);
+            this.bunifuPanel1.TabIndex = 4;
             // 
             // Admin
             // 
@@ -485,7 +474,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1193, 655);
-            this.Controls.Add(this.pnlAdmin);
+            this.Controls.Add(this.bunifuPanel1);
             this.Controls.Add(this.guna2GradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("Admin.IconOptions.Image")));
@@ -517,7 +506,7 @@
         private DevExpress.XtraEditors.SimpleButton btnReport;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private System.Windows.Forms.PictureBox btnLogOut;
-        private Bunifu.UI.WinForms.BunifuPanel pnlAdmin;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
     }
 }
 

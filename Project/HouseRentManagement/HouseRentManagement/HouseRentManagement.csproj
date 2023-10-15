@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b, processorArchitecture=MSIL">
       <HintPath>..\packages\Bunifu.UI.WinForms.5.0.3\lib\Bunifu.Licensing.dll</HintPath>
     </Reference>
@@ -161,6 +164,9 @@
     <Reference Include="Guna.UI2, Version=2.0.3.4, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\Downloads\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNetCore.Hosting.Abstractions, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNetCore.Hosting.Abstractions.2.1.0\lib\netstandard2.0\Microsoft.AspNetCore.Hosting.Abstractions.dll</HintPath>
@@ -449,6 +455,12 @@
     <Compile Include="ChangePassword.Designer.cs">
       <DependentUpon>ChangePassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="CondoAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CondoAdmin.Designer.cs">
+      <DependentUpon>CondoAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="CondoServices.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -461,6 +473,25 @@
     <Compile Include="ConstructionForm.Designer.cs">
       <DependentUpon>ConstructionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Contract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract.Designer.cs">
+      <DependentUpon>Contract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExportAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportAdmin.Designer.cs">
+      <DependentUpon>ExportAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FatherFormManager.cs" />
     <Compile Include="ForgotPassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -513,6 +544,18 @@
       <DependentUpon>Payment.cs</DependentUpon>
     </Compile>
     <Compile Include="ChildFormManager .cs" />
+    <Compile Include="PriceAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PriceAdmin.designer.cs">
+      <DependentUpon>PriceAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileAdmin.Designer.cs">
+      <DependentUpon>ProfileAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProfileUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -527,11 +570,41 @@
     <Compile Include="Receipt.Designer.cs">
       <DependentUpon>Receipt.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportAdminForm.Designer.cs">
+      <DependentUpon>ReportAdminForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ReportForm.Designer.cs">
       <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportMoneyAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportMoneyAdmin.Designer.cs">
+      <DependentUpon>ReportMoneyAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportRoomResidenceAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportRoomResidenceAdmin.Designer.cs">
+      <DependentUpon>ReportRoomResidenceAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportServiceAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportServiceAdmin.Designer.cs">
+      <DependentUpon>ReportServiceAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resident_Card.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resident_Card.Designer.cs">
+      <DependentUpon>Resident_Card.cs</DependentUpon>
     </Compile>
     <Compile Include="TransferForm.cs">
       <SubType>Form</SubType>
@@ -545,17 +618,35 @@
     <Compile Include="User.Designer.cs">
       <DependentUpon>User.cs</DependentUpon>
     </Compile>
+    <Compile Include="VehicleCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleCard.Designer.cs">
+      <DependentUpon>VehicleCard.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChangePassword.resx">
       <DependentUpon>ChangePassword.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CondoAdmin.resx">
+      <DependentUpon>CondoAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CondoServices.resx">
       <DependentUpon>CondoServices.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConstructionForm.resx">
       <DependentUpon>ConstructionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract.resx">
+      <DependentUpon>Contract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExportAdmin.resx">
+      <DependentUpon>ExportAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ForgotPassword.resx">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
@@ -568,6 +659,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Payment.resx">
       <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PriceAdmin.resx">
+      <DependentUpon>PriceAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileAdmin.resx">
+      <DependentUpon>ProfileAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProfileUser.resx">
       <DependentUpon>ProfileUser.cs</DependentUpon>
@@ -589,14 +686,32 @@
     <EmbeddedResource Include="Receipt.resx">
       <DependentUpon>Receipt.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReportAdminForm.resx">
+      <DependentUpon>ReportAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReportForm.resx">
       <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportMoneyAdmin.resx">
+      <DependentUpon>ReportMoneyAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportRoomResidenceAdmin.resx">
+      <DependentUpon>ReportRoomResidenceAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportServiceAdmin.resx">
+      <DependentUpon>ReportServiceAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resident_Card.resx">
+      <DependentUpon>Resident_Card.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TransferForm.resx">
       <DependentUpon>TransferForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User.resx">
       <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleCard.resx">
+      <DependentUpon>VehicleCard.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="packages.config" />
