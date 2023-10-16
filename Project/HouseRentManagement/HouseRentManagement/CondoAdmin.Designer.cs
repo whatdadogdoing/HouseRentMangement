@@ -29,21 +29,23 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CondoAdmin));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.lblCondo = new Bunifu.UI.WinForms.BunifuLabel();
             this.pnlProfileUser = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnClose2 = new DevExpress.XtraEditors.HyperlinkLabelControl();
+            this.btnClose1 = new DevExpress.XtraEditors.HyperlinkLabelControl();
             this.tsCondoAdmin = new System.Windows.Forms.ToolStrip();
             this.tsbPopulation = new System.Windows.Forms.ToolStripButton();
             this.tsbVehicleCard = new System.Windows.Forms.ToolStripButton();
+            this.tsbCondoService = new System.Windows.Forms.ToolStripButton();
             this.pnlContainer = new System.Windows.Forms.Panel();
-            this.btnClose1 = new DevExpress.XtraEditors.HyperlinkLabelControl();
             this.dgvCondo = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,7 +65,6 @@
             this.clnXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnQuanHeVoiChuThue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtSearchPopulation = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.btnClose2 = new DevExpress.XtraEditors.HyperlinkLabelControl();
             this.pnlProfileUser.SuspendLayout();
             this.tsCondoAdmin.SuspendLayout();
             this.pnlContainer.SuspendLayout();
@@ -100,12 +101,47 @@
             this.pnlProfileUser.Size = new System.Drawing.Size(958, 97);
             this.pnlProfileUser.TabIndex = 37;
             // 
+            // btnClose2
+            // 
+            this.btnClose2.Appearance.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose2.Appearance.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(144)))), ((int)(((byte)(29)))));
+            this.btnClose2.Appearance.Options.UseFont = true;
+            this.btnClose2.Appearance.Options.UseLinkColor = true;
+            this.btnClose2.AppearancePressed.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(37)))));
+            this.btnClose2.AppearancePressed.Options.UseLinkColor = true;
+            this.btnClose2.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.btnClose2.Location = new System.Drawing.Point(12, 57);
+            this.btnClose2.Name = "btnClose2";
+            this.btnClose2.Size = new System.Drawing.Size(47, 28);
+            this.btnClose2.TabIndex = 48;
+            this.btnClose2.Text = "Close";
+            this.btnClose2.Visible = false;
+            this.btnClose2.Click += new System.EventHandler(this.btnClose2_Click);
+            // 
+            // btnClose1
+            // 
+            this.btnClose1.Appearance.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose1.Appearance.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(144)))), ((int)(((byte)(29)))));
+            this.btnClose1.Appearance.Options.UseFont = true;
+            this.btnClose1.Appearance.Options.UseLinkColor = true;
+            this.btnClose1.AppearancePressed.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(37)))));
+            this.btnClose1.AppearancePressed.Options.UseLinkColor = true;
+            this.btnClose1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.btnClose1.Location = new System.Drawing.Point(12, 57);
+            this.btnClose1.Name = "btnClose1";
+            this.btnClose1.Size = new System.Drawing.Size(47, 28);
+            this.btnClose1.TabIndex = 48;
+            this.btnClose1.Text = "Close";
+            this.btnClose1.Visible = false;
+            this.btnClose1.Click += new System.EventHandler(this.btnClose1_Click);
+            // 
             // tsCondoAdmin
             // 
             this.tsCondoAdmin.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.tsCondoAdmin.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbPopulation,
-            this.tsbVehicleCard});
+            this.tsbVehicleCard,
+            this.tsbCondoService});
             this.tsCondoAdmin.Location = new System.Drawing.Point(0, 97);
             this.tsCondoAdmin.Name = "tsCondoAdmin";
             this.tsCondoAdmin.Size = new System.Drawing.Size(958, 30);
@@ -134,6 +170,17 @@
             this.tsbVehicleCard.Text = "Vehicle Card";
             this.tsbVehicleCard.Click += new System.EventHandler(this.tsbVehicleCard_Click);
             // 
+            // tsbCondoService
+            // 
+            this.tsbCondoService.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tsbCondoService.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsbCondoService.Image = ((System.Drawing.Image)(resources.GetObject("tsbCondoService.Image")));
+            this.tsbCondoService.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbCondoService.Name = "tsbCondoService";
+            this.tsbCondoService.Size = new System.Drawing.Size(123, 27);
+            this.tsbCondoService.Text = "Condo Service";
+            this.tsbCondoService.Click += new System.EventHandler(this.tsbCondoService_Click);
+            // 
             // pnlContainer
             // 
             this.pnlContainer.Controls.Add(this.dgvCondo);
@@ -144,23 +191,6 @@
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.Size = new System.Drawing.Size(958, 571);
             this.pnlContainer.TabIndex = 45;
-            // 
-            // btnClose1
-            // 
-            this.btnClose1.Appearance.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose1.Appearance.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(144)))), ((int)(((byte)(29)))));
-            this.btnClose1.Appearance.Options.UseFont = true;
-            this.btnClose1.Appearance.Options.UseLinkColor = true;
-            this.btnClose1.AppearancePressed.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(37)))));
-            this.btnClose1.AppearancePressed.Options.UseLinkColor = true;
-            this.btnClose1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.btnClose1.Location = new System.Drawing.Point(12, 57);
-            this.btnClose1.Name = "btnClose1";
-            this.btnClose1.Size = new System.Drawing.Size(47, 28);
-            this.btnClose1.TabIndex = 48;
-            this.btnClose1.Text = "Close";
-            this.btnClose1.Visible = false;
-            this.btnClose1.Click += new System.EventHandler(this.btnClose1_Click);
             // 
             // dgvCondo
             // 
@@ -264,26 +294,26 @@
             this.txtSearchCondo.Modified = false;
             this.txtSearchCondo.Multiline = false;
             this.txtSearchCondo.Name = "txtSearchCondo";
-            stateProperties9.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties9.FillColor = System.Drawing.Color.Empty;
-            stateProperties9.ForeColor = System.Drawing.Color.Empty;
-            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtSearchCondo.OnActiveState = stateProperties9;
-            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtSearchCondo.OnDisabledState = stateProperties10;
-            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties11.FillColor = System.Drawing.Color.Empty;
-            stateProperties11.ForeColor = System.Drawing.Color.Empty;
-            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtSearchCondo.OnHoverState = stateProperties11;
-            stateProperties12.BorderColor = System.Drawing.Color.Silver;
-            stateProperties12.FillColor = System.Drawing.Color.White;
-            stateProperties12.ForeColor = System.Drawing.Color.Empty;
-            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtSearchCondo.OnIdleState = stateProperties12;
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtSearchCondo.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtSearchCondo.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtSearchCondo.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtSearchCondo.OnIdleState = stateProperties4;
             this.txtSearchCondo.Padding = new System.Windows.Forms.Padding(3);
             this.txtSearchCondo.PasswordChar = '\0';
             this.txtSearchCondo.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -437,26 +467,26 @@
             this.txtSearchPopulation.Modified = false;
             this.txtSearchPopulation.Multiline = false;
             this.txtSearchPopulation.Name = "txtSearchPopulation";
-            stateProperties13.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties13.FillColor = System.Drawing.Color.Empty;
-            stateProperties13.ForeColor = System.Drawing.Color.Empty;
-            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtSearchPopulation.OnActiveState = stateProperties13;
-            stateProperties14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtSearchPopulation.OnDisabledState = stateProperties14;
-            stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties15.FillColor = System.Drawing.Color.Empty;
-            stateProperties15.ForeColor = System.Drawing.Color.Empty;
-            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtSearchPopulation.OnHoverState = stateProperties15;
-            stateProperties16.BorderColor = System.Drawing.Color.Silver;
-            stateProperties16.FillColor = System.Drawing.Color.White;
-            stateProperties16.ForeColor = System.Drawing.Color.Empty;
-            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtSearchPopulation.OnIdleState = stateProperties16;
+            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties5.FillColor = System.Drawing.Color.Empty;
+            stateProperties5.ForeColor = System.Drawing.Color.Empty;
+            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtSearchPopulation.OnActiveState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtSearchPopulation.OnDisabledState = stateProperties6;
+            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties7.FillColor = System.Drawing.Color.Empty;
+            stateProperties7.ForeColor = System.Drawing.Color.Empty;
+            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtSearchPopulation.OnHoverState = stateProperties7;
+            stateProperties8.BorderColor = System.Drawing.Color.Silver;
+            stateProperties8.FillColor = System.Drawing.Color.White;
+            stateProperties8.ForeColor = System.Drawing.Color.Empty;
+            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtSearchPopulation.OnIdleState = stateProperties8;
             this.txtSearchPopulation.Padding = new System.Windows.Forms.Padding(3);
             this.txtSearchPopulation.PasswordChar = '\0';
             this.txtSearchPopulation.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -478,23 +508,6 @@
             this.txtSearchPopulation.UseSystemPasswordChar = false;
             this.txtSearchPopulation.Visible = false;
             this.txtSearchPopulation.WordWrap = true;
-            // 
-            // btnClose2
-            // 
-            this.btnClose2.Appearance.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose2.Appearance.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(144)))), ((int)(((byte)(29)))));
-            this.btnClose2.Appearance.Options.UseFont = true;
-            this.btnClose2.Appearance.Options.UseLinkColor = true;
-            this.btnClose2.AppearancePressed.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(37)))));
-            this.btnClose2.AppearancePressed.Options.UseLinkColor = true;
-            this.btnClose2.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.btnClose2.Location = new System.Drawing.Point(12, 57);
-            this.btnClose2.Name = "btnClose2";
-            this.btnClose2.Size = new System.Drawing.Size(47, 28);
-            this.btnClose2.TabIndex = 48;
-            this.btnClose2.Text = "Close";
-            this.btnClose2.Visible = false;
-            this.btnClose2.Click += new System.EventHandler(this.btnClose2_Click);
             // 
             // CondoAdmin
             // 
@@ -550,5 +563,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clnQuanHeVoiChuThue;
         private DevExpress.XtraEditors.HyperlinkLabelControl btnClose1;
         private DevExpress.XtraEditors.HyperlinkLabelControl btnClose2;
+        private System.Windows.Forms.ToolStripButton tsbCondoService;
     }
 }

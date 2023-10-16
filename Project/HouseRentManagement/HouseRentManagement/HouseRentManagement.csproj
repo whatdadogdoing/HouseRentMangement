@@ -475,6 +475,12 @@
     <Compile Include="CondoAdmin.Designer.cs">
       <DependentUpon>CondoAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="CondoServiceAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CondoServiceAdmin.Designer.cs">
+      <DependentUpon>CondoServiceAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="CondoServices.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -515,7 +521,6 @@
     <Compile Include="HRMcontextDB\ADMIN.cs" />
     <Compile Include="HRMcontextDB\BANGGIA.cs" />
     <Compile Include="HRMcontextDB\BANQUANLY.cs" />
-    <Compile Include="HRMcontextDB\BIENLAI.cs" />
     <Compile Include="HRMcontextDB\CANHO.cs" />
     <Compile Include="HRMcontextDB\CHUCVU.cs" />
     <Compile Include="HRMcontextDB\CHUSOHUU.cs" />
@@ -533,7 +538,6 @@
     <Compile Include="HRMcontextDB\PHIEUPHAT.cs" />
     <Compile Include="HRMcontextDB\PHIEUSUACHUA.cs" />
     <Compile Include="HRMcontextDB\PHIEUTHICONG.cs" />
-    <Compile Include="HRMcontextDB\sysdiagram.cs" />
     <Compile Include="HRMcontextDB\TANG.cs" />
     <Compile Include="HRMcontextDB\THECUDAN.cs" />
     <Compile Include="HRMcontextDB\THEXE.cs" />
@@ -641,6 +645,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CondoAdmin.resx">
       <DependentUpon>CondoAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CondoServiceAdmin.resx">
+      <DependentUpon>CondoServiceAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CondoServices.resx">
       <DependentUpon>CondoServices.cs</DependentUpon>

@@ -21,7 +21,7 @@ namespace HouseRentManagement.HRMcontextDB
 
         [Column("Tang")]
         [StringLength(30)]
-        public string Tang { get; set; }
+        public string Tang1 { get; set; }
 
         public int? SoCanHo { get; set; }
 

@@ -137,5 +137,26 @@ namespace HouseRentManagement
             txtSearchCondo.Visible = true;
             btnClose2.Visible = false;
         }
+        private void showCondoServiceAdmin()
+        {
+            if (formManager.CurrentChildForm is CondoServiceAdmin)
+            {
+                return;
+            }
+            formManager.CloseCurrentChildForm();
+            CondoServiceAdmin condoServiceAdmin = new CondoServiceAdmin();
+            formManager.ShowChildForm(pnlContainer, condoServiceAdmin);
+        }
+        
+        private void tsbCondoService_Click(object sender, EventArgs e)
+        {
+            showCondoServiceAdmin();
+            dgvPopulation.Visible = false;
+            txtSearchPopulation.Visible = false;
+            dgvCondo.Visible = false;
+            txtSearchCondo.Visible = false;
+            btnClose1.Visible = false;
+            btnClose2.Visible = true;
+        }
     }
 }
