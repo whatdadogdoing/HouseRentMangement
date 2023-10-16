@@ -27,8 +27,6 @@ namespace HouseRentManagement.HRMcontextDB
         public string TrangThai { get; set; }
         public decimal? TongTien { get; set; }
 
-        public int? HanDong { get; set; }
-
         [StringLength(200)]
         public string GhiChu { get; set; }
 

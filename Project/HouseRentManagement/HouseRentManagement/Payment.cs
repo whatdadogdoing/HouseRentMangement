@@ -60,7 +60,8 @@ namespace HouseRentManagement
         }
         private void txtBoxSearch_TextChange(object sender, EventArgs e)
         {
-
+            string st = txtBoxSearch.Text;
+            search(st);
         }
         private void txtBoxAmount_KeyPress(object sender, KeyPressEventArgs e)
         {

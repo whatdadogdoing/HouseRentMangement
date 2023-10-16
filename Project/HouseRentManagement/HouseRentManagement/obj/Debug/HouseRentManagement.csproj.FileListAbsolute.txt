@@ -217,3 +217,4 @@ C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRent
 C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.Tenant.resources
 C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.ResidentCard.resources
 C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.Employee.resources
+C:\Users\hoang\OneDrive\Documents\Workspace\HouseRentMangement\Project\HouseRentManagement\HouseRentManagement\obj\Debug\HouseRentManagement.ProfileAdmin.resources

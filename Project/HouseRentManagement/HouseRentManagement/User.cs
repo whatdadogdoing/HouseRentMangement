@@ -82,7 +82,7 @@ namespace HouseRentManagement
         {
             if (payment == null)
             {
-                payment = new Payment();
+                payment = new Payment(username);
                 payment.FormClosed += Payment_FormClosed;
                 payment.MdiParent = this;
                 payment.Dock = DockStyle.Fill;

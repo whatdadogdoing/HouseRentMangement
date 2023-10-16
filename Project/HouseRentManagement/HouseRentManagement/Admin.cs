@@ -15,7 +15,6 @@ namespace HouseRentManagement
         private CondoAdmin condoAdmin;
         private Tenant residentCard;
         private Employee employee;
-        private ProfileAdmin profileAdmin;
         private bool isDragging = false;
         private Point startPoint;
         public Admin(string username)
@@ -152,27 +151,6 @@ namespace HouseRentManagement
         {
             employee = null;
         }
-        private void ShowProfileAdmin()
-        {
-            if (profileAdmin == null)
-            {
-                profileAdmin = new Employee();
-                profileAdmin.FormClosed += profileAdmin_FormClosed;
-                profileAdmin.MdiParent = this;
-                profileAdmin.Dock = DockStyle.Fill;
-                profileAdmin.Show();
-            }
-            else
-            {
-                profileAdmin.Activate();
-            }
-        }
-
-
-        private void profileAdmin_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            profileAdmin = null;
-        }
         private void ShowResidentCard()
         {
             if (residentCard == null)
@@ -285,11 +263,6 @@ namespace HouseRentManagement
         private void btnEmployee_Click(object sender, EventArgs e)
         {
             ShowEmployee();
-        }
-
-        private void btnProfileAdmin_Click(object sender, EventArgs e)
-        {
-            ShowProfileAdmin();
         }
     }
 

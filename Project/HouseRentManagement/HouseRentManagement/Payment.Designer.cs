@@ -33,20 +33,15 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlPayment = new Bunifu.UI.WinForms.BunifuPanel();
             this.pnlAddPayment = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.btnPay = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.txtBoxAmount = new System.Windows.Forms.TextBox();
-            this.txtBoxDescription = new System.Windows.Forms.TextBox();
-            this.lblDescription = new Bunifu.UI.WinForms.BunifuLabel();
-            this.lblAmount = new Bunifu.UI.WinForms.BunifuLabel();
             this.btnPayment = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lbltamount = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblTotalAmount = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lblTran = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblTransactions = new Bunifu.UI.WinForms.BunifuLabel();
             this.txtBoxSearch = new Bunifu.UI.WinForms.BunifuTextBox();
             this.dgvPayment = new System.Windows.Forms.DataGridView();
@@ -55,6 +50,15 @@
             this.clhTongTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clhTrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clhMaCanHo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnPay = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.txtBoxAmount = new System.Windows.Forms.TextBox();
+            this.txtBoxPaymentID = new System.Windows.Forms.TextBox();
+            this.txtBoxDescription = new System.Windows.Forms.TextBox();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lblDescription = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lblAmount = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lblPaymentID = new Bunifu.UI.WinForms.BunifuLabel();
             this.pnlPayment.SuspendLayout();
             this.pnlAddPayment.SuspendLayout();
             this.bunifuPanel2.SuspendLayout();
@@ -95,9 +99,12 @@
             this.pnlAddPayment.Controls.Add(this.btnPay);
             this.pnlAddPayment.Controls.Add(this.btnCancel);
             this.pnlAddPayment.Controls.Add(this.txtBoxAmount);
+            this.pnlAddPayment.Controls.Add(this.txtBoxPaymentID);
             this.pnlAddPayment.Controls.Add(this.txtBoxDescription);
+            this.pnlAddPayment.Controls.Add(this.bunifuLabel1);
             this.pnlAddPayment.Controls.Add(this.lblDescription);
             this.pnlAddPayment.Controls.Add(this.lblAmount);
+            this.pnlAddPayment.Controls.Add(this.lblPaymentID);
             this.pnlAddPayment.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.pnlAddPayment.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
             this.pnlAddPayment.Location = new System.Drawing.Point(592, 53);
@@ -113,106 +120,6 @@
             this.pnlAddPayment.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.pnlAddPayment.TabIndex = 5;
             this.pnlAddPayment.Visible = false;
-            // 
-            // btnPay
-            // 
-            this.btnPay.ActiveBorderThickness = 1;
-            this.btnPay.ActiveCornerRadius = 20;
-            this.btnPay.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(223)))), ((int)(((byte)(22)))));
-            this.btnPay.ActiveForecolor = System.Drawing.Color.White;
-            this.btnPay.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(223)))), ((int)(((byte)(22)))));
-            this.btnPay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPay.BackColor = System.Drawing.Color.Transparent;
-            this.btnPay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPay.BackgroundImage")));
-            this.btnPay.ButtonText = "Pay";
-            this.btnPay.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPay.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPay.ForeColor = System.Drawing.Color.White;
-            this.btnPay.IdleBorderThickness = 1;
-            this.btnPay.IdleCornerRadius = 20;
-            this.btnPay.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(147)))), ((int)(((byte)(15)))));
-            this.btnPay.IdleForecolor = System.Drawing.Color.White;
-            this.btnPay.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(147)))), ((int)(((byte)(15)))));
-            this.btnPay.Location = new System.Drawing.Point(267, 217);
-            this.btnPay.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnPay.Name = "btnPay";
-            this.btnPay.Size = new System.Drawing.Size(65, 40);
-            this.btnPay.TabIndex = 7;
-            this.btnPay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.ActiveBorderThickness = 1;
-            this.btnCancel.ActiveCornerRadius = 20;
-            this.btnCancel.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnCancel.ActiveForecolor = System.Drawing.Color.White;
-            this.btnCancel.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.BackColor = System.Drawing.Color.Transparent;
-            this.btnCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancel.BackgroundImage")));
-            this.btnCancel.ButtonText = "Cancel";
-            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancel.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.IdleBorderThickness = 1;
-            this.btnCancel.IdleCornerRadius = 20;
-            this.btnCancel.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnCancel.IdleForecolor = System.Drawing.Color.White;
-            this.btnCancel.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnCancel.Location = new System.Drawing.Point(196, 217);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(65, 40);
-            this.btnCancel.TabIndex = 7;
-            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // txtBoxAmount
-            // 
-            this.txtBoxAmount.Location = new System.Drawing.Point(14, 45);
-            this.txtBoxAmount.Name = "txtBoxAmount";
-            this.txtBoxAmount.Size = new System.Drawing.Size(318, 34);
-            this.txtBoxAmount.TabIndex = 6;
-            // 
-            // txtBoxDescription
-            // 
-            this.txtBoxDescription.Location = new System.Drawing.Point(14, 106);
-            this.txtBoxDescription.Multiline = true;
-            this.txtBoxDescription.Name = "txtBoxDescription";
-            this.txtBoxDescription.Size = new System.Drawing.Size(318, 104);
-            this.txtBoxDescription.TabIndex = 6;
-            // 
-            // lblDescription
-            // 
-            this.lblDescription.AllowParentOverrides = false;
-            this.lblDescription.AutoEllipsis = false;
-            this.lblDescription.CursorType = null;
-            this.lblDescription.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescription.Location = new System.Drawing.Point(14, 79);
-            this.lblDescription.Name = "lblDescription";
-            this.lblDescription.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblDescription.Size = new System.Drawing.Size(76, 20);
-            this.lblDescription.TabIndex = 4;
-            this.lblDescription.Text = "Description";
-            this.lblDescription.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lblDescription.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // lblAmount
-            // 
-            this.lblAmount.AllowParentOverrides = false;
-            this.lblAmount.AutoEllipsis = false;
-            this.lblAmount.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblAmount.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lblAmount.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAmount.Location = new System.Drawing.Point(14, 19);
-            this.lblAmount.Name = "lblAmount";
-            this.lblAmount.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblAmount.Size = new System.Drawing.Size(53, 20);
-            this.lblAmount.TabIndex = 4;
-            this.lblAmount.Text = "Amount";
-            this.lblAmount.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lblAmount.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // btnPayment
             // 
@@ -249,7 +156,7 @@
             this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel2.BorderRadius = 3;
             this.bunifuPanel2.BorderThickness = 1;
-            this.bunifuPanel2.Controls.Add(this.bunifuLabel3);
+            this.bunifuPanel2.Controls.Add(this.lbltamount);
             this.bunifuPanel2.Controls.Add(this.lblTotalAmount);
             this.bunifuPanel2.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuPanel2.ForeColor = System.Drawing.Color.White;
@@ -259,21 +166,21 @@
             this.bunifuPanel2.Size = new System.Drawing.Size(200, 90);
             this.bunifuPanel2.TabIndex = 0;
             // 
-            // bunifuLabel3
+            // lbltamount
             // 
-            this.bunifuLabel3.AllowParentOverrides = false;
-            this.bunifuLabel3.AutoEllipsis = false;
-            this.bunifuLabel3.CursorType = null;
-            this.bunifuLabel3.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel3.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel3.Location = new System.Drawing.Point(173, 50);
-            this.bunifuLabel3.Name = "bunifuLabel3";
-            this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(15, 37);
-            this.bunifuLabel3.TabIndex = 0;
-            this.bunifuLabel3.Text = "0";
-            this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lbltamount.AllowParentOverrides = false;
+            this.lbltamount.AutoEllipsis = false;
+            this.lbltamount.CursorType = null;
+            this.lbltamount.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltamount.ForeColor = System.Drawing.Color.White;
+            this.lbltamount.Location = new System.Drawing.Point(9, 50);
+            this.lbltamount.Name = "lbltamount";
+            this.lbltamount.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbltamount.Size = new System.Drawing.Size(15, 37);
+            this.lbltamount.TabIndex = 0;
+            this.lbltamount.Text = "0";
+            this.lbltamount.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lbltamount.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // lblTotalAmount
             // 
@@ -299,7 +206,7 @@
             this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel1.BorderRadius = 3;
             this.bunifuPanel1.BorderThickness = 1;
-            this.bunifuPanel1.Controls.Add(this.bunifuLabel2);
+            this.bunifuPanel1.Controls.Add(this.lblTran);
             this.bunifuPanel1.Controls.Add(this.lblTransactions);
             this.bunifuPanel1.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuPanel1.ForeColor = System.Drawing.Color.White;
@@ -309,21 +216,21 @@
             this.bunifuPanel1.Size = new System.Drawing.Size(200, 90);
             this.bunifuPanel1.TabIndex = 0;
             // 
-            // bunifuLabel2
+            // lblTran
             // 
-            this.bunifuLabel2.AllowParentOverrides = false;
-            this.bunifuLabel2.AutoEllipsis = false;
-            this.bunifuLabel2.CursorType = null;
-            this.bunifuLabel2.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel2.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel2.Location = new System.Drawing.Point(173, 50);
-            this.bunifuLabel2.Name = "bunifuLabel2";
-            this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(15, 37);
-            this.bunifuLabel2.TabIndex = 0;
-            this.bunifuLabel2.Text = "0";
-            this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lblTran.AllowParentOverrides = false;
+            this.lblTran.AutoEllipsis = false;
+            this.lblTran.CursorType = null;
+            this.lblTran.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTran.ForeColor = System.Drawing.Color.White;
+            this.lblTran.Location = new System.Drawing.Point(9, 50);
+            this.lblTran.Name = "lblTran";
+            this.lblTran.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblTran.Size = new System.Drawing.Size(15, 37);
+            this.lblTran.TabIndex = 0;
+            this.lblTran.Text = "0";
+            this.lblTran.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblTran.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // lblTransactions
             // 
@@ -359,7 +266,7 @@
             this.txtBoxSearch.BorderThickness = 1;
             this.txtBoxSearch.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtBoxSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBoxSearch.DefaultFont = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxSearch.DefaultFont = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxSearch.DefaultText = "";
             this.txtBoxSearch.FillColor = System.Drawing.Color.White;
             this.txtBoxSearch.ForeColor = System.Drawing.Color.Black;
@@ -370,7 +277,7 @@
             this.txtBoxSearch.IconRight = null;
             this.txtBoxSearch.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBoxSearch.Lines = new string[0];
-            this.txtBoxSearch.Location = new System.Drawing.Point(3, 126);
+            this.txtBoxSearch.Location = new System.Drawing.Point(3, 122);
             this.txtBoxSearch.MaxLength = 32767;
             this.txtBoxSearch.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtBoxSearch.Modified = false;
@@ -406,7 +313,7 @@
             this.txtBoxSearch.SelectionLength = 0;
             this.txtBoxSearch.SelectionStart = 0;
             this.txtBoxSearch.ShortcutsEnabled = true;
-            this.txtBoxSearch.Size = new System.Drawing.Size(260, 43);
+            this.txtBoxSearch.Size = new System.Drawing.Size(260, 47);
             this.txtBoxSearch.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtBoxSearch.TabIndex = 33;
             this.txtBoxSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -416,11 +323,13 @@
             this.txtBoxSearch.TextPlaceholder = "Search Payment";
             this.txtBoxSearch.UseSystemPasswordChar = false;
             this.txtBoxSearch.WordWrap = true;
+            this.txtBoxSearch.TextChange += new System.EventHandler(this.txtBoxSearch_TextChange);
             // 
             // dgvPayment
             // 
             this.dgvPayment.AllowUserToAddRows = false;
             this.dgvPayment.AllowUserToDeleteRows = false;
+            this.dgvPayment.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPayment.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.dgvPayment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPayment.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -429,6 +338,14 @@
             this.clhTongTien,
             this.clhTrangThai,
             this.clhMaCanHo});
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPayment.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvPayment.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvPayment.Location = new System.Drawing.Point(0, 175);
             this.dgvPayment.Name = "dgvPayment";
@@ -444,7 +361,6 @@
             this.clhPaymentID.MinimumWidth = 6;
             this.clhPaymentID.Name = "clhPaymentID";
             this.clhPaymentID.ReadOnly = true;
-            this.clhPaymentID.Width = 125;
             // 
             // clhNgayLap
             // 
@@ -452,7 +368,6 @@
             this.clhNgayLap.MinimumWidth = 6;
             this.clhNgayLap.Name = "clhNgayLap";
             this.clhNgayLap.ReadOnly = true;
-            this.clhNgayLap.Width = 125;
             // 
             // clhTongTien
             // 
@@ -460,7 +375,6 @@
             this.clhTongTien.MinimumWidth = 6;
             this.clhTongTien.Name = "clhTongTien";
             this.clhTongTien.ReadOnly = true;
-            this.clhTongTien.Width = 125;
             // 
             // clhTrangThai
             // 
@@ -468,7 +382,6 @@
             this.clhTrangThai.MinimumWidth = 6;
             this.clhTrangThai.Name = "clhTrangThai";
             this.clhTrangThai.ReadOnly = true;
-            this.clhTrangThai.Width = 125;
             // 
             // clhMaCanHo
             // 
@@ -476,7 +389,146 @@
             this.clhMaCanHo.MinimumWidth = 6;
             this.clhMaCanHo.Name = "clhMaCanHo";
             this.clhMaCanHo.ReadOnly = true;
-            this.clhMaCanHo.Width = 125;
+            // 
+            // btnPay
+            // 
+            this.btnPay.ActiveBorderThickness = 1;
+            this.btnPay.ActiveCornerRadius = 20;
+            this.btnPay.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(223)))), ((int)(((byte)(22)))));
+            this.btnPay.ActiveForecolor = System.Drawing.Color.White;
+            this.btnPay.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(223)))), ((int)(((byte)(22)))));
+            this.btnPay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPay.BackColor = System.Drawing.Color.Transparent;
+            this.btnPay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPay.BackgroundImage")));
+            this.btnPay.ButtonText = "Pay";
+            this.btnPay.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPay.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPay.ForeColor = System.Drawing.Color.White;
+            this.btnPay.IdleBorderThickness = 1;
+            this.btnPay.IdleCornerRadius = 20;
+            this.btnPay.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(147)))), ((int)(((byte)(15)))));
+            this.btnPay.IdleForecolor = System.Drawing.Color.White;
+            this.btnPay.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(147)))), ((int)(((byte)(15)))));
+            this.btnPay.Location = new System.Drawing.Point(269, 214);
+            this.btnPay.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnPay.Name = "btnPay";
+            this.btnPay.Size = new System.Drawing.Size(65, 40);
+            this.btnPay.TabIndex = 15;
+            this.btnPay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.ActiveBorderThickness = 1;
+            this.btnCancel.ActiveCornerRadius = 20;
+            this.btnCancel.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnCancel.ActiveForecolor = System.Drawing.Color.White;
+            this.btnCancel.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancel.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancel.BackgroundImage")));
+            this.btnCancel.ButtonText = "Cancel";
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancel.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.IdleBorderThickness = 1;
+            this.btnCancel.IdleCornerRadius = 20;
+            this.btnCancel.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnCancel.IdleForecolor = System.Drawing.Color.White;
+            this.btnCancel.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnCancel.Location = new System.Drawing.Point(198, 214);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(65, 40);
+            this.btnCancel.TabIndex = 16;
+            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // txtBoxAmount
+            // 
+            this.txtBoxAmount.Location = new System.Drawing.Point(16, 107);
+            this.txtBoxAmount.Name = "txtBoxAmount";
+            this.txtBoxAmount.Size = new System.Drawing.Size(318, 34);
+            this.txtBoxAmount.TabIndex = 12;
+            this.txtBoxAmount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxAmount_KeyPress);
+            // 
+            // txtBoxPaymentID
+            // 
+            this.txtBoxPaymentID.Location = new System.Drawing.Point(16, 43);
+            this.txtBoxPaymentID.Name = "txtBoxPaymentID";
+            this.txtBoxPaymentID.Size = new System.Drawing.Size(318, 34);
+            this.txtBoxPaymentID.TabIndex = 13;
+            // 
+            // txtBoxDescription
+            // 
+            this.txtBoxDescription.Location = new System.Drawing.Point(16, 171);
+            this.txtBoxDescription.Multiline = true;
+            this.txtBoxDescription.Name = "txtBoxDescription";
+            this.txtBoxDescription.Size = new System.Drawing.Size(318, 34);
+            this.txtBoxDescription.TabIndex = 14;
+            // 
+            // bunifuLabel1
+            // 
+            this.bunifuLabel1.AllowParentOverrides = false;
+            this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel1.Location = new System.Drawing.Point(16, 56);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(53, 20);
+            this.bunifuLabel1.TabIndex = 8;
+            this.bunifuLabel1.Text = "Amount";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // lblDescription
+            // 
+            this.lblDescription.AllowParentOverrides = false;
+            this.lblDescription.AutoEllipsis = false;
+            this.lblDescription.CursorType = null;
+            this.lblDescription.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescription.Location = new System.Drawing.Point(16, 145);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblDescription.Size = new System.Drawing.Size(76, 20);
+            this.lblDescription.TabIndex = 9;
+            this.lblDescription.Text = "Description";
+            this.lblDescription.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblDescription.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // lblAmount
+            // 
+            this.lblAmount.AllowParentOverrides = false;
+            this.lblAmount.AutoEllipsis = false;
+            this.lblAmount.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblAmount.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lblAmount.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAmount.Location = new System.Drawing.Point(16, 83);
+            this.lblAmount.Name = "lblAmount";
+            this.lblAmount.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblAmount.Size = new System.Drawing.Size(53, 20);
+            this.lblAmount.TabIndex = 10;
+            this.lblAmount.Text = "Amount";
+            this.lblAmount.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblAmount.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // lblPaymentID
+            // 
+            this.lblPaymentID.AllowParentOverrides = false;
+            this.lblPaymentID.AutoEllipsis = false;
+            this.lblPaymentID.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblPaymentID.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lblPaymentID.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPaymentID.Location = new System.Drawing.Point(16, 16);
+            this.lblPaymentID.Name = "lblPaymentID";
+            this.lblPaymentID.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblPaymentID.Size = new System.Drawing.Size(76, 20);
+            this.lblPaymentID.TabIndex = 11;
+            this.lblPaymentID.Text = "Payment ID";
+            this.lblPaymentID.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblPaymentID.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // Payment
             // 
@@ -506,20 +558,14 @@
         #endregion
 
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
+        private Bunifu.UI.WinForms.BunifuLabel lblTran;
         private Bunifu.UI.WinForms.BunifuLabel lblTransactions;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
+        private Bunifu.UI.WinForms.BunifuLabel lbltamount;
         private Bunifu.UI.WinForms.BunifuLabel lblTotalAmount;
         private Bunifu.UI.WinForms.BunifuPanel pnlPayment;
         private Bunifu.UI.WinForms.BunifuShadowPanel pnlAddPayment;
-        private Bunifu.UI.WinForms.BunifuLabel lblDescription;
-        private Bunifu.UI.WinForms.BunifuLabel lblAmount;
-        private System.Windows.Forms.TextBox txtBoxAmount;
-        private System.Windows.Forms.TextBox txtBoxDescription;
         private Bunifu.Framework.UI.BunifuThinButton2 btnPayment;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnCancel;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnPay;
         private Bunifu.UI.WinForms.BunifuTextBox txtBoxSearch;
         private System.Windows.Forms.DataGridView dgvPayment;
         private System.Windows.Forms.DataGridViewTextBoxColumn clhPaymentID;
@@ -527,5 +573,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clhTongTien;
         private System.Windows.Forms.DataGridViewTextBoxColumn clhTrangThai;
         private System.Windows.Forms.DataGridViewTextBoxColumn clhMaCanHo;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnPay;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnCancel;
+        private System.Windows.Forms.TextBox txtBoxAmount;
+        private System.Windows.Forms.TextBox txtBoxPaymentID;
+        private System.Windows.Forms.TextBox txtBoxDescription;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
+        private Bunifu.UI.WinForms.BunifuLabel lblDescription;
+        private Bunifu.UI.WinForms.BunifuLabel lblAmount;
+        private Bunifu.UI.WinForms.BunifuLabel lblPaymentID;
     }
 }
