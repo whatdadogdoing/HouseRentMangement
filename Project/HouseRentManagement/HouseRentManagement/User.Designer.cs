@@ -46,8 +46,6 @@
             this.btnCondoServices = new System.Windows.Forms.Button();
             this.pnlReceipt = new System.Windows.Forms.Panel();
             this.btnReceipt = new System.Windows.Forms.Button();
-            this.pnlAbout = new System.Windows.Forms.Panel();
-            this.btnAbout = new System.Windows.Forms.Button();
             this.pnlLogout = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
             this.menuTransition = new System.Windows.Forms.Timer(this.components);
@@ -63,7 +61,6 @@
             this.pnlPayment.SuspendLayout();
             this.pnlCondoServices.SuspendLayout();
             this.pnlReceipt.SuspendLayout();
-            this.pnlAbout.SuspendLayout();
             this.pnlLogout.SuspendLayout();
             this.pnlUserBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxLogo)).BeginInit();
@@ -107,7 +104,6 @@
             this.pnlNavLoad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pnlNavLoad.Controls.Add(this.pnlHome);
             this.pnlNavLoad.Controls.Add(this.pnlProfileLoad);
-            this.pnlNavLoad.Controls.Add(this.pnlAbout);
             this.pnlNavLoad.Controls.Add(this.pnlLogout);
             this.pnlNavLoad.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlNavLoad.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
@@ -305,41 +301,12 @@
             this.btnReceipt.UseVisualStyleBackColor = false;
             this.btnReceipt.Click += new System.EventHandler(this.btnReceipt_Click);
             // 
-            // pnlAbout
-            // 
-            this.pnlAbout.Controls.Add(this.btnAbout);
-            this.pnlAbout.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pnlAbout.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlAbout.Location = new System.Drawing.Point(0, 108);
-            this.pnlAbout.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlAbout.Name = "pnlAbout";
-            this.pnlAbout.Size = new System.Drawing.Size(255, 54);
-            this.pnlAbout.TabIndex = 25;
-            // 
-            // btnAbout
-            // 
-            this.btnAbout.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnAbout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(31)))));
-            this.btnAbout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAbout.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAbout.ForeColor = System.Drawing.Color.White;
-            this.btnAbout.Image = global::HouseRentManagement.Properties.Resources.btnAboutWhite16x16;
-            this.btnAbout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAbout.Location = new System.Drawing.Point(-26, -29);
-            this.btnAbout.Name = "btnAbout";
-            this.btnAbout.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnAbout.Size = new System.Drawing.Size(323, 117);
-            this.btnAbout.TabIndex = 23;
-            this.btnAbout.Text = "          About";
-            this.btnAbout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAbout.UseVisualStyleBackColor = false;
-            // 
             // pnlLogout
             // 
             this.pnlLogout.Controls.Add(this.btnLogout);
             this.pnlLogout.Cursor = System.Windows.Forms.Cursors.Default;
             this.pnlLogout.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlLogout.Location = new System.Drawing.Point(0, 162);
+            this.pnlLogout.Location = new System.Drawing.Point(0, 108);
             this.pnlLogout.Margin = new System.Windows.Forms.Padding(0);
             this.pnlLogout.Name = "pnlLogout";
             this.pnlLogout.Size = new System.Drawing.Size(255, 54);
@@ -451,7 +418,6 @@
             this.pnlPayment.ResumeLayout(false);
             this.pnlCondoServices.ResumeLayout(false);
             this.pnlReceipt.ResumeLayout(false);
-            this.pnlAbout.ResumeLayout(false);
             this.pnlLogout.ResumeLayout(false);
             this.pnlUserBar.ResumeLayout(false);
             this.pnlUserBar.PerformLayout();
@@ -480,8 +446,6 @@
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Timer menuTransition;
         private Bunifu.UI.WinForms.BunifuPanel pnlUserBar;
-        private System.Windows.Forms.Panel pnlAbout;
-        private System.Windows.Forms.Button btnAbout;
         private System.Windows.Forms.Label lblHeadUser;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnUser;

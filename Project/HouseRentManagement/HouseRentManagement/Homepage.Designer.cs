@@ -154,6 +154,7 @@
             this.lblLinkEmail.Size = new System.Drawing.Size(197, 25);
             this.lblLinkEmail.TabIndex = 28;
             this.lblLinkEmail.Text = "jungleuncles@gmail.com";
+            this.lblLinkEmail.Click += new System.EventHandler(this.lblLinkEmail_Click);
             // 
             // txtBoxCompanyName
             // 

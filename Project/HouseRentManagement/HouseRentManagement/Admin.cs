@@ -15,11 +15,13 @@ namespace HouseRentManagement
         private CondoAdmin condoAdmin;
         private Tenant residentCard;
         private Employee employee;
+        private Homepage homepage;
         private bool isDragging = false;
         private Point startPoint;
         public Admin(string username)
         {
             InitializeComponent();
+            ShowHomepageForm();
             this.username = username;
             var mdiClient = Controls.OfType<MdiClient>().FirstOrDefault();
             if (mdiClient != null)
@@ -31,6 +33,25 @@ namespace HouseRentManagement
             Login loginForm = new Login();
             loginForm.Show();
             this.Hide();
+        }
+        private void ShowHomepageForm()
+        {
+            if (homepage == null)
+            {
+                homepage = new Homepage();
+                homepage.FormClosed += Homepage_FormClosed;
+                homepage.MdiParent = this;
+                homepage.Dock = DockStyle.Fill;
+                homepage.Show();
+            }
+            else
+            {
+                homepage.Activate();
+            }
+        }
+        private void Homepage_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            homepage = null;
         }
         private void ShowReportForm()
         {
@@ -174,9 +195,9 @@ namespace HouseRentManagement
         {
             if (menuExpand)
             {
-                if (pnlProfileLoad.Height + 5 >= 540)
+                if (pnlProfileLoad.Height + 5 >= 380)
                 {
-                    pnlProfileLoad.Height = 540;
+                    pnlProfileLoad.Height = 380;
                     menuTransition.Stop();
                     menuExpand = false;
                 }

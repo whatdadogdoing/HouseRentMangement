@@ -190,32 +190,23 @@
         97aPdXq5fn4BAADg4H6jdxzHhz15zczMzMzMzKobhm9c863vW8kAUgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="clhNgayLap.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="clhName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="clhTongTienThanhToan.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="clhBegin.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="clhTrangThai.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="clhEnd.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="clhQuantity.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="clhMoney.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="lblCondoReceipt.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Yu Gothic UI'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
-  </data>
-  <data name="btnSearch.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAEYAAAAoCAYAAABD0IyuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIASURBVGhD7ZnfK4NRGMfdKrNps802vxLJnVq5UEpyoeVm
-        8U9Qi0uKv0Gz39jFFBPiQiIl5QYpU4oLUUJS/obHvudts7c9Z3cu9p5z8bl6n3O28+m8z9m+p+Hn+4M0
-        1WgxErQYCVqMBC1GghYjoaaYz68Xyt6uUWhvkoKbQ+TPdFHjqr1uwffHOsZ2xil5HafX9yd23UAqZv8+
-        T23pDnKn/OyH1DuuZBt50gGKXq2w668SA4vhg3BxUDs7odXwpP00vD1CT28FkweTGEjp2egnW8zFTmJZ
-        onax7sLrDS8GO0U5KRWg/1SJQU9R5fWR4Sz2ncXzhT8xOH3QaLli1YCH6+dLQwyOLnRprlA1mmJOipxG
-        DDE417kiVenLDhhiutd72QJVsRV3jRDTknCzBSojxHAPVEeLkaDFSNBiJGgxErQYCVqMBCEGP2i4hyoj
-        xNR7ZPkfCDFIsBDWcAUqgr9IQszyxRI5Eq1skYpMHU4bYhDpeRUPqUog/N+6yxliwPzZHLmSPrZYFWxx
-        J03shszRJlK8wVyQHaAKgUx3+a6pLAYg0vOlO9lBVgeR5tHDYdmFSQw4ezwWVwkORTKa5phL7JRKKaBK
-        DMBrNXsyQ95UgJ3MKqDRjubH2KtaVkwJWMTRZbVrWiSWuI/HvTy3blBTjMpoMRK0GAlajAQthuWDfgHz
-        unrqx8dWgAAAAABJRU5ErkJggg==
-</value>
   </data>
   <data name="txtBoxSearch.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

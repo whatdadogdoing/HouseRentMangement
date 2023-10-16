@@ -293,5 +293,27 @@ namespace HouseRentManagement
                 }
             }
         }
+
+        private void txtPhoneNumber_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void bunifuTextBox1_TextChange(object sender, EventArgs e)
+        {
+            string searchText = bunifuTextBox1.Text.Trim();
+
+            // Filter the data based on the search text
+            List<BANQUANLY> filteredData = context.BANQUANLies
+                .Where(bq => bq.MaQL.Contains(searchText) ||
+                             bq.TenQuanLy.Contains(searchText) ||
+                             bq.CCCD.Contains(searchText) ||
+                             bq.SDT.Contains(searchText) ||
+                             bq.Email.Contains(searchText))
+                .ToList();
+
+            // Bind the filtered data to the grid
+            BindGrid(filteredData);
+        }
     }
 }

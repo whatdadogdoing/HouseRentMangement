@@ -4,7 +4,9 @@ using HouseRentManagement.HRMcontextDB;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,6 +19,8 @@ namespace HouseRentManagement
     {
         private Model_QLCHCC context;
         private string username;
+        private string connString = ConfigurationManager.ConnectionStrings["Model_QLCHCC"].ConnectionString;
+
 
         public Payment(string username)
         {
@@ -24,39 +28,74 @@ namespace HouseRentManagement
             this.username = username;
             context = new Model_QLCHCC();
             List<HOADONTHANHTOAN> listPayment = context.HOADONTHANHTOANs.ToList();
-            BindGrid(listPayment);
+            BindGrid(username);
         }
-        private void BindGrid(List<HOADONTHANHTOAN> listPayment)
+        private void BindGrid(string username)
         {
             dgvPayment.Rows.Clear();
-            string maNguoiThue = context.THECUDANs.SingleOrDefault(item => item.MaTheCuDan == username)?.MaNguoiThue;
+            string maNguoiThue = null;
 
-            if (maNguoiThue != null)
+            using (SqlConnection connection = new SqlConnection(connString))
             {
-                // Lấy MaCanHo từ bảng DANHSACHNHANKHAU dựa trên MaNguoiThue
-                var condoIds = context.DANHSACHNHANKHAUs
-                    .Where(item => item.MaNguoiThue == maNguoiThue)
-                    .Select(item => item.MaCanHo)
-                    .ToList();
+                connection.Open();
 
-                foreach (var payment in listPayment)
+                // Lấy MaNguoiThue từ bảng THECUDAN dựa trên MaTheCuDan và username
+                string selectTheCuDanQuery = "SELECT MaNguoiThue FROM THECUDAN WHERE MaTheCuDan = @MaTheCuDan";
+                using (SqlCommand selectTheCuDanCommand = new SqlCommand(selectTheCuDanQuery, connection))
                 {
-                    // Kiểm tra xem MaCanHo của hóa đơn có trong danh sách MaCanHo của username
-                    if (condoIds.Contains(payment.MaCanHo))
+                    selectTheCuDanCommand.Parameters.AddWithValue("@MaTheCuDan", username);
+                    maNguoiThue = selectTheCuDanCommand.ExecuteScalar()?.ToString();
+                }
+
+                if (maNguoiThue != null)
+                {
+                    // Lấy danh sách MaCanHo từ bảng DANHSACHNHANKHAU dựa trên MaNguoiThue
+                    string selectMaCanHoQuery = "SELECT MaCanHo FROM DANHSACHNHANKHAU WHERE MaNguoiThue = @MaNguoiThue";
+                    using (SqlCommand selectMaCanHoCommand = new SqlCommand(selectMaCanHoQuery, connection))
                     {
-                        int rowIndex = dgvPayment.Rows.Add();
-                        string ngaylap = payment.NgayLap.Value.ToString("dd-MM-yyyy");
-                        float tongtien = float.Parse(payment.TongTien.Value.ToString());
-                        string formattedTongTien = tongtien.ToString("#,##0").Replace(",", " ");
-                        dgvPayment.Rows[rowIndex].Cells[0].Value = payment.SoHoaDon;
-                        dgvPayment.Rows[rowIndex].Cells[1].Value = ngaylap;
-                        dgvPayment.Rows[rowIndex].Cells[2].Value = formattedTongTien;
-                        dgvPayment.Rows[rowIndex].Cells[3].Value = payment.TrangThai;
-                        dgvPayment.Rows[rowIndex].Cells[4].Value = payment.MaCanHo;
+                        selectMaCanHoCommand.Parameters.AddWithValue("@MaNguoiThue", maNguoiThue);
+                        List<string> condoIds = new List<string>();
+
+                        using (SqlDataReader reader = selectMaCanHoCommand.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                condoIds.Add(reader["MaCanHo"].ToString());
+                            }
+                        }
+
+                        // Lấy danh sách hóa đơn thanh toán phù hợp
+                        string selectPaymentQuery = "SELECT * FROM HOADONTHANHTOAN WHERE MaCanHo IN ({0})";
+                        string condoIdParams = string.Join(",", condoIds.Select((s, i) => "@MaCanHo" + i));
+                        selectPaymentQuery = string.Format(selectPaymentQuery, condoIdParams);
+
+                        using (SqlCommand selectPaymentCommand = new SqlCommand(selectPaymentQuery, connection))
+                        {
+                            for (int i = 0; i < condoIds.Count; i++)
+                            {
+                                selectPaymentCommand.Parameters.AddWithValue("@MaCanHo" + i, condoIds[i]);
+                            }
+
+                            using (SqlDataReader reader = selectPaymentCommand.ExecuteReader())
+                            {
+                                while (reader.Read())
+                                {
+                                    int rowIndex = dgvPayment.Rows.Add();
+                                    string ngaylap = reader["NgayLap"].ToString();
+                                    float tongtien = float.Parse(reader["TongTien"].ToString());
+                                    string formattedTongTien = tongtien.ToString("#,##0").Replace(",", " ");
+                                    dgvPayment.Rows[rowIndex].Cells[0].Value = reader["SoHoaDon"].ToString();
+                                    dgvPayment.Rows[rowIndex].Cells[1].Value = ngaylap;
+                                    dgvPayment.Rows[rowIndex].Cells[2].Value = formattedTongTien;
+                                    dgvPayment.Rows[rowIndex].Cells[3].Value = reader["TrangThai"].ToString();
+                                    dgvPayment.Rows[rowIndex].Cells[4].Value = reader["MaCanHo"].ToString();
+                                }
+                            }
+                        }
                     }
                 }
+                updateTranAmount();
             }
-            updateTranAmount();
         }
         private void txtBoxSearch_TextChange(object sender, EventArgs e)
         {
@@ -116,9 +155,7 @@ namespace HouseRentManagement
             string paymentID = txtBoxPaymentID.Text;
             string amount = txtBoxAmount.Text;
             string description = txtBoxDescription.Text;
-            //MessageBox.Show(paymentID);
-            //MessageBox.Show(amount);
-            //MessageBox.Show(description);
+
             int rowIndex = IsValidPayID(paymentID);
             if (paymentID == "" || amount == "" || description == "")
             {
@@ -136,19 +173,26 @@ namespace HouseRentManagement
                 MessageBox.Show("Please enter the correct amount!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            string selectedPaymentID = dgvPayment.Rows[rowIndex].Cells["clhPaymentID"].Value.ToString();
-            var paymentToUpdate = context.HOADONTHANHTOANs.FirstOrDefault(p => p.SoHoaDon == selectedPaymentID);
 
-            if (paymentToUpdate != null)
+
+            using (SqlConnection connection = new SqlConnection(connString))
             {
-                paymentToUpdate.TrangThai = "Đã Thanh Toán";
-                context.SaveChanges(); // Lưu thay đổi vào cơ sở dữ liệu
-                MessageBox.Show("Payment updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                pnlAddPayment.Visible = false;
-                BindGrid(context.HOADONTHANHTOANs.ToList());// Cập nhật lại DataGridView
-                resetPayment();
+                connection.Open();
+
+                // Cập nhật trạng thái thanh toán trong cơ sở dữ liệu
+                string updatePaymentQuery = "UPDATE HOADONTHANHTOAN SET TrangThai = @TrangThai WHERE SoHoaDon = @SoHoaDon";
+                using (SqlCommand updatePaymentCommand = new SqlCommand(updatePaymentQuery, connection))
+                {
+                    updatePaymentCommand.Parameters.AddWithValue("@TrangThai", "Đã Thanh Toán");
+                    updatePaymentCommand.Parameters.AddWithValue("@SoHoaDon", paymentID);
+                    updatePaymentCommand.ExecuteNonQuery();
+                }
             }
 
+            MessageBox.Show("Payment updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            pnlAddPayment.Visible = false;
+            BindGrid(username); // Cập nhật lại DataGridView
+            resetPayment();
         }
         private void updateTranAmount()
         {
@@ -157,12 +201,12 @@ namespace HouseRentManagement
 
             foreach (DataGridViewRow row in dgvPayment.Rows)
             {
-                if (row.Cells["clhTrangThai"].Value != null)
+                if (row.Cells[3].Value != null)
                 {
-                    string trangThai = row.Cells["clhTrangThai"].Value.ToString();
+                    string trangThai = row.Cells[3].Value.ToString();
                     if (trangThai == "Đã Thanh Toán")
                     {
-                        float paymentAmount = float.Parse(row.Cells["clhTongTien"].Value.ToString().Replace(" ", ""));
+                        float paymentAmount = float.Parse(row.Cells[2].Value.ToString().Replace(" ", ""));
                         totalAmount += paymentAmount;
                         transCount++;
                     }

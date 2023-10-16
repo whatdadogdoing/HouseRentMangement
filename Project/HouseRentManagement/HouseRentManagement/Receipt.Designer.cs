@@ -29,25 +29,24 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Receipt));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlReceipt = new Bunifu.UI.WinForms.BunifuPanel();
-            this.dgvPayment = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.clhNgayLap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clhTongTienThanhToan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clhTrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblCondoReceipt = new Bunifu.UI.WinForms.BunifuLabel();
             this.cbbReceipt = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtBoxSearch = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.dgvReceipt = new System.Windows.Forms.DataGridView();
+            this.clhName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clhBegin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clhEnd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clhQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clhMoney = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlReceipt.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPayment)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReceipt)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlReceipt
@@ -58,10 +57,9 @@
             this.pnlReceipt.BorderColor = System.Drawing.Color.Transparent;
             this.pnlReceipt.BorderRadius = 3;
             this.pnlReceipt.BorderThickness = 1;
-            this.pnlReceipt.Controls.Add(this.dgvPayment);
+            this.pnlReceipt.Controls.Add(this.dgvReceipt);
             this.pnlReceipt.Controls.Add(this.lblCondoReceipt);
             this.pnlReceipt.Controls.Add(this.cbbReceipt);
-            this.pnlReceipt.Controls.Add(this.btnSearch);
             this.pnlReceipt.Controls.Add(this.txtBoxSearch);
             this.pnlReceipt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlReceipt.Location = new System.Drawing.Point(0, 0);
@@ -69,99 +67,6 @@
             this.pnlReceipt.ShowBorders = true;
             this.pnlReceipt.Size = new System.Drawing.Size(958, 655);
             this.pnlReceipt.TabIndex = 32;
-            // 
-            // dgvPayment
-            // 
-            this.dgvPayment.AllowUserToAddRows = false;
-            this.dgvPayment.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvPayment.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvPayment.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.dgvPayment.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
-            this.dgvPayment.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgvPayment.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(125)))), ((int)(((byte)(122)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 7.8F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(162)))), ((int)(((byte)(158)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPayment.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvPayment.ColumnHeadersHeight = 42;
-            this.dgvPayment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvPayment.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.clhNgayLap,
-            this.clhTongTienThanhToan,
-            this.clhTrangThai});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 7.8F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPayment.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvPayment.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvPayment.Location = new System.Drawing.Point(15, 193);
-            this.dgvPayment.Name = "dgvPayment";
-            this.dgvPayment.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 7.8F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPayment.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvPayment.RowHeadersVisible = false;
-            this.dgvPayment.RowHeadersWidth = 51;
-            this.dgvPayment.RowTemplate.Height = 24;
-            this.dgvPayment.Size = new System.Drawing.Size(931, 450);
-            this.dgvPayment.TabIndex = 35;
-            this.dgvPayment.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvPayment.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgvPayment.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgvPayment.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgvPayment.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvPayment.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
-            this.dgvPayment.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvPayment.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(125)))), ((int)(((byte)(122)))));
-            this.dgvPayment.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            this.dgvPayment.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvPayment.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvPayment.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvPayment.ThemeStyle.HeaderStyle.Height = 42;
-            this.dgvPayment.ThemeStyle.ReadOnly = true;
-            this.dgvPayment.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvPayment.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvPayment.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tahoma", 7.8F);
-            this.dgvPayment.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.dgvPayment.ThemeStyle.RowsStyle.Height = 24;
-            this.dgvPayment.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvPayment.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // clhNgayLap
-            // 
-            this.clhNgayLap.HeaderText = "Date";
-            this.clhNgayLap.MinimumWidth = 6;
-            this.clhNgayLap.Name = "clhNgayLap";
-            this.clhNgayLap.ReadOnly = true;
-            // 
-            // clhTongTienThanhToan
-            // 
-            this.clhTongTienThanhToan.HeaderText = "Money Spent";
-            this.clhTongTienThanhToan.MinimumWidth = 6;
-            this.clhTongTienThanhToan.Name = "clhTongTienThanhToan";
-            this.clhTongTienThanhToan.ReadOnly = true;
-            // 
-            // clhTrangThai
-            // 
-            this.clhTrangThai.HeaderText = "Status";
-            this.clhTrangThai.MinimumWidth = 6;
-            this.clhTrangThai.Name = "clhTrangThai";
-            this.clhTrangThai.ReadOnly = true;
             // 
             // lblCondoReceipt
             // 
@@ -194,33 +99,7 @@
             this.cbbReceipt.Name = "cbbReceipt";
             this.cbbReceipt.Size = new System.Drawing.Size(200, 36);
             this.cbbReceipt.TabIndex = 33;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.ActiveBorderThickness = 1;
-            this.btnSearch.ActiveCornerRadius = 20;
-            this.btnSearch.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(223)))), ((int)(((byte)(22)))));
-            this.btnSearch.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
-            this.btnSearch.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(223)))), ((int)(((byte)(22)))));
-            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
-            this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
-            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSearch.ButtonText = "Search";
-            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
-            this.btnSearch.IdleBorderThickness = 1;
-            this.btnSearch.IdleCornerRadius = 20;
-            this.btnSearch.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(147)))), ((int)(((byte)(15)))));
-            this.btnSearch.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
-            this.btnSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(147)))), ((int)(((byte)(15)))));
-            this.btnSearch.Location = new System.Drawing.Point(610, 12);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(70, 40);
-            this.btnSearch.TabIndex = 31;
-            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cbbReceipt.SelectedIndexChanged += new System.EventHandler(this.cbbReceipt_SelectedIndexChanged);
             // 
             // txtBoxSearch
             // 
@@ -295,6 +174,80 @@
             this.txtBoxSearch.TextPlaceholder = "Search form";
             this.txtBoxSearch.UseSystemPasswordChar = false;
             this.txtBoxSearch.WordWrap = true;
+            this.txtBoxSearch.TextChange += new System.EventHandler(this.txtBoxSearch_TextChange);
+            // 
+            // dgvReceipt
+            // 
+            this.dgvReceipt.AllowUserToAddRows = false;
+            this.dgvReceipt.AllowUserToDeleteRows = false;
+            this.dgvReceipt.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvReceipt.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvReceipt.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvReceipt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReceipt.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clhName,
+            this.clhBegin,
+            this.clhEnd,
+            this.clhQuantity,
+            this.clhMoney});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvReceipt.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvReceipt.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgvReceipt.Location = new System.Drawing.Point(0, 193);
+            this.dgvReceipt.Name = "dgvReceipt";
+            this.dgvReceipt.ReadOnly = true;
+            this.dgvReceipt.RowHeadersWidth = 51;
+            this.dgvReceipt.RowTemplate.Height = 24;
+            this.dgvReceipt.Size = new System.Drawing.Size(958, 462);
+            this.dgvReceipt.TabIndex = 35;
+            // 
+            // clhName
+            // 
+            this.clhName.HeaderText = "Name Service";
+            this.clhName.MinimumWidth = 6;
+            this.clhName.Name = "clhName";
+            this.clhName.ReadOnly = true;
+            // 
+            // clhBegin
+            // 
+            this.clhBegin.HeaderText = "Begin Date";
+            this.clhBegin.MinimumWidth = 6;
+            this.clhBegin.Name = "clhBegin";
+            this.clhBegin.ReadOnly = true;
+            // 
+            // clhEnd
+            // 
+            this.clhEnd.HeaderText = "End Date";
+            this.clhEnd.MinimumWidth = 6;
+            this.clhEnd.Name = "clhEnd";
+            this.clhEnd.ReadOnly = true;
+            // 
+            // clhQuantity
+            // 
+            this.clhQuantity.HeaderText = "Quantity";
+            this.clhQuantity.MinimumWidth = 6;
+            this.clhQuantity.Name = "clhQuantity";
+            this.clhQuantity.ReadOnly = true;
+            // 
+            // clhMoney
+            // 
+            this.clhMoney.HeaderText = "Money Spent";
+            this.clhMoney.MinimumWidth = 6;
+            this.clhMoney.Name = "clhMoney";
+            this.clhMoney.ReadOnly = true;
             // 
             // Receipt
             // 
@@ -311,20 +264,21 @@
             this.Load += new System.EventHandler(this.Receipt_Load);
             this.pnlReceipt.ResumeLayout(false);
             this.pnlReceipt.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPayment)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReceipt)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private Bunifu.Framework.UI.BunifuThinButton2 btnSearch;
         private Bunifu.UI.WinForms.BunifuTextBox txtBoxSearch;
         private Bunifu.UI.WinForms.BunifuPanel pnlReceipt;
         private Bunifu.UI.WinForms.BunifuLabel lblCondoReceipt;
         private Guna.UI2.WinForms.Guna2ComboBox cbbReceipt;
-        private Guna.UI2.WinForms.Guna2DataGridView dgvPayment;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clhNgayLap;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clhTongTienThanhToan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clhTrangThai;
+        private System.Windows.Forms.DataGridView dgvReceipt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clhName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clhBegin;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clhEnd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clhQuantity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clhMoney;
     }
 }

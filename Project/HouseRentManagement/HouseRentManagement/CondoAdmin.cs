@@ -110,7 +110,16 @@ namespace HouseRentManagement
             VehicleCard vc = new VehicleCard();
             formManager.ShowChildForm(pnlContainer, vc);
         }
-
+        private void showCondoServicesAdmin()
+        {
+            if (formManager.CurrentChildForm is CondoServicesAdmin)
+            {
+                return;
+            }
+            formManager.CloseCurrentChildForm();
+            CondoServicesAdmin condoServiceAdmin = new CondoServicesAdmin();
+            formManager.ShowChildForm(pnlContainer, condoServiceAdmin);
+        }
         private void tsbVehicleCard_Click(object sender, EventArgs e)
         {
             ShowVehicleCard();
@@ -120,6 +129,7 @@ namespace HouseRentManagement
             txtSearchCondo.Visible = false;
             btnClose1.Visible = false;
             btnClose2.Visible = true;
+            btnClose3.Visible = false;
         }
 
         private void btnClose1_Click(object sender, EventArgs e)
@@ -136,6 +146,69 @@ namespace HouseRentManagement
             dgvCondo.Visible = true;
             txtSearchCondo.Visible = true;
             btnClose2.Visible = false;
+        }
+
+        private void tsbCondoService_Click(object sender, EventArgs e)
+        {
+            showCondoServicesAdmin();
+            dgvPopulation.Visible = false;
+            txtSearchPopulation.Visible = false;
+            dgvCondo.Visible = false;
+            txtSearchCondo.Visible = false;
+            btnClose1.Visible = false;
+            btnClose2.Visible = false;
+            btnClose3.Visible = true;
+        }
+        private void btnClose3_Click(object sender, EventArgs e)
+        {
+            formManager.CloseCurrentChildForm();
+            dgvCondo.Visible = true;
+            txtSearchCondo.Visible = true;
+            btnClose3.Visible = false;
+        }
+
+        private void txtSearchCondo_TextChange(object sender, EventArgs e)
+        {
+            string searchKeyword = txtSearchCondo.Text.Trim();
+
+            using (SqlConnection connection = new SqlConnection(connString))
+            {
+                connection.Open();
+                string query = @"
+            SELECT CANHO.MaCanHo, TANG.Tang, CHUSOHUU.TenChuSoHuu, LOAICANHO.TenLoai, CANHO.TinhTrang, LOAICANHO.DienTich
+            FROM CANHO
+            INNER JOIN TANG ON CANHO.MaTang = TANG.MaTang
+            INNER JOIN CHUSOHUU ON CANHO.MaChuSoHuu = CHUSOHUU.MaChuSoHuu
+            INNER JOIN LOAICANHO ON CANHO.MaLoai = LOAICANHO.MaLoai
+            WHERE CANHO.MaCanHo LIKE @searchKeyword OR
+                  TANG.Tang LIKE @searchKeyword OR
+                  CHUSOHUU.TenChuSoHuu LIKE @searchKeyword OR
+                  LOAICANHO.TenLoai LIKE @searchKeyword OR
+                  CANHO.TinhTrang LIKE @searchKeyword OR
+                  LOAICANHO.DienTich LIKE @searchKeyword;";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@searchKeyword", "%" + searchKeyword + "%");
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        dgvCondo.Rows.Clear();
+
+                        while (reader.Read())
+                        {
+                            int index = dgvCondo.Rows.Add();
+
+                            dgvCondo.Rows[index].Cells[0].Value = reader["MaCanHo"];
+                            dgvCondo.Rows[index].Cells[1].Value = reader["Tang"];
+                            dgvCondo.Rows[index].Cells[4].Value = reader["TenChuSoHuu"];
+                            dgvCondo.Rows[index].Cells[5].Value = reader["TinhTrang"];
+                            dgvCondo.Rows[index].Cells[3].Value = reader["TenLoai"];
+                            dgvCondo.Rows[index].Cells[2].Value = reader["DienTich"];
+                        }
+                    }
+                }
+            }
         }
     }
 }

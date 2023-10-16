@@ -48,8 +48,6 @@
             this.btnPrice = new System.Windows.Forms.Button();
             this.pnlReport = new System.Windows.Forms.Panel();
             this.btnReport = new System.Windows.Forms.Button();
-            this.pnlCondoServices = new System.Windows.Forms.Panel();
-            this.btnCondoServices = new System.Windows.Forms.Button();
             this.pnlExport = new System.Windows.Forms.Panel();
             this.btnExport = new System.Windows.Forms.Button();
             this.pnlLogout = new System.Windows.Forms.Panel();
@@ -69,7 +67,6 @@
             this.pnlCodo.SuspendLayout();
             this.pnlPrice.SuspendLayout();
             this.pnlReport.SuspendLayout();
-            this.pnlCondoServices.SuspendLayout();
             this.pnlExport.SuspendLayout();
             this.pnlLogout.SuspendLayout();
             this.pnlUserBar.SuspendLayout();
@@ -130,7 +127,6 @@
             this.pnlProfileLoad.Controls.Add(this.pnlCodo);
             this.pnlProfileLoad.Controls.Add(this.pnlPrice);
             this.pnlProfileLoad.Controls.Add(this.pnlReport);
-            this.pnlProfileLoad.Controls.Add(this.pnlCondoServices);
             this.pnlProfileLoad.Cursor = System.Windows.Forms.Cursors.Default;
             this.pnlProfileLoad.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.pnlProfileLoad.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -338,33 +334,6 @@
             this.btnReport.UseVisualStyleBackColor = false;
             this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
-            // pnlCondoServices
-            // 
-            this.pnlCondoServices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.pnlCondoServices.Controls.Add(this.btnCondoServices);
-            this.pnlCondoServices.Location = new System.Drawing.Point(1785, 0);
-            this.pnlCondoServices.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlCondoServices.Name = "pnlCondoServices";
-            this.pnlCondoServices.Size = new System.Drawing.Size(255, 54);
-            this.pnlCondoServices.TabIndex = 24;
-            // 
-            // btnCondoServices
-            // 
-            this.btnCondoServices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.btnCondoServices.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCondoServices.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCondoServices.ForeColor = System.Drawing.Color.White;
-            this.btnCondoServices.Image = global::HouseRentManagement.Properties.Resources.btnCondoServicesAltWhite16x16;
-            this.btnCondoServices.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCondoServices.Location = new System.Drawing.Point(-26, -31);
-            this.btnCondoServices.Name = "btnCondoServices";
-            this.btnCondoServices.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnCondoServices.Size = new System.Drawing.Size(323, 117);
-            this.btnCondoServices.TabIndex = 23;
-            this.btnCondoServices.Text = "          Condo Services";
-            this.btnCondoServices.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCondoServices.UseVisualStyleBackColor = false;
-            // 
             // pnlExport
             // 
             this.pnlExport.Controls.Add(this.btnExport);
@@ -423,6 +392,7 @@
             this.btnLogout.Text = "          Logout";
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // menuTransition
             // 
@@ -512,7 +482,6 @@
             this.pnlCodo.ResumeLayout(false);
             this.pnlPrice.ResumeLayout(false);
             this.pnlReport.ResumeLayout(false);
-            this.pnlCondoServices.ResumeLayout(false);
             this.pnlExport.ResumeLayout(false);
             this.pnlLogout.ResumeLayout(false);
             this.pnlUserBar.ResumeLayout(false);
@@ -547,8 +516,6 @@
         private System.Windows.Forms.Button btnPrice;
         private System.Windows.Forms.Panel pnlReport;
         private System.Windows.Forms.Button btnReport;
-        private System.Windows.Forms.Panel pnlCondoServices;
-        private System.Windows.Forms.Button btnCondoServices;
         private System.Windows.Forms.Panel pnlLogout;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Timer menuTransition;

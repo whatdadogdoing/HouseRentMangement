@@ -481,6 +481,12 @@
     <Compile Include="CondoServices.Designer.cs">
       <DependentUpon>CondoServices.cs</DependentUpon>
     </Compile>
+    <Compile Include="CondoServicesAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CondoServicesAdmin.Designer.cs">
+      <DependentUpon>CondoServicesAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConstructionForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -656,6 +662,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CondoServices.resx">
       <DependentUpon>CondoServices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CondoServicesAdmin.resx">
+      <DependentUpon>CondoServicesAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConstructionForm.resx">
       <DependentUpon>ConstructionForm.cs</DependentUpon>

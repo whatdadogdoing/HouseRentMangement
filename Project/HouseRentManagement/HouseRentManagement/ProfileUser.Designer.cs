@@ -402,6 +402,7 @@
             this.txtBoxContactNumber.TextPlaceholder = "Your Contact Number";
             this.txtBoxContactNumber.UseSystemPasswordChar = false;
             this.txtBoxContactNumber.WordWrap = true;
+            this.txtBoxContactNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxContactNumber_KeyPress);
             // 
             // lblDoB
             // 
@@ -493,6 +494,7 @@
             this.txtBoxFullName.TextPlaceholder = "Your Name";
             this.txtBoxFullName.UseSystemPasswordChar = false;
             this.txtBoxFullName.WordWrap = true;
+            this.txtBoxFullName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxFullName_KeyPress);
             // 
             // grbCondoInfo
             // 

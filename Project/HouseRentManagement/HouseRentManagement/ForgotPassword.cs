@@ -290,10 +290,21 @@ namespace HouseRentManagement
                     if (context != null)
                     {
                         StringBuilder template = new StringBuilder();
-                        template.AppendLine($"Hello {context.TenNguoiThue},");
+                        template.AppendLine($"Dear {context.TenNguoiThue},");
+
+                        template.AppendLine("<p>We have received a request to change the password for your account. To proceed with the password change, please use the following One-Time Password (OTP):</p>");
+
                         template.AppendLine($"<p>Your OTP: {otp}</p>");
-                        template.AppendLine("Please use this OTP to verify your account.");
-                        template.AppendLine("<p>Thank you!</p>");
+
+                        template.AppendLine("<p>Please enter this OTP in the provided field to verify your identity and proceed with the password change. It is important to keep your account secure.</p>");
+
+                        template.AppendLine("<p>If you did not initiate this password change request, please disregard this email and ensure the security of your account by contacting our support team immediately.</p>");
+
+                        template.AppendLine("<p>Thank you for your attention to this matter.</p>");
+
+                        template.AppendLine("<p>Best regards, </p>");
+
+                        template.AppendLine("<p>The Gmail Confirmation Team</p>");
 
                         Email.DefaultSender = smtpSender;
                         Email.DefaultRenderer = new RazorRenderer();
@@ -319,22 +330,22 @@ namespace HouseRentManagement
                         }
                         catch (Exception ex)
                         {
-                            MessageBox.Show("Lỗi gửi email: " + ex.Message);
+                            MessageBox.Show("Email sending error: " + ex.Message);
                         }
                     }
                     else
                     {
-                        MessageBox.Show("Username không tồn tại trong hệ thống");
+                        MessageBox.Show("Username does not exist in the system");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Email không tồn tại trong hệ thống");
+                    MessageBox.Show("Email does not exist in the system");
                 }
             }
             else
             {
-                MessageBox.Show("Vui lòng nhập đúng định dạng email");
+                MessageBox.Show("Please enter a valid email format");
             }
         }
 
