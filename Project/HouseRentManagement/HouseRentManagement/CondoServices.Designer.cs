@@ -77,7 +77,7 @@
             this.pnlCondoServices.Location = new System.Drawing.Point(0, 0);
             this.pnlCondoServices.Name = "pnlCondoServices";
             this.pnlCondoServices.ShowBorders = true;
-            this.pnlCondoServices.Size = new System.Drawing.Size(956, 613);
+            this.pnlCondoServices.Size = new System.Drawing.Size(958, 697);
             this.pnlCondoServices.TabIndex = 8;
             // 
             // pnlReportForm
@@ -170,7 +170,7 @@
             this.btnSearch.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(147)))), ((int)(((byte)(15)))));
             this.btnSearch.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
             this.btnSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(147)))), ((int)(((byte)(15)))));
-            this.btnSearch.Location = new System.Drawing.Point(608, 13);
+            this.btnSearch.Location = new System.Drawing.Point(610, 13);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(70, 40);
@@ -365,7 +365,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvCondoServices.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvCondoServices.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvCondoServices.Location = new System.Drawing.Point(14, 151);
+            this.dgvCondoServices.Location = new System.Drawing.Point(16, 235);
             this.dgvCondoServices.Name = "dgvCondoServices";
             this.dgvCondoServices.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -444,7 +444,7 @@
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(956, 613);
+            this.ClientSize = new System.Drawing.Size(958, 697);
             this.Controls.Add(this.pnlCondoServices);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IconOptions.Image = global::HouseRentManagement.Properties.Resources.appLogo;

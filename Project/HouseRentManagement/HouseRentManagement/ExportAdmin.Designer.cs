@@ -56,7 +56,6 @@
             this.pnlPriceTitle.BorderThickness = 0;
             this.pnlPriceTitle.Controls.Add(this.bunifuLabel2);
             this.pnlPriceTitle.Controls.Add(this.bunifuLabel1);
-            this.pnlPriceTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlPriceTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.pnlPriceTitle.Location = new System.Drawing.Point(0, 0);
             this.pnlPriceTitle.Margin = new System.Windows.Forms.Padding(4);
@@ -113,11 +112,12 @@
             this.pnlReport.Controls.Add(this.pnlPriceTitle);
             this.pnlReport.Controls.Add(this.btnPdf);
             this.pnlReport.Controls.Add(this.pnlExport);
-            this.pnlReport.Location = new System.Drawing.Point(0, 46);
+            this.pnlReport.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlReport.Location = new System.Drawing.Point(0, 0);
             this.pnlReport.Margin = new System.Windows.Forms.Padding(4);
             this.pnlReport.Name = "pnlReport";
             this.pnlReport.ShowBorders = true;
-            this.pnlReport.Size = new System.Drawing.Size(958, 647);
+            this.pnlReport.Size = new System.Drawing.Size(958, 697);
             this.pnlReport.TabIndex = 1;
             // 
             // btnExcel

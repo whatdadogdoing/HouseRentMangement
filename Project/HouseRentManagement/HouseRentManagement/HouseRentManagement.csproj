@@ -487,6 +487,12 @@
     <Compile Include="ConstructionForm.Designer.cs">
       <DependentUpon>ConstructionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ContractAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContractAdmin.Designer.cs">
+      <DependentUpon>ContractAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="ExportAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -597,6 +603,18 @@
     <Compile Include="ReportServicesForm.Designer.cs">
       <DependentUpon>ReportServicesForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ResidentCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResidentCard.Designer.cs">
+      <DependentUpon>ResidentCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tenant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tenant.Designer.cs">
+      <DependentUpon>Tenant.cs</DependentUpon>
+    </Compile>
     <Compile Include="TransferForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -629,6 +647,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConstructionForm.resx">
       <DependentUpon>ConstructionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractAdmin.resx">
+      <DependentUpon>ContractAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExportAdmin.resx">
       <DependentUpon>ExportAdmin.cs</DependentUpon>
@@ -682,6 +703,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReportServicesForm.resx">
       <DependentUpon>ReportServicesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResidentCard.resx">
+      <DependentUpon>ResidentCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tenant.resx">
+      <DependentUpon>Tenant.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TransferForm.resx">
       <DependentUpon>TransferForm.cs</DependentUpon>

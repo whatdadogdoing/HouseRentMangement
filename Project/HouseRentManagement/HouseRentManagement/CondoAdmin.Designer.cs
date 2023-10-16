@@ -63,6 +63,7 @@
             this.clnXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnQuanHeVoiChuThue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtSearchPopulation = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.btnClose2 = new DevExpress.XtraEditors.HyperlinkLabelControl();
             this.pnlProfileUser.SuspendLayout();
             this.tsCondoAdmin.SuspendLayout();
             this.pnlContainer.SuspendLayout();
@@ -90,6 +91,8 @@
             // pnlProfileUser
             // 
             this.pnlProfileUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
+            this.pnlProfileUser.Controls.Add(this.btnClose2);
+            this.pnlProfileUser.Controls.Add(this.btnClose1);
             this.pnlProfileUser.Controls.Add(this.lblCondo);
             this.pnlProfileUser.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlProfileUser.Location = new System.Drawing.Point(0, 0);
@@ -133,7 +136,6 @@
             // 
             // pnlContainer
             // 
-            this.pnlContainer.Controls.Add(this.btnClose1);
             this.pnlContainer.Controls.Add(this.dgvCondo);
             this.pnlContainer.Controls.Add(this.txtSearchCondo);
             this.pnlContainer.Controls.Add(this.dgvPopulation);
@@ -146,9 +148,13 @@
             // btnClose1
             // 
             this.btnClose1.Appearance.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose1.Appearance.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(144)))), ((int)(((byte)(29)))));
             this.btnClose1.Appearance.Options.UseFont = true;
+            this.btnClose1.Appearance.Options.UseLinkColor = true;
+            this.btnClose1.AppearancePressed.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(37)))));
+            this.btnClose1.AppearancePressed.Options.UseLinkColor = true;
             this.btnClose1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.btnClose1.Location = new System.Drawing.Point(12, 3);
+            this.btnClose1.Location = new System.Drawing.Point(12, 57);
             this.btnClose1.Name = "btnClose1";
             this.btnClose1.Size = new System.Drawing.Size(47, 28);
             this.btnClose1.TabIndex = 48;
@@ -473,6 +479,23 @@
             this.txtSearchPopulation.Visible = false;
             this.txtSearchPopulation.WordWrap = true;
             // 
+            // btnClose2
+            // 
+            this.btnClose2.Appearance.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose2.Appearance.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(144)))), ((int)(((byte)(29)))));
+            this.btnClose2.Appearance.Options.UseFont = true;
+            this.btnClose2.Appearance.Options.UseLinkColor = true;
+            this.btnClose2.AppearancePressed.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(37)))));
+            this.btnClose2.AppearancePressed.Options.UseLinkColor = true;
+            this.btnClose2.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.btnClose2.Location = new System.Drawing.Point(12, 57);
+            this.btnClose2.Name = "btnClose2";
+            this.btnClose2.Size = new System.Drawing.Size(47, 28);
+            this.btnClose2.TabIndex = 48;
+            this.btnClose2.Text = "Close";
+            this.btnClose2.Visible = false;
+            this.btnClose2.Click += new System.EventHandler(this.btnClose2_Click);
+            // 
             // CondoAdmin
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
@@ -492,7 +515,6 @@
             this.tsCondoAdmin.ResumeLayout(false);
             this.tsCondoAdmin.PerformLayout();
             this.pnlContainer.ResumeLayout(false);
-            this.pnlContainer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCondo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPopulation)).EndInit();
             this.ResumeLayout(false);
@@ -527,5 +549,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clnXe;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnQuanHeVoiChuThue;
         private DevExpress.XtraEditors.HyperlinkLabelControl btnClose1;
+        private DevExpress.XtraEditors.HyperlinkLabelControl btnClose2;
     }
 }

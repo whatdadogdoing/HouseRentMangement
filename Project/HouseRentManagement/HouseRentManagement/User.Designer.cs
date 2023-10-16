@@ -114,7 +114,7 @@
             this.pnlNavLoad.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlNavLoad.Location = new System.Drawing.Point(0, 40);
             this.pnlNavLoad.Name = "pnlNavLoad";
-            this.pnlNavLoad.Size = new System.Drawing.Size(255, 657);
+            this.pnlNavLoad.Size = new System.Drawing.Size(255, 700);
             this.pnlNavLoad.TabIndex = 21;
             // 
             // pnlHome
@@ -384,7 +384,7 @@
             this.pnlUserBar.Location = new System.Drawing.Point(0, 0);
             this.pnlUserBar.Name = "pnlUserBar";
             this.pnlUserBar.ShowBorders = true;
-            this.pnlUserBar.Size = new System.Drawing.Size(1193, 40);
+            this.pnlUserBar.Size = new System.Drawing.Size(1220, 40);
             this.pnlUserBar.TabIndex = 9;
             this.pnlUserBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Login_MouseDown);
             this.pnlUserBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Login_MouseMove);
@@ -396,7 +396,7 @@
             this.ctbClose.Dock = System.Windows.Forms.DockStyle.Right;
             this.ctbClose.FillColor = System.Drawing.Color.White;
             this.ctbClose.IconColor = System.Drawing.Color.Black;
-            this.ctbClose.Location = new System.Drawing.Point(1148, 0);
+            this.ctbClose.Location = new System.Drawing.Point(1175, 0);
             this.ctbClose.Name = "ctbClose";
             this.ctbClose.Size = new System.Drawing.Size(45, 40);
             this.ctbClose.TabIndex = 6;
@@ -434,7 +434,7 @@
             this.Appearance.Options.UseBackColor = true;
             this.Appearance.Options.UseForeColor = true;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1193, 697);
+            this.ClientSize = new System.Drawing.Size(1220, 740);
             this.Controls.Add(this.pnlNavLoad);
             this.Controls.Add(this.pnlUserBar);
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.None;

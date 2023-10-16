@@ -117,27 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="lblName.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Yu Gothic UI'; font-size: 16.2pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(237, 234, 229); text-align: left; }</value>
-  </data>
-  <data name="bunifuLabel2.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Yu Gothic UI Light'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
-  </data>
-  <metadata name="menuTransition.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pnlUserBar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAABMQAAAAoCAYAAAAR+SYQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAF2SURBVHhe7dqxjcMwFAVBhS7D4YUuxSU4dBmqXDrqxORa
-        4M4ADwR+CQtuAAAAAJB0nudzbDczMzMzMzMzM1twPzOD3cbhNQYAAAAAK3vPHPYXxK5KBgAAAAAr22cO
-        E8QAAAAASBDEAAAAAEgRxAAAAABIEcQAAAAASBHEAAAAAEgRxAAAAABIEcQAAAAASBHEAAAAAEgRxAAA
-        AABIEcQAAAAASBHEAAAAAEgRxAAAAABIEcQAAAAASBHEAAAAAEgRxAAAAABIEcQAAAAASBHEAAAAAEgR
-        xAAAAABIEcQAAAAASBHEAAAAAEgRxAAAAABIEcQAAAAASBHEAAAAAEgRxAAAAABIEcQAAAAASBHEAAAA
-        AEgRxAAAAABIEcQAAAAASBHEAAAAAEgRxAAAAABIEcQAAAAASBHEAAAAAEgRxAAAAABI+RfE3vcNAAAA
-        ANZ0HMd35rDbuH3Grp9iZmZmZmZmZmZmS+2KYeN9zBQGAAAAABXb9guB053VqlS/wAAAAABJRU5ErkJg
-        gg==
-</value>
-  </data>
 </root>

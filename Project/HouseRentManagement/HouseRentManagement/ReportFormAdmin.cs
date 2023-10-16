@@ -51,12 +51,6 @@ namespace HouseRentManagement
             formManager.ShowChildForm(pnlReportAdmin, rsf);
         }
 
-
-        private void reportCondoForm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            reportCondoForm = null;
-        }
-
         private void tsbReportCondo_Click(object sender, EventArgs e)
         {
             ShowReportCondo();

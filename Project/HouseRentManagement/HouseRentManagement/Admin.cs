@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Drawing;
+using System.Linq;
 
 namespace HouseRentManagement
 {
@@ -10,15 +11,20 @@ namespace HouseRentManagement
         private ReportFormAdmin reportFormAdmin;
         private PriceForm priceForm;
         private ExportAdmin exportAdmin;
+        private ContractAdmin contractAdmin;
+        private CondoAdmin condoAdmin;
+        private Tenant residentCard;
         private bool isDragging = false;
         private Point startPoint;
         public Admin(string username)
         {
             InitializeComponent();
             this.username = username;
+            var mdiClient = Controls.OfType<MdiClient>().FirstOrDefault();
+            if (mdiClient != null)
+                mdiClient.BackColor = Color.FromArgb(237, 234, 229);
         }
         bool menuExpand = true;
-
         private void btnLogOut_Click(object sender, EventArgs e)
         {
             Login loginForm = new Login();
@@ -79,12 +85,69 @@ namespace HouseRentManagement
                 exportAdmin.Activate();
             }
         }
-
         private void exportAdmin_FormClosed(object sender, FormClosedEventArgs e)
         {
             exportAdmin = null;
         }
+        private void ShowContractAdmin()
+        {
+            if (contractAdmin == null)
+            {
+                contractAdmin = new ContractAdmin();
+                contractAdmin.FormClosed += contractAdmin_FormClosed;
+                contractAdmin.MdiParent = this;
+                contractAdmin.Dock = DockStyle.Fill;
+                contractAdmin.Show();
+            }
+            else
+            {
+                contractAdmin.Activate();
+            }
+        }
 
+
+        private void contractAdmin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            contractAdmin = null;
+        }
+        private void ShowCondoAdmin()
+        {
+            if (condoAdmin == null)
+            {
+                condoAdmin = new CondoAdmin();
+                condoAdmin.FormClosed += condoAdmin_FormClosed;
+                condoAdmin.MdiParent = this;
+                condoAdmin.Dock = DockStyle.Fill;
+                condoAdmin.Show();
+            }
+            else
+            {
+                condoAdmin.Activate();
+            }
+        }
+        private void condoAdmin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            condoAdmin = null;
+        }
+        private void ShowResidentCard()
+        {
+            if (residentCard == null)
+            {
+                residentCard = new Tenant();
+                residentCard.FormClosed += residentCard_FormClosed;
+                residentCard.MdiParent = this;
+                residentCard.Dock = DockStyle.Fill;
+                residentCard.Show();
+            }
+            else
+            {
+                residentCard.Activate();
+            }
+        }
+        private void residentCard_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            residentCard = null;
+        }
         private void menuTransition_Tick(object sender, EventArgs e)
         {
             if (menuExpand)
@@ -158,6 +221,21 @@ namespace HouseRentManagement
         private void btnExport_Click(object sender, EventArgs e)
         {
             ShowExportAdmin();
+        }
+
+        private void btnContract_Click(object sender, EventArgs e)
+        {
+            ShowContractAdmin();
+        }
+
+        private void btnCondo_Click(object sender, EventArgs e)
+        {
+            ShowCondoAdmin();
+        }
+
+        private void btnResidentCard_Click(object sender, EventArgs e)
+        {
+            ShowResidentCard();
         }
     }
 

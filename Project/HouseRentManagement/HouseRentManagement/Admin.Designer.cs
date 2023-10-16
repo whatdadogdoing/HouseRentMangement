@@ -32,33 +32,31 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
             this.pnlNavLoad = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlHome = new System.Windows.Forms.Panel();
-            this.btnHome = new System.Windows.Forms.Button();
             this.pnlProfileLoad = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnAdmin = new System.Windows.Forms.Button();
             this.pnlProfile = new System.Windows.Forms.Panel();
-            this.btnProfileAdmin = new System.Windows.Forms.Button();
             this.pnlEmployee = new System.Windows.Forms.Panel();
-            this.btnEmployee = new System.Windows.Forms.Button();
             this.pnlResidentCard = new System.Windows.Forms.Panel();
-            this.btnResidentCard = new System.Windows.Forms.Button();
-            this.pnlVehicleCard = new System.Windows.Forms.Panel();
-            this.btnVehicleCard = new System.Windows.Forms.Button();
             this.pnlContract = new System.Windows.Forms.Panel();
-            this.btnContract = new System.Windows.Forms.Button();
             this.pnlCodo = new System.Windows.Forms.Panel();
-            this.btnCondo = new System.Windows.Forms.Button();
             this.pnlPrice = new System.Windows.Forms.Panel();
-            this.btnPrice = new System.Windows.Forms.Button();
             this.pnlReport = new System.Windows.Forms.Panel();
-            this.btnReport = new System.Windows.Forms.Button();
             this.pnlCondoServices = new System.Windows.Forms.Panel();
-            this.btnCondoServices = new System.Windows.Forms.Button();
             this.pnlExport = new System.Windows.Forms.Panel();
-            this.btnExport = new System.Windows.Forms.Button();
             this.pnlLogout = new System.Windows.Forms.Panel();
-            this.btnLogout = new System.Windows.Forms.Button();
             this.menuTransition = new System.Windows.Forms.Timer(this.components);
+            this.btnHome = new System.Windows.Forms.Button();
+            this.btnAdmin = new System.Windows.Forms.Button();
+            this.btnProfileAdmin = new System.Windows.Forms.Button();
+            this.btnEmployee = new System.Windows.Forms.Button();
+            this.btnTenant = new System.Windows.Forms.Button();
+            this.btnContract = new System.Windows.Forms.Button();
+            this.btnCondo = new System.Windows.Forms.Button();
+            this.btnPrice = new System.Windows.Forms.Button();
+            this.btnReport = new System.Windows.Forms.Button();
+            this.btnCondoServices = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.pnlUserBar = new Bunifu.UI.WinForms.BunifuPanel();
             this.ctbClose = new Guna.UI2.WinForms.Guna2ControlBox();
             this.lblHeadUser = new System.Windows.Forms.Label();
@@ -70,7 +68,6 @@
             this.pnlProfile.SuspendLayout();
             this.pnlEmployee.SuspendLayout();
             this.pnlResidentCard.SuspendLayout();
-            this.pnlVehicleCard.SuspendLayout();
             this.pnlContract.SuspendLayout();
             this.pnlCodo.SuspendLayout();
             this.pnlPrice.SuspendLayout();
@@ -95,7 +92,7 @@
             this.pnlNavLoad.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlNavLoad.Location = new System.Drawing.Point(0, 40);
             this.pnlNavLoad.Name = "pnlNavLoad";
-            this.pnlNavLoad.Size = new System.Drawing.Size(255, 657);
+            this.pnlNavLoad.Size = new System.Drawing.Size(255, 700);
             this.pnlNavLoad.TabIndex = 22;
             // 
             // pnlHome
@@ -107,6 +104,146 @@
             this.pnlHome.Name = "pnlHome";
             this.pnlHome.Size = new System.Drawing.Size(255, 54);
             this.pnlHome.TabIndex = 22;
+            // 
+            // pnlProfileLoad
+            // 
+            this.pnlProfileLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(31)))));
+            this.pnlProfileLoad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pnlProfileLoad.Controls.Add(this.panel1);
+            this.pnlProfileLoad.Controls.Add(this.pnlProfile);
+            this.pnlProfileLoad.Controls.Add(this.pnlEmployee);
+            this.pnlProfileLoad.Controls.Add(this.pnlResidentCard);
+            this.pnlProfileLoad.Controls.Add(this.pnlContract);
+            this.pnlProfileLoad.Controls.Add(this.pnlCodo);
+            this.pnlProfileLoad.Controls.Add(this.pnlPrice);
+            this.pnlProfileLoad.Controls.Add(this.pnlReport);
+            this.pnlProfileLoad.Controls.Add(this.pnlCondoServices);
+            this.pnlProfileLoad.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pnlProfileLoad.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.pnlProfileLoad.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlProfileLoad.ForeColor = System.Drawing.Color.White;
+            this.pnlProfileLoad.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pnlProfileLoad.Location = new System.Drawing.Point(0, 54);
+            this.pnlProfileLoad.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlProfileLoad.Name = "pnlProfileLoad";
+            this.pnlProfileLoad.Size = new System.Drawing.Size(255, 433);
+            this.pnlProfileLoad.TabIndex = 23;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnAdmin);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(255, 54);
+            this.panel1.TabIndex = 25;
+            // 
+            // pnlProfile
+            // 
+            this.pnlProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.pnlProfile.Controls.Add(this.btnProfileAdmin);
+            this.pnlProfile.Location = new System.Drawing.Point(0, 54);
+            this.pnlProfile.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlProfile.Name = "pnlProfile";
+            this.pnlProfile.Size = new System.Drawing.Size(255, 54);
+            this.pnlProfile.TabIndex = 22;
+            // 
+            // pnlEmployee
+            // 
+            this.pnlEmployee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.pnlEmployee.Controls.Add(this.btnEmployee);
+            this.pnlEmployee.Location = new System.Drawing.Point(0, 108);
+            this.pnlEmployee.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlEmployee.Name = "pnlEmployee";
+            this.pnlEmployee.Size = new System.Drawing.Size(255, 54);
+            this.pnlEmployee.TabIndex = 22;
+            // 
+            // pnlResidentCard
+            // 
+            this.pnlResidentCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.pnlResidentCard.Controls.Add(this.btnTenant);
+            this.pnlResidentCard.Location = new System.Drawing.Point(0, 162);
+            this.pnlResidentCard.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlResidentCard.Name = "pnlResidentCard";
+            this.pnlResidentCard.Size = new System.Drawing.Size(255, 54);
+            this.pnlResidentCard.TabIndex = 23;
+            // 
+            // pnlContract
+            // 
+            this.pnlContract.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.pnlContract.Controls.Add(this.btnContract);
+            this.pnlContract.Location = new System.Drawing.Point(0, 216);
+            this.pnlContract.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlContract.Name = "pnlContract";
+            this.pnlContract.Size = new System.Drawing.Size(255, 54);
+            this.pnlContract.TabIndex = 24;
+            // 
+            // pnlCodo
+            // 
+            this.pnlCodo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.pnlCodo.Controls.Add(this.btnCondo);
+            this.pnlCodo.Location = new System.Drawing.Point(0, 270);
+            this.pnlCodo.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlCodo.Name = "pnlCodo";
+            this.pnlCodo.Size = new System.Drawing.Size(255, 54);
+            this.pnlCodo.TabIndex = 24;
+            // 
+            // pnlPrice
+            // 
+            this.pnlPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.pnlPrice.Controls.Add(this.btnPrice);
+            this.pnlPrice.Location = new System.Drawing.Point(0, 324);
+            this.pnlPrice.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlPrice.Name = "pnlPrice";
+            this.pnlPrice.Size = new System.Drawing.Size(255, 54);
+            this.pnlPrice.TabIndex = 24;
+            // 
+            // pnlReport
+            // 
+            this.pnlReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.pnlReport.Controls.Add(this.btnReport);
+            this.pnlReport.Location = new System.Drawing.Point(0, 378);
+            this.pnlReport.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlReport.Name = "pnlReport";
+            this.pnlReport.Size = new System.Drawing.Size(255, 54);
+            this.pnlReport.TabIndex = 24;
+            // 
+            // pnlCondoServices
+            // 
+            this.pnlCondoServices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.pnlCondoServices.Controls.Add(this.btnCondoServices);
+            this.pnlCondoServices.Location = new System.Drawing.Point(255, 0);
+            this.pnlCondoServices.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlCondoServices.Name = "pnlCondoServices";
+            this.pnlCondoServices.Size = new System.Drawing.Size(255, 54);
+            this.pnlCondoServices.TabIndex = 24;
+            // 
+            // pnlExport
+            // 
+            this.pnlExport.Controls.Add(this.btnExport);
+            this.pnlExport.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pnlExport.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlExport.Location = new System.Drawing.Point(0, 487);
+            this.pnlExport.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlExport.Name = "pnlExport";
+            this.pnlExport.Size = new System.Drawing.Size(255, 54);
+            this.pnlExport.TabIndex = 25;
+            // 
+            // pnlLogout
+            // 
+            this.pnlLogout.Controls.Add(this.btnLogout);
+            this.pnlLogout.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pnlLogout.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlLogout.Location = new System.Drawing.Point(0, 541);
+            this.pnlLogout.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlLogout.Name = "pnlLogout";
+            this.pnlLogout.Size = new System.Drawing.Size(255, 54);
+            this.pnlLogout.TabIndex = 25;
+            // 
+            // menuTransition
+            // 
+            this.menuTransition.Interval = 10;
+            this.menuTransition.Tick += new System.EventHandler(this.menuTransition_Tick);
             // 
             // btnHome
             // 
@@ -124,40 +261,6 @@
             this.btnHome.Text = "          Home";
             this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.UseVisualStyleBackColor = false;
-            // 
-            // pnlProfileLoad
-            // 
-            this.pnlProfileLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(31)))));
-            this.pnlProfileLoad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pnlProfileLoad.Controls.Add(this.panel1);
-            this.pnlProfileLoad.Controls.Add(this.pnlProfile);
-            this.pnlProfileLoad.Controls.Add(this.pnlEmployee);
-            this.pnlProfileLoad.Controls.Add(this.pnlResidentCard);
-            this.pnlProfileLoad.Controls.Add(this.pnlVehicleCard);
-            this.pnlProfileLoad.Controls.Add(this.pnlContract);
-            this.pnlProfileLoad.Controls.Add(this.pnlCodo);
-            this.pnlProfileLoad.Controls.Add(this.pnlPrice);
-            this.pnlProfileLoad.Controls.Add(this.pnlReport);
-            this.pnlProfileLoad.Controls.Add(this.pnlCondoServices);
-            this.pnlProfileLoad.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pnlProfileLoad.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.pnlProfileLoad.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlProfileLoad.ForeColor = System.Drawing.Color.White;
-            this.pnlProfileLoad.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pnlProfileLoad.Location = new System.Drawing.Point(0, 54);
-            this.pnlProfileLoad.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlProfileLoad.Name = "pnlProfileLoad";
-            this.pnlProfileLoad.Size = new System.Drawing.Size(255, 54);
-            this.pnlProfileLoad.TabIndex = 23;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btnAdmin);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(255, 54);
-            this.panel1.TabIndex = 25;
             // 
             // btnAdmin
             // 
@@ -178,16 +281,6 @@
             this.btnAdmin.UseVisualStyleBackColor = false;
             this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
-            // pnlProfile
-            // 
-            this.pnlProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.pnlProfile.Controls.Add(this.btnProfileAdmin);
-            this.pnlProfile.Location = new System.Drawing.Point(255, 0);
-            this.pnlProfile.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlProfile.Name = "pnlProfile";
-            this.pnlProfile.Size = new System.Drawing.Size(255, 54);
-            this.pnlProfile.TabIndex = 22;
-            // 
             // btnProfileAdmin
             // 
             this.btnProfileAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
@@ -204,16 +297,6 @@
             this.btnProfileAdmin.Text = "          Profile";
             this.btnProfileAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProfileAdmin.UseVisualStyleBackColor = false;
-            // 
-            // pnlEmployee
-            // 
-            this.pnlEmployee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.pnlEmployee.Controls.Add(this.btnEmployee);
-            this.pnlEmployee.Location = new System.Drawing.Point(510, 0);
-            this.pnlEmployee.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlEmployee.Name = "pnlEmployee";
-            this.pnlEmployee.Size = new System.Drawing.Size(255, 54);
-            this.pnlEmployee.TabIndex = 22;
             // 
             // btnEmployee
             // 
@@ -232,69 +315,23 @@
             this.btnEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEmployee.UseVisualStyleBackColor = false;
             // 
-            // pnlResidentCard
+            // btnTenant
             // 
-            this.pnlResidentCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.pnlResidentCard.Controls.Add(this.btnResidentCard);
-            this.pnlResidentCard.Location = new System.Drawing.Point(765, 0);
-            this.pnlResidentCard.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlResidentCard.Name = "pnlResidentCard";
-            this.pnlResidentCard.Size = new System.Drawing.Size(255, 54);
-            this.pnlResidentCard.TabIndex = 23;
-            // 
-            // btnResidentCard
-            // 
-            this.btnResidentCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.btnResidentCard.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnResidentCard.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResidentCard.ForeColor = System.Drawing.Color.White;
-            this.btnResidentCard.Image = global::HouseRentManagement.Properties.Resources.btnResidentCardWhite16x16;
-            this.btnResidentCard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnResidentCard.Location = new System.Drawing.Point(-26, -31);
-            this.btnResidentCard.Name = "btnResidentCard";
-            this.btnResidentCard.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnResidentCard.Size = new System.Drawing.Size(323, 117);
-            this.btnResidentCard.TabIndex = 23;
-            this.btnResidentCard.Text = "          Resident Card";
-            this.btnResidentCard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnResidentCard.UseVisualStyleBackColor = false;
-            // 
-            // pnlVehicleCard
-            // 
-            this.pnlVehicleCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.pnlVehicleCard.Controls.Add(this.btnVehicleCard);
-            this.pnlVehicleCard.Location = new System.Drawing.Point(1020, 0);
-            this.pnlVehicleCard.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlVehicleCard.Name = "pnlVehicleCard";
-            this.pnlVehicleCard.Size = new System.Drawing.Size(255, 54);
-            this.pnlVehicleCard.TabIndex = 24;
-            // 
-            // btnVehicleCard
-            // 
-            this.btnVehicleCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.btnVehicleCard.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVehicleCard.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVehicleCard.ForeColor = System.Drawing.Color.White;
-            this.btnVehicleCard.Image = global::HouseRentManagement.Properties.Resources.btnVehicleCardWhite16x16;
-            this.btnVehicleCard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVehicleCard.Location = new System.Drawing.Point(-26, -31);
-            this.btnVehicleCard.Name = "btnVehicleCard";
-            this.btnVehicleCard.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnVehicleCard.Size = new System.Drawing.Size(323, 117);
-            this.btnVehicleCard.TabIndex = 23;
-            this.btnVehicleCard.Text = "          Vehicle Card";
-            this.btnVehicleCard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVehicleCard.UseVisualStyleBackColor = false;
-            // 
-            // pnlContract
-            // 
-            this.pnlContract.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.pnlContract.Controls.Add(this.btnContract);
-            this.pnlContract.Location = new System.Drawing.Point(1275, 0);
-            this.pnlContract.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlContract.Name = "pnlContract";
-            this.pnlContract.Size = new System.Drawing.Size(255, 54);
-            this.pnlContract.TabIndex = 24;
+            this.btnTenant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.btnTenant.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTenant.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTenant.ForeColor = System.Drawing.Color.White;
+            this.btnTenant.Image = global::HouseRentManagement.Properties.Resources.btnResidentCardWhite16x16;
+            this.btnTenant.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTenant.Location = new System.Drawing.Point(-26, -31);
+            this.btnTenant.Name = "btnTenant";
+            this.btnTenant.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnTenant.Size = new System.Drawing.Size(323, 117);
+            this.btnTenant.TabIndex = 23;
+            this.btnTenant.Text = "          Tenant";
+            this.btnTenant.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTenant.UseVisualStyleBackColor = false;
+            this.btnTenant.Click += new System.EventHandler(this.btnResidentCard_Click);
             // 
             // btnContract
             // 
@@ -312,16 +349,7 @@
             this.btnContract.Text = "          Contract";
             this.btnContract.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnContract.UseVisualStyleBackColor = false;
-            // 
-            // pnlCodo
-            // 
-            this.pnlCodo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.pnlCodo.Controls.Add(this.btnCondo);
-            this.pnlCodo.Location = new System.Drawing.Point(1530, 0);
-            this.pnlCodo.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlCodo.Name = "pnlCodo";
-            this.pnlCodo.Size = new System.Drawing.Size(255, 54);
-            this.pnlCodo.TabIndex = 24;
+            this.btnContract.Click += new System.EventHandler(this.btnContract_Click);
             // 
             // btnCondo
             // 
@@ -339,16 +367,7 @@
             this.btnCondo.Text = "          Condo";
             this.btnCondo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCondo.UseVisualStyleBackColor = false;
-            // 
-            // pnlPrice
-            // 
-            this.pnlPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.pnlPrice.Controls.Add(this.btnPrice);
-            this.pnlPrice.Location = new System.Drawing.Point(1785, 0);
-            this.pnlPrice.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlPrice.Name = "pnlPrice";
-            this.pnlPrice.Size = new System.Drawing.Size(255, 54);
-            this.pnlPrice.TabIndex = 24;
+            this.btnCondo.Click += new System.EventHandler(this.btnCondo_Click);
             // 
             // btnPrice
             // 
@@ -368,16 +387,6 @@
             this.btnPrice.UseVisualStyleBackColor = false;
             this.btnPrice.Click += new System.EventHandler(this.btnPrice_Click);
             // 
-            // pnlReport
-            // 
-            this.pnlReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.pnlReport.Controls.Add(this.btnReport);
-            this.pnlReport.Location = new System.Drawing.Point(2040, 0);
-            this.pnlReport.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlReport.Name = "pnlReport";
-            this.pnlReport.Size = new System.Drawing.Size(255, 54);
-            this.pnlReport.TabIndex = 24;
-            // 
             // btnReport
             // 
             this.btnReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
@@ -396,16 +405,6 @@
             this.btnReport.UseVisualStyleBackColor = false;
             this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
-            // pnlCondoServices
-            // 
-            this.pnlCondoServices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.pnlCondoServices.Controls.Add(this.btnCondoServices);
-            this.pnlCondoServices.Location = new System.Drawing.Point(2295, 0);
-            this.pnlCondoServices.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlCondoServices.Name = "pnlCondoServices";
-            this.pnlCondoServices.Size = new System.Drawing.Size(255, 54);
-            this.pnlCondoServices.TabIndex = 24;
-            // 
             // btnCondoServices
             // 
             this.btnCondoServices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
@@ -422,17 +421,6 @@
             this.btnCondoServices.Text = "          Condo Services";
             this.btnCondoServices.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCondoServices.UseVisualStyleBackColor = false;
-            // 
-            // pnlExport
-            // 
-            this.pnlExport.Controls.Add(this.btnExport);
-            this.pnlExport.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pnlExport.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlExport.Location = new System.Drawing.Point(0, 108);
-            this.pnlExport.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlExport.Name = "pnlExport";
-            this.pnlExport.Size = new System.Drawing.Size(255, 54);
-            this.pnlExport.TabIndex = 25;
             // 
             // btnExport
             // 
@@ -453,17 +441,6 @@
             this.btnExport.UseVisualStyleBackColor = false;
             this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
-            // pnlLogout
-            // 
-            this.pnlLogout.Controls.Add(this.btnLogout);
-            this.pnlLogout.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pnlLogout.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlLogout.Location = new System.Drawing.Point(0, 162);
-            this.pnlLogout.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlLogout.Name = "pnlLogout";
-            this.pnlLogout.Size = new System.Drawing.Size(255, 54);
-            this.pnlLogout.TabIndex = 25;
-            // 
             // btnLogout
             // 
             this.btnLogout.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -482,11 +459,6 @@
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogout.UseVisualStyleBackColor = false;
             // 
-            // menuTransition
-            // 
-            this.menuTransition.Interval = 10;
-            this.menuTransition.Tick += new System.EventHandler(this.menuTransition_Tick);
-            // 
             // pnlUserBar
             // 
             this.pnlUserBar.BackgroundColor = System.Drawing.Color.White;
@@ -502,7 +474,7 @@
             this.pnlUserBar.Location = new System.Drawing.Point(0, 0);
             this.pnlUserBar.Name = "pnlUserBar";
             this.pnlUserBar.ShowBorders = true;
-            this.pnlUserBar.Size = new System.Drawing.Size(1193, 40);
+            this.pnlUserBar.Size = new System.Drawing.Size(1220, 40);
             this.pnlUserBar.TabIndex = 10;
             this.pnlUserBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Login_MouseDown);
             this.pnlUserBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Login_MouseMove);
@@ -514,7 +486,7 @@
             this.ctbClose.Dock = System.Windows.Forms.DockStyle.Right;
             this.ctbClose.FillColor = System.Drawing.Color.White;
             this.ctbClose.IconColor = System.Drawing.Color.Black;
-            this.ctbClose.Location = new System.Drawing.Point(1148, 0);
+            this.ctbClose.Location = new System.Drawing.Point(1175, 0);
             this.ctbClose.Name = "ctbClose";
             this.ctbClose.Size = new System.Drawing.Size(45, 40);
             this.ctbClose.TabIndex = 6;
@@ -551,7 +523,7 @@
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1193, 697);
+            this.ClientSize = new System.Drawing.Size(1220, 740);
             this.Controls.Add(this.pnlNavLoad);
             this.Controls.Add(this.pnlUserBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -567,7 +539,6 @@
             this.pnlProfile.ResumeLayout(false);
             this.pnlEmployee.ResumeLayout(false);
             this.pnlResidentCard.ResumeLayout(false);
-            this.pnlVehicleCard.ResumeLayout(false);
             this.pnlContract.ResumeLayout(false);
             this.pnlCodo.ResumeLayout(false);
             this.pnlPrice.ResumeLayout(false);
@@ -598,9 +569,7 @@
         private System.Windows.Forms.Panel pnlEmployee;
         private System.Windows.Forms.Button btnEmployee;
         private System.Windows.Forms.Panel pnlResidentCard;
-        private System.Windows.Forms.Button btnResidentCard;
-        private System.Windows.Forms.Panel pnlVehicleCard;
-        private System.Windows.Forms.Button btnVehicleCard;
+        private System.Windows.Forms.Button btnTenant;
         private System.Windows.Forms.Panel pnlExport;
         private System.Windows.Forms.Button btnExport;
         private System.Windows.Forms.Panel pnlContract;

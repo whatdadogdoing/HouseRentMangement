@@ -118,6 +118,8 @@ namespace HouseRentManagement
             txtSearchPopulation.Visible = false;
             dgvCondo.Visible = false;
             txtSearchCondo.Visible = false;
+            btnClose1.Visible = false;
+            btnClose2.Visible = true;
         }
 
         private void btnClose1_Click(object sender, EventArgs e)
@@ -127,6 +129,13 @@ namespace HouseRentManagement
             dgvCondo.Visible = true;
             txtSearchCondo.Visible = true;
             btnClose1.Visible = false;
+        }
+        private void btnClose2_Click(object sender, EventArgs e)
+        {
+            formManager.CloseCurrentChildForm();
+            dgvCondo.Visible = true;
+            txtSearchCondo.Visible = true;
+            btnClose2.Visible = false;
         }
     }
 }
