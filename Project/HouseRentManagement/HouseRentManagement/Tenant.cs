@@ -24,18 +24,18 @@ namespace HouseRentManagement
 
         private void BindGrid(List<NGUOITHUE> lsNguoiThue)
         {
-            dgvDSReCard.Rows.Clear();
+            dgvTenant.Rows.Clear();
             foreach (var item in lsNguoiThue)
             {
-                int index = dgvDSReCard.Rows.Add();
-                dgvDSReCard.Rows[index].Cells[0].Value = item.MaNguoiThue;
-                dgvDSReCard.Rows[index].Cells[1].Value = item.TenNguoiThue;
-                dgvDSReCard.Rows[index].Cells[2].Value = item.CCCD;
-                dgvDSReCard.Rows[index].Cells[3].Value = item.NgaySinh;
+                int index = dgvTenant.Rows.Add();
+                dgvTenant.Rows[index].Cells[0].Value = item.MaNguoiThue;
+                dgvTenant.Rows[index].Cells[1].Value = item.TenNguoiThue;
+                dgvTenant.Rows[index].Cells[2].Value = item.CCCD;
+                dgvTenant.Rows[index].Cells[3].Value = item.NgaySinh;
                 string gender = GetGender(item.GioiTinh);
-                dgvDSReCard.Rows[index].Cells[4].Value = gender;
-                dgvDSReCard.Rows[index].Cells[5].Value = item.SDT;
-                dgvDSReCard.Rows[index].Cells[6].Value = item.Email;
+                dgvTenant.Rows[index].Cells[4].Value = gender;
+                dgvTenant.Rows[index].Cells[5].Value = item.SDT;
+                dgvTenant.Rows[index].Cells[6].Value = item.Email;
             }
         }
 
@@ -108,11 +108,11 @@ namespace HouseRentManagement
         }
         private int CheckTenantIdentify(string TenantID)
         {
-            int length = dgvDSReCard.Rows.Count;
+            int length = dgvTenant.Rows.Count;
             for (int i = 0; i < length; i++)
             {
-                if (dgvDSReCard.Rows[i].Cells[0].Value != null)
-                    if (dgvDSReCard.Rows[i].Cells[0].Value.ToString() == TenantID)
+                if (dgvTenant.Rows[i].Cells[0].Value != null)
+                    if (dgvTenant.Rows[i].Cells[0].Value.ToString() == TenantID)
                         return i;
             }
             return -1;
@@ -130,6 +130,7 @@ namespace HouseRentManagement
             txtTenantContact.Clear();
             txtTenantEmail.Clear();
             txtTenantIdentify.Clear();
+            txtTenantID.Clear();
         }
         private bool CheckNull()
         {
@@ -219,9 +220,9 @@ namespace HouseRentManagement
         }
         private void dgvDSReCard_SelectionChanged(object sender, EventArgs e)
         {
-            if (dgvDSReCard.SelectedRows.Count > 0)
+            if (dgvTenant.SelectedRows.Count > 0)
             {
-                DataGridViewRow selectedRow = dgvDSReCard.SelectedRows[0];
+                DataGridViewRow selectedRow = dgvTenant.SelectedRows[0];
                 string tenantID = selectedRow.Cells[0].Value.ToString();
 
                 // Hiển thị thông tin người thuê lên các điều khiển
@@ -235,7 +236,6 @@ namespace HouseRentManagement
                     SetGenderToRadioButton(nguoiThue.GioiTinh); // Đặt giới tính cho RadioButton
                     txtTenantContact.Text = nguoiThue.SDT;
                     txtTenantEmail.Text = nguoiThue.Email;
-
                 }
             }
         }
@@ -253,6 +253,38 @@ namespace HouseRentManagement
         {
             ShowResidentCard();
             pnlTenant.Hide();
+            btnClose2.Visible = true;
+        }
+
+        private void btnClose2_Click(object sender, EventArgs e)
+        {
+            formManager.CloseCurrentChildForm();
+            btnClose2.Visible = false;
+            pnlTenant.Show();
+        }
+
+        private void txtBoxSearch_TextChange(object sender, EventArgs e)
+        {
+            string searchText = txtBoxSearch.Text.Trim();
+
+            if (string.IsNullOrEmpty(searchText))
+            {
+                // Nếu TextBox tìm kiếm trống, hiển thị tất cả dữ liệu
+                List<NGUOITHUE> lsNguoiThue = context.NGUOITHUEs.ToList();
+                BindGrid(lsNguoiThue);
+            }
+            else
+            {
+                // Nếu có dữ liệu trong TextBox tìm kiếm, thực hiện tìm kiếm và hiển thị kết quả
+                List<NGUOITHUE> searchResults = context.NGUOITHUEs
+                    .Where(nt => nt.MaNguoiThue.Contains(searchText) ||
+                                 nt.TenNguoiThue.Contains(searchText) ||
+                                 nt.CCCD.Contains(searchText) ||
+                                 nt.SDT.Contains(searchText) ||
+                                 nt.Email.Contains(searchText))
+                    .ToList();
+                BindGrid(searchResults);
+            }
         }
     }
 }

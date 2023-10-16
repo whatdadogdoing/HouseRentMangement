@@ -18,7 +18,7 @@ namespace HouseRentManagement
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Tenant());
+            Application.Run(new Employee());
         }
     }
 }

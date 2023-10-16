@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Homepage));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -41,22 +37,26 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.pnlHomepage = new Bunifu.UI.WinForms.BunifuPanel();
             this.pnlContainerInfo = new System.Windows.Forms.Panel();
-            this.txtBoxInfo = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.lblName = new Bunifu.UI.WinForms.BunifuLabel();
-            this.picBoxCondo = new System.Windows.Forms.PictureBox();
             this.pnlContainerInfo2 = new Bunifu.UI.WinForms.BunifuPanel();
             this.lblSlogan = new Bunifu.UI.WinForms.BunifuLabel();
             this.picBoxLogo = new System.Windows.Forms.PictureBox();
             this.lblLinkEmail = new DevExpress.XtraEditors.HyperlinkLabelControl();
             this.txtBoxCompanyName = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtBoxContact = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.txtBoxInfo = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.lblName = new Bunifu.UI.WinForms.BunifuLabel();
+            this.picBoxCondo = new System.Windows.Forms.PictureBox();
             this.pnlHomepage.SuspendLayout();
             this.pnlContainerInfo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxCondo)).BeginInit();
             this.pnlContainerInfo2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxCondo)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlHomepage
@@ -74,7 +74,7 @@
             this.pnlHomepage.Controls.Add(this.lblName);
             this.pnlHomepage.Controls.Add(this.picBoxCondo);
             this.pnlHomepage.Location = new System.Drawing.Point(0, 0);
-            this.pnlHomepage.MinimumSize = new System.Drawing.Size(958, 655);
+            this.pnlHomepage.MinimumSize = new System.Drawing.Size(958, 697);
             this.pnlHomepage.Name = "pnlHomepage";
             this.pnlHomepage.ShowBorders = true;
             this.pnlHomepage.Size = new System.Drawing.Size(958, 697);
@@ -91,117 +91,6 @@
             this.pnlContainerInfo.Name = "pnlContainerInfo";
             this.pnlContainerInfo.Size = new System.Drawing.Size(958, 276);
             this.pnlContainerInfo.TabIndex = 22;
-            // 
-            // txtBoxInfo
-            // 
-            this.txtBoxInfo.AcceptsReturn = false;
-            this.txtBoxInfo.AcceptsTab = false;
-            this.txtBoxInfo.AnimationSpeed = 200;
-            this.txtBoxInfo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtBoxInfo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtBoxInfo.BackColor = System.Drawing.Color.Transparent;
-            this.txtBoxInfo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtBoxInfo.BackgroundImage")));
-            this.txtBoxInfo.BorderColorActive = System.Drawing.Color.Transparent;
-            this.txtBoxInfo.BorderColorDisabled = System.Drawing.Color.Transparent;
-            this.txtBoxInfo.BorderColorHover = System.Drawing.Color.Transparent;
-            this.txtBoxInfo.BorderColorIdle = System.Drawing.Color.Transparent;
-            this.txtBoxInfo.BorderRadius = 1;
-            this.txtBoxInfo.BorderThickness = 1;
-            this.txtBoxInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtBoxInfo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBoxInfo.DefaultFont = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxInfo.DefaultText = "Explore the over 50 condominium developments JungleUncles Properties has proudly " +
-    "completed across Ho Chi Minh, Da Nang and Ha Noi. ";
-            this.txtBoxInfo.Dock = System.Windows.Forms.DockStyle.Left;
-            this.txtBoxInfo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
-            this.txtBoxInfo.HideSelection = true;
-            this.txtBoxInfo.IconLeft = null;
-            this.txtBoxInfo.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBoxInfo.IconPadding = 10;
-            this.txtBoxInfo.IconRight = null;
-            this.txtBoxInfo.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBoxInfo.Lines = new string[] {
-        "Explore the over 50 condominium developments JungleUncles Properties has proudly " +
-            "completed across Ho Chi Minh, Da Nang and Ha Noi. "};
-            this.txtBoxInfo.Location = new System.Drawing.Point(0, 0);
-            this.txtBoxInfo.MaxLength = 32767;
-            this.txtBoxInfo.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtBoxInfo.Modified = false;
-            this.txtBoxInfo.Multiline = true;
-            this.txtBoxInfo.Name = "txtBoxInfo";
-            stateProperties9.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties9.FillColor = System.Drawing.Color.Empty;
-            stateProperties9.ForeColor = System.Drawing.Color.Empty;
-            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBoxInfo.OnActiveState = stateProperties9;
-            stateProperties10.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtBoxInfo.OnDisabledState = stateProperties10;
-            stateProperties11.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties11.FillColor = System.Drawing.Color.Empty;
-            stateProperties11.ForeColor = System.Drawing.Color.Empty;
-            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBoxInfo.OnHoverState = stateProperties11;
-            stateProperties12.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
-            stateProperties12.ForeColor = System.Drawing.Color.Empty;
-            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBoxInfo.OnIdleState = stateProperties12;
-            this.txtBoxInfo.Padding = new System.Windows.Forms.Padding(3);
-            this.txtBoxInfo.PasswordChar = '\0';
-            this.txtBoxInfo.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtBoxInfo.PlaceholderText = "Enter text";
-            this.txtBoxInfo.ReadOnly = true;
-            this.txtBoxInfo.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtBoxInfo.SelectedText = "";
-            this.txtBoxInfo.SelectionLength = 0;
-            this.txtBoxInfo.SelectionStart = 0;
-            this.txtBoxInfo.ShortcutsEnabled = true;
-            this.txtBoxInfo.Size = new System.Drawing.Size(669, 276);
-            this.txtBoxInfo.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtBoxInfo.TabIndex = 20;
-            this.txtBoxInfo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtBoxInfo.TextMarginBottom = 0;
-            this.txtBoxInfo.TextMarginLeft = 3;
-            this.txtBoxInfo.TextMarginTop = 0;
-            this.txtBoxInfo.TextPlaceholder = "Enter text";
-            this.txtBoxInfo.UseSystemPasswordChar = false;
-            this.txtBoxInfo.WordWrap = true;
-            // 
-            // lblName
-            // 
-            this.lblName.AllowParentOverrides = false;
-            this.lblName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblName.AutoEllipsis = false;
-            this.lblName.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblName.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lblName.EllipsisFormat = Bunifu.UI.WinForms.Ellipsis.EllipsisFormat.None;
-            this.lblName.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.ForeColor = System.Drawing.Color.White;
-            this.lblName.Location = new System.Drawing.Point(12, 338);
-            this.lblName.Name = "lblName";
-            this.lblName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblName.Size = new System.Drawing.Size(296, 37);
-            this.lblName.TabIndex = 18;
-            this.lblName.Text = "Completed Communities";
-            this.lblName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lblName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // picBoxCondo
-            // 
-            this.picBoxCondo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.picBoxCondo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.picBoxCondo.Image = global::HouseRentManagement.Properties.Resources.picBoxAltCondo;
-            this.picBoxCondo.Location = new System.Drawing.Point(0, 0);
-            this.picBoxCondo.MaximumSize = new System.Drawing.Size(1200, 424);
-            this.picBoxCondo.MinimumSize = new System.Drawing.Size(958, 424);
-            this.picBoxCondo.Name = "picBoxCondo";
-            this.picBoxCondo.Size = new System.Drawing.Size(958, 424);
-            this.picBoxCondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picBoxCondo.TabIndex = 17;
-            this.picBoxCondo.TabStop = false;
             // 
             // pnlContainerInfo2
             // 
@@ -418,6 +307,117 @@
             this.txtBoxContact.UseSystemPasswordChar = false;
             this.txtBoxContact.WordWrap = true;
             // 
+            // txtBoxInfo
+            // 
+            this.txtBoxInfo.AcceptsReturn = false;
+            this.txtBoxInfo.AcceptsTab = false;
+            this.txtBoxInfo.AnimationSpeed = 200;
+            this.txtBoxInfo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtBoxInfo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtBoxInfo.BackColor = System.Drawing.Color.Transparent;
+            this.txtBoxInfo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtBoxInfo.BackgroundImage")));
+            this.txtBoxInfo.BorderColorActive = System.Drawing.Color.Transparent;
+            this.txtBoxInfo.BorderColorDisabled = System.Drawing.Color.Transparent;
+            this.txtBoxInfo.BorderColorHover = System.Drawing.Color.Transparent;
+            this.txtBoxInfo.BorderColorIdle = System.Drawing.Color.Transparent;
+            this.txtBoxInfo.BorderRadius = 1;
+            this.txtBoxInfo.BorderThickness = 1;
+            this.txtBoxInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtBoxInfo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBoxInfo.DefaultFont = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxInfo.DefaultText = "Explore the over 50 condominium developments JungleUncles Properties has proudly " +
+    "completed across Ho Chi Minh, Da Nang and Ha Noi. ";
+            this.txtBoxInfo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.txtBoxInfo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
+            this.txtBoxInfo.HideSelection = true;
+            this.txtBoxInfo.IconLeft = null;
+            this.txtBoxInfo.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBoxInfo.IconPadding = 10;
+            this.txtBoxInfo.IconRight = null;
+            this.txtBoxInfo.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBoxInfo.Lines = new string[] {
+        "Explore the over 50 condominium developments JungleUncles Properties has proudly " +
+            "completed across Ho Chi Minh, Da Nang and Ha Noi. "};
+            this.txtBoxInfo.Location = new System.Drawing.Point(0, 0);
+            this.txtBoxInfo.MaxLength = 32767;
+            this.txtBoxInfo.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtBoxInfo.Modified = false;
+            this.txtBoxInfo.Multiline = true;
+            this.txtBoxInfo.Name = "txtBoxInfo";
+            stateProperties9.BorderColor = System.Drawing.Color.Transparent;
+            stateProperties9.FillColor = System.Drawing.Color.Empty;
+            stateProperties9.ForeColor = System.Drawing.Color.Empty;
+            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBoxInfo.OnActiveState = stateProperties9;
+            stateProperties10.BorderColor = System.Drawing.Color.Transparent;
+            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtBoxInfo.OnDisabledState = stateProperties10;
+            stateProperties11.BorderColor = System.Drawing.Color.Transparent;
+            stateProperties11.FillColor = System.Drawing.Color.Empty;
+            stateProperties11.ForeColor = System.Drawing.Color.Empty;
+            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBoxInfo.OnHoverState = stateProperties11;
+            stateProperties12.BorderColor = System.Drawing.Color.Transparent;
+            stateProperties12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
+            stateProperties12.ForeColor = System.Drawing.Color.Empty;
+            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBoxInfo.OnIdleState = stateProperties12;
+            this.txtBoxInfo.Padding = new System.Windows.Forms.Padding(3);
+            this.txtBoxInfo.PasswordChar = '\0';
+            this.txtBoxInfo.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtBoxInfo.PlaceholderText = "Enter text";
+            this.txtBoxInfo.ReadOnly = true;
+            this.txtBoxInfo.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtBoxInfo.SelectedText = "";
+            this.txtBoxInfo.SelectionLength = 0;
+            this.txtBoxInfo.SelectionStart = 0;
+            this.txtBoxInfo.ShortcutsEnabled = true;
+            this.txtBoxInfo.Size = new System.Drawing.Size(669, 276);
+            this.txtBoxInfo.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtBoxInfo.TabIndex = 20;
+            this.txtBoxInfo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtBoxInfo.TextMarginBottom = 0;
+            this.txtBoxInfo.TextMarginLeft = 3;
+            this.txtBoxInfo.TextMarginTop = 0;
+            this.txtBoxInfo.TextPlaceholder = "Enter text";
+            this.txtBoxInfo.UseSystemPasswordChar = false;
+            this.txtBoxInfo.WordWrap = true;
+            // 
+            // lblName
+            // 
+            this.lblName.AllowParentOverrides = false;
+            this.lblName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblName.AutoEllipsis = false;
+            this.lblName.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblName.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lblName.EllipsisFormat = Bunifu.UI.WinForms.Ellipsis.EllipsisFormat.None;
+            this.lblName.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ForeColor = System.Drawing.Color.White;
+            this.lblName.Location = new System.Drawing.Point(12, 338);
+            this.lblName.Name = "lblName";
+            this.lblName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblName.Size = new System.Drawing.Size(296, 37);
+            this.lblName.TabIndex = 18;
+            this.lblName.Text = "Completed Communities";
+            this.lblName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // picBoxCondo
+            // 
+            this.picBoxCondo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.picBoxCondo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.picBoxCondo.Image = global::HouseRentManagement.Properties.Resources.picBoxAltCondo;
+            this.picBoxCondo.Location = new System.Drawing.Point(0, 0);
+            this.picBoxCondo.MaximumSize = new System.Drawing.Size(1200, 424);
+            this.picBoxCondo.MinimumSize = new System.Drawing.Size(958, 424);
+            this.picBoxCondo.Name = "picBoxCondo";
+            this.picBoxCondo.Size = new System.Drawing.Size(958, 424);
+            this.picBoxCondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picBoxCondo.TabIndex = 17;
+            this.picBoxCondo.TabStop = false;
+            // 
             // Homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -426,15 +426,16 @@
             this.Controls.Add(this.pnlHomepage);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.IconOptions.Image = global::HouseRentManagement.Properties.Resources.appLogo16x16;
             this.Name = "Homepage";
             this.Text = "Homepage";
             this.pnlHomepage.ResumeLayout(false);
             this.pnlHomepage.PerformLayout();
             this.pnlContainerInfo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxCondo)).EndInit();
             this.pnlContainerInfo2.ResumeLayout(false);
             this.pnlContainerInfo2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxCondo)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -59,7 +59,6 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties28 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlProfileUser = new Guna.UI2.WinForms.Guna2Panel();
-            this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblProfileUser = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblFullName = new Bunifu.UI.WinForms.BunifuLabel();
             this.grbProfile = new System.Windows.Forms.GroupBox();
@@ -96,29 +95,12 @@
             // pnlProfileUser
             // 
             this.pnlProfileUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
-            this.pnlProfileUser.Controls.Add(this.bunifuLabel2);
             this.pnlProfileUser.Controls.Add(this.lblProfileUser);
             this.pnlProfileUser.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlProfileUser.Location = new System.Drawing.Point(0, 0);
             this.pnlProfileUser.Name = "pnlProfileUser";
             this.pnlProfileUser.Size = new System.Drawing.Size(958, 97);
             this.pnlProfileUser.TabIndex = 0;
-            // 
-            // bunifuLabel2
-            // 
-            this.bunifuLabel2.AllowParentOverrides = false;
-            this.bunifuLabel2.AutoEllipsis = false;
-            this.bunifuLabel2.CursorType = null;
-            this.bunifuLabel2.Font = new System.Drawing.Font("Yu Gothic UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel2.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel2.Location = new System.Drawing.Point(12, 49);
-            this.bunifuLabel2.Name = "bunifuLabel2";
-            this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(126, 28);
-            this.bunifuLabel2.TabIndex = 0;
-            this.bunifuLabel2.Text = "Owned Condo: ";
-            this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // lblProfileUser
             // 
@@ -1009,7 +991,6 @@
         private System.Windows.Forms.GroupBox grbResidentCard;
         private DevExpress.XtraEditors.HyperlinkLabelControl lblLinkEdit;
         private DevExpress.XtraEditors.HyperlinkLabelControl lblLinkDone;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private Bunifu.UI.WinForms.BunifuTextBox txtBoxOwner;
         private Bunifu.UI.WinForms.BunifuTextBox txtBoxOwnerEmail;
         private Bunifu.UI.WinForms.BunifuTextBox txtBoxTenantName;

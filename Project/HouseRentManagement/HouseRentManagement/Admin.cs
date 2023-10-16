@@ -14,6 +14,8 @@ namespace HouseRentManagement
         private ContractAdmin contractAdmin;
         private CondoAdmin condoAdmin;
         private Tenant residentCard;
+        private Employee employee;
+        private ProfileAdmin profileAdmin;
         private bool isDragging = false;
         private Point startPoint;
         public Admin(string username)
@@ -129,6 +131,48 @@ namespace HouseRentManagement
         {
             condoAdmin = null;
         }
+        private void ShowEmployee()
+        {
+            if (employee == null)
+            {
+                employee = new Employee();
+                employee.FormClosed += employee_FormClosed;
+                employee.MdiParent = this;
+                employee.Dock = DockStyle.Fill;
+                employee.Show();
+            }
+            else
+            {
+                employee.Activate();
+            }
+        }
+
+
+        private void employee_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            employee = null;
+        }
+        private void ShowProfileAdmin()
+        {
+            if (profileAdmin == null)
+            {
+                profileAdmin = new Employee();
+                profileAdmin.FormClosed += profileAdmin_FormClosed;
+                profileAdmin.MdiParent = this;
+                profileAdmin.Dock = DockStyle.Fill;
+                profileAdmin.Show();
+            }
+            else
+            {
+                profileAdmin.Activate();
+            }
+        }
+
+
+        private void profileAdmin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            profileAdmin = null;
+        }
         private void ShowResidentCard()
         {
             if (residentCard == null)
@@ -236,6 +280,16 @@ namespace HouseRentManagement
         private void btnResidentCard_Click(object sender, EventArgs e)
         {
             ShowResidentCard();
+        }
+
+        private void btnEmployee_Click(object sender, EventArgs e)
+        {
+            ShowEmployee();
+        }
+
+        private void btnProfileAdmin_Click(object sender, EventArgs e)
+        {
+            ShowProfileAdmin();
         }
     }
 

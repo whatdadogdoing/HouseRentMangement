@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using HouseRentManagement.HRMcontextDB;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,14 +9,194 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Entity.Migrations;
 
 namespace HouseRentManagement
 {
     public partial class ResidentCard : DevExpress.XtraEditors.XtraForm
     {
+        Model_QLCHCC context = new Model_QLCHCC();
         public ResidentCard()
         {
             InitializeComponent();
+        }
+
+        private void BindGrid(List<THECUDAN> lsTheCuDan)
+        {
+            dgvDSReCard.Rows.Clear();
+            foreach (var item in lsTheCuDan)
+            {
+                int index = dgvDSReCard.Rows.Add();
+                dgvDSReCard.Rows[index].Cells[0].Value = item.MaTheCuDan;
+                dgvDSReCard.Rows[index].Cells[1].Value = item.NgayLap;
+                dgvDSReCard.Rows[index].Cells[2].Value = item.HSD;
+                dgvDSReCard.Rows[index].Cells[3].Value = item.MaNguoiThue;
+
+            }
+        }
+
+        private void Resident_Card_Load(object sender, EventArgs e)
+        {
+            List<NGUOITHUE> lsNguoiThue = context.NGUOITHUEs.ToList();
+            List<THECUDAN> lsTheCuDan = context.THECUDANs.ToList();
+            BindGrid(lsTheCuDan);
+        }
+
+        private void btnADD_Click(object sender, EventArgs e)
+        {
+            if (CheckNull())
+            {
+                if (CheckTenantIDCard(txtTenantCardID.Text) == -1) // -1 để là sinh viên mới
+                {
+                    THECUDAN newthecudan = new THECUDAN();
+                    newthecudan.MaTheCuDan = txtTenantCardID.Text;
+                    newthecudan.NgayLap = DateTime.Now;
+                    newthecudan.HSD = int.Parse(txtExpDate.Text);
+                    newthecudan.MaNguoiThue = txtTenantID.Text;
+
+                    context.THECUDANs.AddOrUpdate(newthecudan);
+                    context.SaveChanges();
+
+                    LoaddgvDSSV();
+                    LoadForm();
+
+                    MessageBox.Show($"Thêm thẻ cư dân {newthecudan.MaTheCuDan} vào danh sách thành công!",
+                        "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+                else
+                {
+                    MessageBox.Show($"Thẻ cư dân có mã số {txtTenantCardID.Text} đã tồn tại!", "Thông báo",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+            }
+        }
+        private int CheckTenantIDCard(string TenantIDCard)
+        {
+            int length = dgvDSReCard.Rows.Count;
+            for (int i = 0; i < length; i++)
+            {
+                if (dgvDSReCard.Rows[i].Cells[0].Value != null)
+                    if (dgvDSReCard.Rows[i].Cells[0].Value.ToString() == TenantIDCard)
+                        return i;
+            }
+            return -1;
+        }
+
+        private void LoaddgvDSSV()
+        {
+            List<THECUDAN> newthecudan = context.THECUDANs.ToList();
+            BindGrid(newthecudan);
+        }
+
+        private void LoadForm()
+        {
+            txtTenantCardID.Clear();
+            txtExpDate.Clear();
+            txtTenantID.Clear();
+        }
+        private bool CheckNull()
+        {
+            if (txtTenantCardID.Text == "" || txtExpDate.Text == "" || txtTenantID.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin thẻ cư dân!", "Thông Báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return false;
+            }
+            else if (txtTenantCardID.TextLength < 4)
+            {
+                MessageBox.Show("Mã số thẻ cư dân phải 10 ký tự số trở lên!", "Thông Báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return false;
+            }
+            /* if(txtTenantIDCard != null)
+             {
+                 DialogResult dg = MessageBox.Show("mã người thuê đã tồn tại {txtTenantID.MaNguoiThue})",
+                     "Thông Báo",MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+             }  */
+
+            return true;
+        }
+
+        private void btnDELETE_Click(object sender, EventArgs e)
+        {
+            THECUDAN ReCardDelete = context.THECUDANs.FirstOrDefault(p => p.MaTheCuDan == txtTenantCardID.Text);
+            if (ReCardDelete != null)
+            {
+                DialogResult dg = MessageBox.Show($"Bạn có thực sự muốn xoá mã thẻ cư dân {ReCardDelete.MaTheCuDan}",
+                    "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dg == DialogResult.Yes)
+                {
+                    context.THECUDANs.Remove(ReCardDelete);
+                    context.SaveChanges();
+
+                    // reset lại thông tin sau khi xoá
+                    LoaddgvDSSV();
+                    LoadForm();
+
+                    MessageBox.Show($"Xoá mã thẻ cư dân {ReCardDelete.MaTheCuDan} thành công!",
+                        "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+
+        }
+
+        private void btnUPDATE_Click(object sender, EventArgs e)
+        {
+            if (CheckNull())
+            {
+                // lấy phần tử đầu tiên thoả điều kiện
+                string newTenantIDCard = txtTenantCardID.Text;
+                THECUDAN UpdateTenantIDCard = context.THECUDANs.FirstOrDefault(p => p.MaTheCuDan == newTenantIDCard);
+                if (UpdateTenantIDCard != null)
+                {
+                    UpdateTenantIDCard.HSD = int.Parse(txtExpDate.Text);
+                    UpdateTenantIDCard.NgayLap = dtpNgayLap.Value;
+                    UpdateTenantIDCard.MaNguoiThue = txtTenantID.Text;
+                    // Đưa dữ liệu khi thay đổi vào DB
+                    context.THECUDANs.AddOrUpdate(UpdateTenantIDCard);
+                    context.SaveChanges();
+
+                    LoaddgvDSSV();
+                    LoadForm();
+
+                    MessageBox.Show($"Chỉnh sửa dữ liệu thẻ cư dân {UpdateTenantIDCard.MaTheCuDan} thành công!",
+                        "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy thẻ cư dân cần sửa!",
+                        "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            string keyword = txtSearch.Text.Trim();
+
+            List<THECUDAN> searchResults = context.THECUDANs
+                .Where(tc => tc.MaTheCuDan.Contains(keyword) ||
+                             tc.MaNguoiThue.Contains(keyword))
+                .ToList();
+
+            BindGrid(searchResults);
+        }
+
+        private void dgvDSReCard_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvDSReCard.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = dgvDSReCard.SelectedRows[0];
+
+                // Đổ dữ liệu vào các TextBox tương ứng
+                txtTenantCardID.Text = selectedRow.Cells[0].Value.ToString();
+                txtExpDate.Text = selectedRow.Cells[2].Value.ToString();
+                txtTenantID.Text = selectedRow.Cells[3].Value.ToString();
+                DateTime ngayLap = (DateTime)selectedRow.Cells[1].Value;
+                dtpNgayLap.Value = ngayLap;
+            }
         }
     }
 }

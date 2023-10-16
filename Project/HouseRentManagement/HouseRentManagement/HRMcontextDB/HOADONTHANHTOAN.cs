@@ -22,7 +22,9 @@ namespace HouseRentManagement.HRMcontextDB
 
         [Column(TypeName = "date")]
         public DateTime? NgayLap { get; set; }
-
+        
+        [StringLength(50)]
+        public string TrangThai { get; set; }
         public decimal? TongTien { get; set; }
 
         public int? HanDong { get; set; }

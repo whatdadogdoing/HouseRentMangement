@@ -493,6 +493,12 @@
     <Compile Include="ContractAdmin.Designer.cs">
       <DependentUpon>ContractAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
     <Compile Include="ExportAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -558,6 +564,12 @@
     </Compile>
     <Compile Include="PriceForm.Designer.cs">
       <DependentUpon>PriceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileAdmin.Designer.cs">
+      <DependentUpon>ProfileAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="ProfileUser.cs">
       <SubType>Form</SubType>
@@ -651,6 +663,9 @@
     <EmbeddedResource Include="ContractAdmin.resx">
       <DependentUpon>ContractAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ExportAdmin.resx">
       <DependentUpon>ExportAdmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -668,6 +683,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PriceForm.resx">
       <DependentUpon>PriceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileAdmin.resx">
+      <DependentUpon>ProfileAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProfileUser.resx">
       <DependentUpon>ProfileUser.cs</DependentUpon>

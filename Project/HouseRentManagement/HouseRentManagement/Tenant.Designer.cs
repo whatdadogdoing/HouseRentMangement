@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tenant));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties25 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties26 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties27 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -53,23 +55,26 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties46 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties47 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties48 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblProfileUser = new Bunifu.UI.WinForms.BunifuLabel();
             this.pnlProfileUser = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnClose2 = new DevExpress.XtraEditors.HyperlinkLabelControl();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.tsbResidentCard = new System.Windows.Forms.ToolStripButton();
             this.pnlContainer = new System.Windows.Forms.Panel();
             this.pnlTenant = new Guna.UI2.WinForms.Guna2Panel();
+            this.dgvTenant = new System.Windows.Forms.DataGridView();
+            this.clnTenantID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnTenNguoiThue = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnCCCD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnDob = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnGioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnSDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtTenantID = new Bunifu.UI.WinForms.BunifuTextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.rbFemale = new System.Windows.Forms.RadioButton();
             this.rbMale = new System.Windows.Forms.RadioButton();
             this.dtpTenant = new System.Windows.Forms.DateTimePicker();
-            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblTenantIdentify = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblTenantName = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtTenantID = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bnfUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bnfInsert = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bnfDelete = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -78,20 +83,16 @@
             this.txtTenantContact = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtTenantIdentify = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtTenantName = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.tsbResidentCard = new System.Windows.Forms.ToolStripButton();
-            this.dgvDSReCard = new System.Windows.Forms.DataGridView();
-            this.clnTenantID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnTenNguoiThue = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnCCCD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnDob = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnGioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnSDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clnEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTenantIdentify = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTenantName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlProfileUser.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.pnlContainer.SuspendLayout();
             this.pnlTenant.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDSReCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTenant)).BeginInit();
             this.SuspendLayout();
             // 
             // lblProfileUser
@@ -115,6 +116,7 @@
             // pnlProfileUser
             // 
             this.pnlProfileUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
+            this.pnlProfileUser.Controls.Add(this.btnClose2);
             this.pnlProfileUser.Controls.Add(this.lblProfileUser);
             this.pnlProfileUser.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlProfileUser.Location = new System.Drawing.Point(0, 0);
@@ -122,6 +124,23 @@
             this.pnlProfileUser.Name = "pnlProfileUser";
             this.pnlProfileUser.Size = new System.Drawing.Size(942, 79);
             this.pnlProfileUser.TabIndex = 14;
+            // 
+            // btnClose2
+            // 
+            this.btnClose2.Appearance.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose2.Appearance.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(144)))), ((int)(((byte)(29)))));
+            this.btnClose2.Appearance.Options.UseFont = true;
+            this.btnClose2.Appearance.Options.UseLinkColor = true;
+            this.btnClose2.AppearancePressed.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(191)))), ((int)(((byte)(37)))));
+            this.btnClose2.AppearancePressed.Options.UseLinkColor = true;
+            this.btnClose2.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.btnClose2.Location = new System.Drawing.Point(9, 48);
+            this.btnClose2.Name = "btnClose2";
+            this.btnClose2.Size = new System.Drawing.Size(47, 28);
+            this.btnClose2.TabIndex = 62;
+            this.btnClose2.Text = "Close";
+            this.btnClose2.Visible = false;
+            this.btnClose2.Click += new System.EventHandler(this.btnClose2_Click);
             // 
             // toolStrip1
             // 
@@ -134,6 +153,17 @@
             this.toolStrip1.TabIndex = 17;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // tsbResidentCard
+            // 
+            this.tsbResidentCard.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tsbResidentCard.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsbResidentCard.Image = ((System.Drawing.Image)(resources.GetObject("tsbResidentCard.Image")));
+            this.tsbResidentCard.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbResidentCard.Name = "tsbResidentCard";
+            this.tsbResidentCard.Size = new System.Drawing.Size(120, 27);
+            this.tsbResidentCard.Text = "Resident Card";
+            this.tsbResidentCard.Click += new System.EventHandler(this.tsbResidentCard_Click);
+            // 
             // pnlContainer
             // 
             this.pnlContainer.Controls.Add(this.pnlTenant);
@@ -145,7 +175,7 @@
             // 
             // pnlTenant
             // 
-            this.pnlTenant.Controls.Add(this.dgvDSReCard);
+            this.pnlTenant.Controls.Add(this.dgvTenant);
             this.pnlTenant.Controls.Add(this.txtTenantID);
             this.pnlTenant.Controls.Add(this.guna2HtmlLabel1);
             this.pnlTenant.Controls.Add(this.rbFemale);
@@ -171,105 +201,106 @@
             this.pnlTenant.Size = new System.Drawing.Size(942, 537);
             this.pnlTenant.TabIndex = 17;
             // 
-            // guna2HtmlLabel1
+            // dgvTenant
             // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(38, 9);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(86, 30);
-            this.guna2HtmlLabel1.TabIndex = 59;
-            this.guna2HtmlLabel1.Text = "Tenant ID";
+            this.dgvTenant.AllowUserToAddRows = false;
+            this.dgvTenant.AllowUserToDeleteRows = false;
+            this.dgvTenant.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTenant.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvTenant.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTenant.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clnTenantID,
+            this.clnTenNguoiThue,
+            this.clnCCCD,
+            this.clnDob,
+            this.clnGioiTinh,
+            this.clnSDT,
+            this.clnEmail});
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvTenant.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvTenant.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgvTenant.Location = new System.Drawing.Point(0, 246);
+            this.dgvTenant.Name = "dgvTenant";
+            this.dgvTenant.ReadOnly = true;
+            this.dgvTenant.RowHeadersWidth = 51;
+            this.dgvTenant.RowTemplate.Height = 24;
+            this.dgvTenant.Size = new System.Drawing.Size(942, 291);
+            this.dgvTenant.TabIndex = 61;
+            this.dgvTenant.SelectionChanged += new System.EventHandler(this.dgvDSReCard_SelectionChanged);
             // 
-            // rbFemale
+            // clnTenantID
             // 
-            this.rbFemale.AutoSize = true;
-            this.rbFemale.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbFemale.Location = new System.Drawing.Point(689, 152);
-            this.rbFemale.Name = "rbFemale";
-            this.rbFemale.Size = new System.Drawing.Size(95, 32);
-            this.rbFemale.TabIndex = 56;
-            this.rbFemale.TabStop = true;
-            this.rbFemale.Text = "Female";
-            this.rbFemale.UseVisualStyleBackColor = true;
+            this.clnTenantID.HeaderText = "Tenant ID";
+            this.clnTenantID.MinimumWidth = 6;
+            this.clnTenantID.Name = "clnTenantID";
+            this.clnTenantID.ReadOnly = true;
+            this.clnTenantID.Width = 127;
             // 
-            // rbMale
+            // clnTenNguoiThue
             // 
-            this.rbMale.AutoSize = true;
-            this.rbMale.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbMale.Location = new System.Drawing.Point(584, 152);
-            this.rbMale.Name = "rbMale";
-            this.rbMale.Size = new System.Drawing.Size(76, 32);
-            this.rbMale.TabIndex = 56;
-            this.rbMale.TabStop = true;
-            this.rbMale.Text = "Male";
-            this.rbMale.UseVisualStyleBackColor = true;
+            this.clnTenNguoiThue.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.clnTenNguoiThue.HeaderText = "Tenant Name";
+            this.clnTenNguoiThue.MinimumWidth = 6;
+            this.clnTenNguoiThue.Name = "clnTenNguoiThue";
+            this.clnTenNguoiThue.ReadOnly = true;
+            this.clnTenNguoiThue.Width = 155;
             // 
-            // dtpTenant
+            // clnCCCD
             // 
-            this.dtpTenant.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpTenant.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpTenant.Location = new System.Drawing.Point(574, 11);
-            this.dtpTenant.Name = "dtpTenant";
-            this.dtpTenant.Size = new System.Drawing.Size(210, 34);
-            this.dtpTenant.TabIndex = 55;
-            this.dtpTenant.Value = new System.DateTime(2023, 10, 16, 0, 0, 0, 0);
+            this.clnCCCD.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.clnCCCD.HeaderText = "Tenant Identify";
+            this.clnCCCD.MinimumWidth = 6;
+            this.clnCCCD.Name = "clnCCCD";
+            this.clnCCCD.ReadOnly = true;
+            this.clnCCCD.Width = 169;
             // 
-            // guna2HtmlLabel6
+            // clnDob
             // 
-            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(443, 112);
-            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(114, 30);
-            this.guna2HtmlLabel6.TabIndex = 0;
-            this.guna2HtmlLabel6.Text = "Tenant Email";
+            this.clnDob.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.clnDob.HeaderText = "Date of Birth";
+            this.clnDob.MinimumWidth = 6;
+            this.clnDob.Name = "clnDob";
+            this.clnDob.ReadOnly = true;
+            this.clnDob.Width = 151;
             // 
-            // guna2HtmlLabel2
+            // clnGioiTinh
             // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(462, 15);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(104, 30);
-            this.guna2HtmlLabel2.TabIndex = 0;
-            this.guna2HtmlLabel2.Text = "Tenant DoB";
+            this.clnGioiTinh.HeaderText = "Gender";
+            this.clnGioiTinh.MinimumWidth = 6;
+            this.clnGioiTinh.Name = "clnGioiTinh";
+            this.clnGioiTinh.ReadOnly = true;
+            this.clnGioiTinh.Width = 127;
             // 
-            // lblTenantIdentify
+            // clnSDT
             // 
-            this.lblTenantIdentify.BackColor = System.Drawing.Color.Transparent;
-            this.lblTenantIdentify.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenantIdentify.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTenantIdentify.Location = new System.Drawing.Point(24, 112);
-            this.lblTenantIdentify.Name = "lblTenantIdentify";
-            this.lblTenantIdentify.Size = new System.Drawing.Size(133, 30);
-            this.lblTenantIdentify.TabIndex = 0;
-            this.lblTenantIdentify.Text = "Tenant Identify";
+            this.clnSDT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.clnSDT.HeaderText = "Tenant Contact";
+            this.clnSDT.MinimumWidth = 6;
+            this.clnSDT.Name = "clnSDT";
+            this.clnSDT.ReadOnly = true;
+            this.clnSDT.Width = 171;
             // 
-            // guna2HtmlLabel5
+            // clnEmail
             // 
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(443, 59);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(135, 30);
-            this.guna2HtmlLabel5.TabIndex = 0;
-            this.guna2HtmlLabel5.Text = "Tenant Contact";
-            // 
-            // lblTenantName
-            // 
-            this.lblTenantName.BackColor = System.Drawing.Color.Transparent;
-            this.lblTenantName.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenantName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTenantName.Location = new System.Drawing.Point(38, 59);
-            this.lblTenantName.Name = "lblTenantName";
-            this.lblTenantName.Size = new System.Drawing.Size(119, 30);
-            this.lblTenantName.TabIndex = 0;
-            this.lblTenantName.Text = "Tenant Name";
+            this.clnEmail.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.clnEmail.HeaderText = "Tenant Email";
+            this.clnEmail.MinimumWidth = 6;
+            this.clnEmail.Name = "clnEmail";
+            this.clnEmail.ReadOnly = true;
+            this.clnEmail.Width = 150;
             // 
             // txtTenantID
             // 
@@ -345,6 +376,51 @@
             this.txtTenantID.UseSystemPasswordChar = false;
             this.txtTenantID.WordWrap = true;
             // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(38, 9);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(86, 30);
+            this.guna2HtmlLabel1.TabIndex = 59;
+            this.guna2HtmlLabel1.Text = "Tenant ID";
+            // 
+            // rbFemale
+            // 
+            this.rbFemale.AutoSize = true;
+            this.rbFemale.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbFemale.Location = new System.Drawing.Point(689, 152);
+            this.rbFemale.Name = "rbFemale";
+            this.rbFemale.Size = new System.Drawing.Size(95, 32);
+            this.rbFemale.TabIndex = 56;
+            this.rbFemale.TabStop = true;
+            this.rbFemale.Text = "Female";
+            this.rbFemale.UseVisualStyleBackColor = true;
+            // 
+            // rbMale
+            // 
+            this.rbMale.AutoSize = true;
+            this.rbMale.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbMale.Location = new System.Drawing.Point(584, 152);
+            this.rbMale.Name = "rbMale";
+            this.rbMale.Size = new System.Drawing.Size(76, 32);
+            this.rbMale.TabIndex = 56;
+            this.rbMale.TabStop = true;
+            this.rbMale.Text = "Male";
+            this.rbMale.UseVisualStyleBackColor = true;
+            // 
+            // dtpTenant
+            // 
+            this.dtpTenant.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpTenant.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpTenant.Location = new System.Drawing.Point(584, 11);
+            this.dtpTenant.Name = "dtpTenant";
+            this.dtpTenant.Size = new System.Drawing.Size(200, 34);
+            this.dtpTenant.TabIndex = 55;
+            this.dtpTenant.Value = new System.DateTime(2023, 10, 16, 0, 0, 0, 0);
+            // 
             // bnfUpdate
             // 
             this.bnfUpdate.ActiveBorderThickness = 1;
@@ -370,6 +446,7 @@
             this.bnfUpdate.Size = new System.Drawing.Size(92, 47);
             this.bnfUpdate.TabIndex = 54;
             this.bnfUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bnfUpdate.Click += new System.EventHandler(this.btnUPDATE_Click);
             // 
             // bnfInsert
             // 
@@ -390,12 +467,13 @@
             this.bnfInsert.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(147)))), ((int)(((byte)(15)))));
             this.bnfInsert.IdleForecolor = System.Drawing.Color.White;
             this.bnfInsert.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(147)))), ((int)(((byte)(15)))));
-            this.bnfInsert.Location = new System.Drawing.Point(9, 190);
+            this.bnfInsert.Location = new System.Drawing.Point(24, 191);
             this.bnfInsert.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.bnfInsert.Name = "bnfInsert";
             this.bnfInsert.Size = new System.Drawing.Size(92, 47);
             this.bnfInsert.TabIndex = 53;
             this.bnfInsert.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bnfInsert.Click += new System.EventHandler(this.btnADD_Click);
             // 
             // bnfDelete
             // 
@@ -422,6 +500,7 @@
             this.bnfDelete.Size = new System.Drawing.Size(92, 47);
             this.bnfDelete.TabIndex = 52;
             this.bnfDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bnfDelete.Click += new System.EventHandler(this.btnDELETE_Click);
             // 
             // txtBoxSearch
             // 
@@ -496,6 +575,7 @@
             this.txtBoxSearch.TextPlaceholder = "Enter Search";
             this.txtBoxSearch.UseSystemPasswordChar = false;
             this.txtBoxSearch.WordWrap = true;
+            this.txtBoxSearch.TextChange += new System.EventHandler(this.txtBoxSearch_TextChange);
             // 
             // txtTenantEmail
             // 
@@ -793,116 +873,60 @@
             this.txtTenantName.UseSystemPasswordChar = false;
             this.txtTenantName.WordWrap = true;
             // 
-            // tsbResidentCard
+            // guna2HtmlLabel6
             // 
-            this.tsbResidentCard.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.tsbResidentCard.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tsbResidentCard.Image = ((System.Drawing.Image)(resources.GetObject("tsbResidentCard.Image")));
-            this.tsbResidentCard.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbResidentCard.Name = "tsbResidentCard";
-            this.tsbResidentCard.Size = new System.Drawing.Size(120, 27);
-            this.tsbResidentCard.Text = "Resident Card";
-            this.tsbResidentCard.Click += new System.EventHandler(this.tsbResidentCard_Click);
+            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(443, 112);
+            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(114, 30);
+            this.guna2HtmlLabel6.TabIndex = 0;
+            this.guna2HtmlLabel6.Text = "Tenant Email";
             // 
-            // dgvDSReCard
+            // guna2HtmlLabel2
             // 
-            this.dgvDSReCard.AllowUserToAddRows = false;
-            this.dgvDSReCard.AllowUserToDeleteRows = false;
-            this.dgvDSReCard.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(234)))), ((int)(((byte)(229)))));
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDSReCard.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvDSReCard.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDSReCard.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.clnTenantID,
-            this.clnTenNguoiThue,
-            this.clnCCCD,
-            this.clnDob,
-            this.clnGioiTinh,
-            this.clnSDT,
-            this.clnEmail});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvDSReCard.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvDSReCard.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvDSReCard.Location = new System.Drawing.Point(0, 246);
-            this.dgvDSReCard.Name = "dgvDSReCard";
-            this.dgvDSReCard.ReadOnly = true;
-            this.dgvDSReCard.RowHeadersWidth = 51;
-            this.dgvDSReCard.RowTemplate.Height = 24;
-            this.dgvDSReCard.Size = new System.Drawing.Size(942, 291);
-            this.dgvDSReCard.TabIndex = 61;
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(462, 15);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(104, 30);
+            this.guna2HtmlLabel2.TabIndex = 0;
+            this.guna2HtmlLabel2.Text = "Tenant DoB";
             // 
-            // clnTenantID
+            // lblTenantIdentify
             // 
-            this.clnTenantID.HeaderText = "Tenant ID";
-            this.clnTenantID.MinimumWidth = 6;
-            this.clnTenantID.Name = "clnTenantID";
-            this.clnTenantID.ReadOnly = true;
-            this.clnTenantID.Width = 127;
+            this.lblTenantIdentify.BackColor = System.Drawing.Color.Transparent;
+            this.lblTenantIdentify.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenantIdentify.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblTenantIdentify.Location = new System.Drawing.Point(24, 112);
+            this.lblTenantIdentify.Name = "lblTenantIdentify";
+            this.lblTenantIdentify.Size = new System.Drawing.Size(133, 30);
+            this.lblTenantIdentify.TabIndex = 0;
+            this.lblTenantIdentify.Text = "Tenant Identify";
             // 
-            // clnTenNguoiThue
+            // guna2HtmlLabel5
             // 
-            this.clnTenNguoiThue.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.clnTenNguoiThue.HeaderText = "Tenant Name";
-            this.clnTenNguoiThue.MinimumWidth = 6;
-            this.clnTenNguoiThue.Name = "clnTenNguoiThue";
-            this.clnTenNguoiThue.ReadOnly = true;
-            this.clnTenNguoiThue.Width = 155;
+            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(443, 59);
+            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(135, 30);
+            this.guna2HtmlLabel5.TabIndex = 0;
+            this.guna2HtmlLabel5.Text = "Tenant Contact";
             // 
-            // clnCCCD
+            // lblTenantName
             // 
-            this.clnCCCD.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.clnCCCD.HeaderText = "Tenant Identify";
-            this.clnCCCD.MinimumWidth = 6;
-            this.clnCCCD.Name = "clnCCCD";
-            this.clnCCCD.ReadOnly = true;
-            this.clnCCCD.Width = 169;
-            // 
-            // clnDob
-            // 
-            this.clnDob.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.clnDob.HeaderText = "Date of Birth";
-            this.clnDob.MinimumWidth = 6;
-            this.clnDob.Name = "clnDob";
-            this.clnDob.ReadOnly = true;
-            this.clnDob.Width = 151;
-            // 
-            // clnGioiTinh
-            // 
-            this.clnGioiTinh.HeaderText = "Gender";
-            this.clnGioiTinh.MinimumWidth = 6;
-            this.clnGioiTinh.Name = "clnGioiTinh";
-            this.clnGioiTinh.ReadOnly = true;
-            this.clnGioiTinh.Width = 127;
-            // 
-            // clnSDT
-            // 
-            this.clnSDT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.clnSDT.HeaderText = "Tenant Contact";
-            this.clnSDT.MinimumWidth = 6;
-            this.clnSDT.Name = "clnSDT";
-            this.clnSDT.ReadOnly = true;
-            this.clnSDT.Width = 171;
-            // 
-            // clnEmail
-            // 
-            this.clnEmail.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.clnEmail.HeaderText = "Tenant Email";
-            this.clnEmail.MinimumWidth = 6;
-            this.clnEmail.Name = "clnEmail";
-            this.clnEmail.ReadOnly = true;
-            this.clnEmail.Width = 150;
+            this.lblTenantName.BackColor = System.Drawing.Color.Transparent;
+            this.lblTenantName.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenantName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblTenantName.Location = new System.Drawing.Point(38, 59);
+            this.lblTenantName.Name = "lblTenantName";
+            this.lblTenantName.Size = new System.Drawing.Size(119, 30);
+            this.lblTenantName.TabIndex = 0;
+            this.lblTenantName.Text = "Tenant Name";
             // 
             // Tenant
             // 
@@ -926,7 +950,7 @@
             this.pnlContainer.ResumeLayout(false);
             this.pnlTenant.ResumeLayout(false);
             this.pnlTenant.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDSReCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTenant)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -957,7 +981,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTenantIdentify;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTenantName;
-        private System.Windows.Forms.DataGridView dgvDSReCard;
+        private System.Windows.Forms.DataGridView dgvTenant;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnTenantID;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnTenNguoiThue;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnCCCD;
@@ -965,5 +989,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clnGioiTinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnSDT;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnEmail;
+        private DevExpress.XtraEditors.HyperlinkLabelControl btnClose2;
     }
 }

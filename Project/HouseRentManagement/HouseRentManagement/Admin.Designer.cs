@@ -32,31 +32,29 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
             this.pnlNavLoad = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlHome = new System.Windows.Forms.Panel();
+            this.btnHome = new System.Windows.Forms.Button();
             this.pnlProfileLoad = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pnlProfile = new System.Windows.Forms.Panel();
-            this.pnlEmployee = new System.Windows.Forms.Panel();
-            this.pnlResidentCard = new System.Windows.Forms.Panel();
-            this.pnlContract = new System.Windows.Forms.Panel();
-            this.pnlCodo = new System.Windows.Forms.Panel();
-            this.pnlPrice = new System.Windows.Forms.Panel();
-            this.pnlReport = new System.Windows.Forms.Panel();
-            this.pnlCondoServices = new System.Windows.Forms.Panel();
-            this.pnlExport = new System.Windows.Forms.Panel();
-            this.pnlLogout = new System.Windows.Forms.Panel();
-            this.menuTransition = new System.Windows.Forms.Timer(this.components);
-            this.btnHome = new System.Windows.Forms.Button();
             this.btnAdmin = new System.Windows.Forms.Button();
-            this.btnProfileAdmin = new System.Windows.Forms.Button();
+            this.pnlEmployee = new System.Windows.Forms.Panel();
             this.btnEmployee = new System.Windows.Forms.Button();
+            this.pnlResidentCard = new System.Windows.Forms.Panel();
             this.btnTenant = new System.Windows.Forms.Button();
+            this.pnlContract = new System.Windows.Forms.Panel();
             this.btnContract = new System.Windows.Forms.Button();
+            this.pnlCodo = new System.Windows.Forms.Panel();
             this.btnCondo = new System.Windows.Forms.Button();
+            this.pnlPrice = new System.Windows.Forms.Panel();
             this.btnPrice = new System.Windows.Forms.Button();
+            this.pnlReport = new System.Windows.Forms.Panel();
             this.btnReport = new System.Windows.Forms.Button();
+            this.pnlCondoServices = new System.Windows.Forms.Panel();
             this.btnCondoServices = new System.Windows.Forms.Button();
+            this.pnlExport = new System.Windows.Forms.Panel();
             this.btnExport = new System.Windows.Forms.Button();
+            this.pnlLogout = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.menuTransition = new System.Windows.Forms.Timer(this.components);
             this.pnlUserBar = new Bunifu.UI.WinForms.BunifuPanel();
             this.ctbClose = new Guna.UI2.WinForms.Guna2ControlBox();
             this.lblHeadUser = new System.Windows.Forms.Label();
@@ -65,7 +63,6 @@
             this.pnlHome.SuspendLayout();
             this.pnlProfileLoad.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.pnlProfile.SuspendLayout();
             this.pnlEmployee.SuspendLayout();
             this.pnlResidentCard.SuspendLayout();
             this.pnlContract.SuspendLayout();
@@ -105,146 +102,6 @@
             this.pnlHome.Size = new System.Drawing.Size(255, 54);
             this.pnlHome.TabIndex = 22;
             // 
-            // pnlProfileLoad
-            // 
-            this.pnlProfileLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(31)))));
-            this.pnlProfileLoad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pnlProfileLoad.Controls.Add(this.panel1);
-            this.pnlProfileLoad.Controls.Add(this.pnlProfile);
-            this.pnlProfileLoad.Controls.Add(this.pnlEmployee);
-            this.pnlProfileLoad.Controls.Add(this.pnlResidentCard);
-            this.pnlProfileLoad.Controls.Add(this.pnlContract);
-            this.pnlProfileLoad.Controls.Add(this.pnlCodo);
-            this.pnlProfileLoad.Controls.Add(this.pnlPrice);
-            this.pnlProfileLoad.Controls.Add(this.pnlReport);
-            this.pnlProfileLoad.Controls.Add(this.pnlCondoServices);
-            this.pnlProfileLoad.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pnlProfileLoad.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.pnlProfileLoad.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlProfileLoad.ForeColor = System.Drawing.Color.White;
-            this.pnlProfileLoad.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pnlProfileLoad.Location = new System.Drawing.Point(0, 54);
-            this.pnlProfileLoad.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlProfileLoad.Name = "pnlProfileLoad";
-            this.pnlProfileLoad.Size = new System.Drawing.Size(255, 433);
-            this.pnlProfileLoad.TabIndex = 23;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btnAdmin);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(255, 54);
-            this.panel1.TabIndex = 25;
-            // 
-            // pnlProfile
-            // 
-            this.pnlProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.pnlProfile.Controls.Add(this.btnProfileAdmin);
-            this.pnlProfile.Location = new System.Drawing.Point(0, 54);
-            this.pnlProfile.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlProfile.Name = "pnlProfile";
-            this.pnlProfile.Size = new System.Drawing.Size(255, 54);
-            this.pnlProfile.TabIndex = 22;
-            // 
-            // pnlEmployee
-            // 
-            this.pnlEmployee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.pnlEmployee.Controls.Add(this.btnEmployee);
-            this.pnlEmployee.Location = new System.Drawing.Point(0, 108);
-            this.pnlEmployee.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlEmployee.Name = "pnlEmployee";
-            this.pnlEmployee.Size = new System.Drawing.Size(255, 54);
-            this.pnlEmployee.TabIndex = 22;
-            // 
-            // pnlResidentCard
-            // 
-            this.pnlResidentCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.pnlResidentCard.Controls.Add(this.btnTenant);
-            this.pnlResidentCard.Location = new System.Drawing.Point(0, 162);
-            this.pnlResidentCard.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlResidentCard.Name = "pnlResidentCard";
-            this.pnlResidentCard.Size = new System.Drawing.Size(255, 54);
-            this.pnlResidentCard.TabIndex = 23;
-            // 
-            // pnlContract
-            // 
-            this.pnlContract.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.pnlContract.Controls.Add(this.btnContract);
-            this.pnlContract.Location = new System.Drawing.Point(0, 216);
-            this.pnlContract.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlContract.Name = "pnlContract";
-            this.pnlContract.Size = new System.Drawing.Size(255, 54);
-            this.pnlContract.TabIndex = 24;
-            // 
-            // pnlCodo
-            // 
-            this.pnlCodo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.pnlCodo.Controls.Add(this.btnCondo);
-            this.pnlCodo.Location = new System.Drawing.Point(0, 270);
-            this.pnlCodo.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlCodo.Name = "pnlCodo";
-            this.pnlCodo.Size = new System.Drawing.Size(255, 54);
-            this.pnlCodo.TabIndex = 24;
-            // 
-            // pnlPrice
-            // 
-            this.pnlPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.pnlPrice.Controls.Add(this.btnPrice);
-            this.pnlPrice.Location = new System.Drawing.Point(0, 324);
-            this.pnlPrice.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlPrice.Name = "pnlPrice";
-            this.pnlPrice.Size = new System.Drawing.Size(255, 54);
-            this.pnlPrice.TabIndex = 24;
-            // 
-            // pnlReport
-            // 
-            this.pnlReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.pnlReport.Controls.Add(this.btnReport);
-            this.pnlReport.Location = new System.Drawing.Point(0, 378);
-            this.pnlReport.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlReport.Name = "pnlReport";
-            this.pnlReport.Size = new System.Drawing.Size(255, 54);
-            this.pnlReport.TabIndex = 24;
-            // 
-            // pnlCondoServices
-            // 
-            this.pnlCondoServices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.pnlCondoServices.Controls.Add(this.btnCondoServices);
-            this.pnlCondoServices.Location = new System.Drawing.Point(255, 0);
-            this.pnlCondoServices.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlCondoServices.Name = "pnlCondoServices";
-            this.pnlCondoServices.Size = new System.Drawing.Size(255, 54);
-            this.pnlCondoServices.TabIndex = 24;
-            // 
-            // pnlExport
-            // 
-            this.pnlExport.Controls.Add(this.btnExport);
-            this.pnlExport.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pnlExport.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlExport.Location = new System.Drawing.Point(0, 487);
-            this.pnlExport.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlExport.Name = "pnlExport";
-            this.pnlExport.Size = new System.Drawing.Size(255, 54);
-            this.pnlExport.TabIndex = 25;
-            // 
-            // pnlLogout
-            // 
-            this.pnlLogout.Controls.Add(this.btnLogout);
-            this.pnlLogout.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pnlLogout.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlLogout.Location = new System.Drawing.Point(0, 541);
-            this.pnlLogout.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlLogout.Name = "pnlLogout";
-            this.pnlLogout.Size = new System.Drawing.Size(255, 54);
-            this.pnlLogout.TabIndex = 25;
-            // 
-            // menuTransition
-            // 
-            this.menuTransition.Interval = 10;
-            this.menuTransition.Tick += new System.EventHandler(this.menuTransition_Tick);
-            // 
             // btnHome
             // 
             this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(31)))));
@@ -261,6 +118,38 @@
             this.btnHome.Text = "          Home";
             this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.UseVisualStyleBackColor = false;
+            // 
+            // pnlProfileLoad
+            // 
+            this.pnlProfileLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(31)))));
+            this.pnlProfileLoad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pnlProfileLoad.Controls.Add(this.panel1);
+            this.pnlProfileLoad.Controls.Add(this.pnlEmployee);
+            this.pnlProfileLoad.Controls.Add(this.pnlResidentCard);
+            this.pnlProfileLoad.Controls.Add(this.pnlContract);
+            this.pnlProfileLoad.Controls.Add(this.pnlCodo);
+            this.pnlProfileLoad.Controls.Add(this.pnlPrice);
+            this.pnlProfileLoad.Controls.Add(this.pnlReport);
+            this.pnlProfileLoad.Controls.Add(this.pnlCondoServices);
+            this.pnlProfileLoad.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pnlProfileLoad.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.pnlProfileLoad.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlProfileLoad.ForeColor = System.Drawing.Color.White;
+            this.pnlProfileLoad.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pnlProfileLoad.Location = new System.Drawing.Point(0, 54);
+            this.pnlProfileLoad.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlProfileLoad.Name = "pnlProfileLoad";
+            this.pnlProfileLoad.Size = new System.Drawing.Size(255, 54);
+            this.pnlProfileLoad.TabIndex = 23;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnAdmin);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(255, 54);
+            this.panel1.TabIndex = 25;
             // 
             // btnAdmin
             // 
@@ -281,22 +170,15 @@
             this.btnAdmin.UseVisualStyleBackColor = false;
             this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
-            // btnProfileAdmin
+            // pnlEmployee
             // 
-            this.btnProfileAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.btnProfileAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProfileAdmin.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProfileAdmin.ForeColor = System.Drawing.Color.White;
-            this.btnProfileAdmin.Image = global::HouseRentManagement.Properties.Resources.btnProfileWhite16x16;
-            this.btnProfileAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProfileAdmin.Location = new System.Drawing.Point(-26, -31);
-            this.btnProfileAdmin.Name = "btnProfileAdmin";
-            this.btnProfileAdmin.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnProfileAdmin.Size = new System.Drawing.Size(323, 117);
-            this.btnProfileAdmin.TabIndex = 23;
-            this.btnProfileAdmin.Text = "          Profile";
-            this.btnProfileAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProfileAdmin.UseVisualStyleBackColor = false;
+            this.pnlEmployee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.pnlEmployee.Controls.Add(this.btnEmployee);
+            this.pnlEmployee.Location = new System.Drawing.Point(255, 0);
+            this.pnlEmployee.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlEmployee.Name = "pnlEmployee";
+            this.pnlEmployee.Size = new System.Drawing.Size(255, 54);
+            this.pnlEmployee.TabIndex = 22;
             // 
             // btnEmployee
             // 
@@ -314,6 +196,17 @@
             this.btnEmployee.Text = "          Employee";
             this.btnEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEmployee.UseVisualStyleBackColor = false;
+            this.btnEmployee.Click += new System.EventHandler(this.btnEmployee_Click);
+            // 
+            // pnlResidentCard
+            // 
+            this.pnlResidentCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.pnlResidentCard.Controls.Add(this.btnTenant);
+            this.pnlResidentCard.Location = new System.Drawing.Point(510, 0);
+            this.pnlResidentCard.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlResidentCard.Name = "pnlResidentCard";
+            this.pnlResidentCard.Size = new System.Drawing.Size(255, 54);
+            this.pnlResidentCard.TabIndex = 23;
             // 
             // btnTenant
             // 
@@ -333,6 +226,16 @@
             this.btnTenant.UseVisualStyleBackColor = false;
             this.btnTenant.Click += new System.EventHandler(this.btnResidentCard_Click);
             // 
+            // pnlContract
+            // 
+            this.pnlContract.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.pnlContract.Controls.Add(this.btnContract);
+            this.pnlContract.Location = new System.Drawing.Point(765, 0);
+            this.pnlContract.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlContract.Name = "pnlContract";
+            this.pnlContract.Size = new System.Drawing.Size(255, 54);
+            this.pnlContract.TabIndex = 24;
+            // 
             // btnContract
             // 
             this.btnContract.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
@@ -350,6 +253,16 @@
             this.btnContract.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnContract.UseVisualStyleBackColor = false;
             this.btnContract.Click += new System.EventHandler(this.btnContract_Click);
+            // 
+            // pnlCodo
+            // 
+            this.pnlCodo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.pnlCodo.Controls.Add(this.btnCondo);
+            this.pnlCodo.Location = new System.Drawing.Point(1020, 0);
+            this.pnlCodo.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlCodo.Name = "pnlCodo";
+            this.pnlCodo.Size = new System.Drawing.Size(255, 54);
+            this.pnlCodo.TabIndex = 24;
             // 
             // btnCondo
             // 
@@ -369,6 +282,16 @@
             this.btnCondo.UseVisualStyleBackColor = false;
             this.btnCondo.Click += new System.EventHandler(this.btnCondo_Click);
             // 
+            // pnlPrice
+            // 
+            this.pnlPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.pnlPrice.Controls.Add(this.btnPrice);
+            this.pnlPrice.Location = new System.Drawing.Point(1275, 0);
+            this.pnlPrice.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlPrice.Name = "pnlPrice";
+            this.pnlPrice.Size = new System.Drawing.Size(255, 54);
+            this.pnlPrice.TabIndex = 24;
+            // 
             // btnPrice
             // 
             this.btnPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
@@ -386,6 +309,16 @@
             this.btnPrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPrice.UseVisualStyleBackColor = false;
             this.btnPrice.Click += new System.EventHandler(this.btnPrice_Click);
+            // 
+            // pnlReport
+            // 
+            this.pnlReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.pnlReport.Controls.Add(this.btnReport);
+            this.pnlReport.Location = new System.Drawing.Point(1530, 0);
+            this.pnlReport.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlReport.Name = "pnlReport";
+            this.pnlReport.Size = new System.Drawing.Size(255, 54);
+            this.pnlReport.TabIndex = 24;
             // 
             // btnReport
             // 
@@ -405,6 +338,16 @@
             this.btnReport.UseVisualStyleBackColor = false;
             this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
+            // pnlCondoServices
+            // 
+            this.pnlCondoServices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.pnlCondoServices.Controls.Add(this.btnCondoServices);
+            this.pnlCondoServices.Location = new System.Drawing.Point(1785, 0);
+            this.pnlCondoServices.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlCondoServices.Name = "pnlCondoServices";
+            this.pnlCondoServices.Size = new System.Drawing.Size(255, 54);
+            this.pnlCondoServices.TabIndex = 24;
+            // 
             // btnCondoServices
             // 
             this.btnCondoServices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
@@ -421,6 +364,17 @@
             this.btnCondoServices.Text = "          Condo Services";
             this.btnCondoServices.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCondoServices.UseVisualStyleBackColor = false;
+            // 
+            // pnlExport
+            // 
+            this.pnlExport.Controls.Add(this.btnExport);
+            this.pnlExport.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pnlExport.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlExport.Location = new System.Drawing.Point(0, 108);
+            this.pnlExport.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlExport.Name = "pnlExport";
+            this.pnlExport.Size = new System.Drawing.Size(255, 54);
+            this.pnlExport.TabIndex = 25;
             // 
             // btnExport
             // 
@@ -441,6 +395,17 @@
             this.btnExport.UseVisualStyleBackColor = false;
             this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
+            // pnlLogout
+            // 
+            this.pnlLogout.Controls.Add(this.btnLogout);
+            this.pnlLogout.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pnlLogout.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlLogout.Location = new System.Drawing.Point(0, 162);
+            this.pnlLogout.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlLogout.Name = "pnlLogout";
+            this.pnlLogout.Size = new System.Drawing.Size(255, 54);
+            this.pnlLogout.TabIndex = 25;
+            // 
             // btnLogout
             // 
             this.btnLogout.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -458,6 +423,11 @@
             this.btnLogout.Text = "          Logout";
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogout.UseVisualStyleBackColor = false;
+            // 
+            // menuTransition
+            // 
+            this.menuTransition.Interval = 10;
+            this.menuTransition.Tick += new System.EventHandler(this.menuTransition_Tick);
             // 
             // pnlUserBar
             // 
@@ -536,7 +506,6 @@
             this.pnlHome.ResumeLayout(false);
             this.pnlProfileLoad.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.pnlProfile.ResumeLayout(false);
             this.pnlEmployee.ResumeLayout(false);
             this.pnlResidentCard.ResumeLayout(false);
             this.pnlContract.ResumeLayout(false);
@@ -564,8 +533,6 @@
         private System.Windows.Forms.FlowLayoutPanel pnlProfileLoad;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnAdmin;
-        private System.Windows.Forms.Panel pnlProfile;
-        private System.Windows.Forms.Button btnProfileAdmin;
         private System.Windows.Forms.Panel pnlEmployee;
         private System.Windows.Forms.Button btnEmployee;
         private System.Windows.Forms.Panel pnlResidentCard;
