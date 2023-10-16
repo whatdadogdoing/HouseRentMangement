@@ -15,7 +15,7 @@ namespace HouseRentManagement
 {
     public partial class ReportForm : DevExpress.XtraEditors.XtraForm
     {
-        private string connectionString = ConfigurationManager.ConnectionStrings["HRMContextDB"].ConnectionString;
+        private string connectionString = ConfigurationManager.ConnectionStrings["Model_QLCHCC"].ConnectionString;
         public ReportForm()
         {
             InitializeComponent();

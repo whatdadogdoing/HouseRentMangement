@@ -60,14 +60,14 @@ namespace HouseRentManagement
                     LoaddgvDSSV();
                     LoadForm();
 
-                    MessageBox.Show($"Thêm thẻ cư dân {newthecudan.MaTheCuDan} vào danh sách thành công!",
-                        "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"Add Resident Card {newthecudan.MaTheCuDan} successful!",
+                        "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
                 else
                 {
-                    MessageBox.Show($"Thẻ cư dân có mã số {txtTenantCardID.Text} đã tồn tại!", "Thông báo",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"Resident Card ID {txtTenantCardID.Text} already exist!", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
             }
@@ -100,21 +100,16 @@ namespace HouseRentManagement
         {
             if (txtTenantCardID.Text == "" || txtExpDate.Text == "" || txtTenantID.Text == "")
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin thẻ cư dân!", "Thông Báo",
-                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Please complete all information!", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
             else if (txtTenantCardID.TextLength < 4)
             {
-                MessageBox.Show("Mã số thẻ cư dân phải 10 ký tự số trở lên!", "Thông Báo",
-                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Resident Card ID must be longer than 3 characters!", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
-            /* if(txtTenantIDCard != null)
-             {
-                 DialogResult dg = MessageBox.Show("mã người thuê đã tồn tại {txtTenantID.MaNguoiThue})",
-                     "Thông Báo",MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-             }  */
 
             return true;
         }
@@ -124,8 +119,8 @@ namespace HouseRentManagement
             THECUDAN ReCardDelete = context.THECUDANs.FirstOrDefault(p => p.MaTheCuDan == txtTenantCardID.Text);
             if (ReCardDelete != null)
             {
-                DialogResult dg = MessageBox.Show($"Bạn có thực sự muốn xoá mã thẻ cư dân {ReCardDelete.MaTheCuDan}",
-                    "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult dg = MessageBox.Show($"Are you sure to delete the Resident Card? {ReCardDelete.MaTheCuDan}",
+                    "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dg == DialogResult.Yes)
                 {
                     context.THECUDANs.Remove(ReCardDelete);
@@ -135,8 +130,8 @@ namespace HouseRentManagement
                     LoaddgvDSSV();
                     LoadForm();
 
-                    MessageBox.Show($"Xoá mã thẻ cư dân {ReCardDelete.MaTheCuDan} thành công!",
-                        "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"Deleted Resident Card {ReCardDelete.MaTheCuDan} successful!",
+                        "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
 
@@ -161,27 +156,15 @@ namespace HouseRentManagement
                     LoaddgvDSSV();
                     LoadForm();
 
-                    MessageBox.Show($"Chỉnh sửa dữ liệu thẻ cư dân {UpdateTenantIDCard.MaTheCuDan} thành công!",
-                        "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"Update Resident Card {UpdateTenantIDCard.MaTheCuDan} successful!",
+                        "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Không tìm thấy thẻ cư dân cần sửa!",
-                        "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("Resident Card ID not found!",
+                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-        }
-
-        private void txtSearch_TextChanged(object sender, EventArgs e)
-        {
-            string keyword = txtSearch.Text.Trim();
-
-            List<THECUDAN> searchResults = context.THECUDANs
-                .Where(tc => tc.MaTheCuDan.Contains(keyword) ||
-                             tc.MaNguoiThue.Contains(keyword))
-                .ToList();
-
-            BindGrid(searchResults);
         }
 
         private void dgvDSReCard_SelectionChanged(object sender, EventArgs e)
@@ -197,6 +180,37 @@ namespace HouseRentManagement
                 DateTime ngayLap = (DateTime)selectedRow.Cells[1].Value;
                 dtpNgayLap.Value = ngayLap;
             }
+        }
+
+        private void dtpNgayLap_ValueChanged(object sender, EventArgs e)
+        {
+            if(dtpNgayLap.Value > DateTime.Now)
+            {
+                MessageBox.Show("Invalid date created!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                dtpNgayLap.Value = DateTime.Now;
+                return;
+            }
+        }
+
+        private void txtExpDate_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                MessageBox.Show("Number only!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                e.Handled = true; // Từ chối ký tự không phải số
+            }
+        }
+
+        private void txtBoxSearch_TextChanged(object sender, EventArgs e)
+        {
+            string keyword = txtSearch.Text.Trim();
+
+            List<THECUDAN> searchResults = context.THECUDANs
+                .Where(tc => tc.MaTheCuDan.Contains(keyword) ||
+                             tc.MaNguoiThue.Contains(keyword))
+                .ToList();
+
+            BindGrid(searchResults);
         }
     }
 }

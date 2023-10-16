@@ -12,7 +12,6 @@ namespace HouseRentManagement.HRMcontextDB
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public HOADONTHANHTOAN()
         {
-            BIENLAIs = new HashSet<BIENLAI>();
             CTHDTTs = new HashSet<CTHDTT>();
         }
 
@@ -22,10 +21,11 @@ namespace HouseRentManagement.HRMcontextDB
 
         [Column(TypeName = "date")]
         public DateTime? NgayLap { get; set; }
-        
+
+        public decimal? TongTien { get; set; }
+
         [StringLength(50)]
         public string TrangThai { get; set; }
-        public decimal? TongTien { get; set; }
 
         [StringLength(200)]
         public string GhiChu { get; set; }
@@ -33,9 +33,6 @@ namespace HouseRentManagement.HRMcontextDB
         [Required]
         [StringLength(20)]
         public string MaCanHo { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BIENLAI> BIENLAIs { get; set; }
 
         public virtual CANHO CANHO { get; set; }
 

@@ -10,11 +10,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Entity.Migrations;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace HouseRentManagement
 {
     public partial class Tenant : DevExpress.XtraEditors.XtraForm
     {
+        private string connectionString = ConfigurationManager.ConnectionStrings["Model_QLCHCC"].ConnectionString;
+
         Model_QLCHCC context = new Model_QLCHCC();
         public Tenant()
         {
@@ -76,8 +80,23 @@ namespace HouseRentManagement
         {
             if (CheckNull())
             {
-                if (CheckTenantIdentify(txtTenantIdentify.Text) == -1) // -1 để là sinh viên mới
+                if (CheckTenantIdentify(txtTenantIdentify.Text) == -1) 
                 {
+                    string sdt = txtTenantContact.Text;
+                    string cccd = txtTenantIdentify.Text;
+                    if (sdt.Length != 10 || IsAllDigitsSame(sdt) || cccd.Length != 12 || IsAllDigitsSame(cccd))
+                    {
+                        MessageBox.Show("Wrong format Employ Identify or Employee Contact!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                    DateTime dob = dtpTenant.Value;
+                    if (dob > DateTime.Now)
+                    {
+                        MessageBox.Show("Invalid Date of Birth!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                    if (!CheckValidIdentification())
+                        return;
                     NGUOITHUE newNguoiThue = new NGUOITHUE();
 
                     newNguoiThue.MaNguoiThue = txtTenantID.Text;
@@ -94,14 +113,14 @@ namespace HouseRentManagement
                     LoaddgvDSSV();
                     LoadForm();
 
-                    MessageBox.Show($"Thêm khách thuê {newNguoiThue.MaNguoiThue} vào danh sách thành công!",
-                        "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"Add Tenant ID {newNguoiThue.MaNguoiThue} successful!",
+                        "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
                 else
                 {
-                    MessageBox.Show($"Thẻ khách thuê có mã số cccd {txtTenantIdentify.Text} đã tồn tại!", "Thông báo",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"The Tenant ID {txtTenantIdentify.Text} already exist!", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
             }
@@ -136,8 +155,8 @@ namespace HouseRentManagement
         {
             if (txtTenantContact.Text == "" || txtTenantEmail.Text == "" || txtTenantIdentify.Text == "" || txtTenantName.Text == "")
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin khách thuê!", "Thông Báo",
-                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Please complete all information!!", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
             return true;
@@ -148,8 +167,8 @@ namespace HouseRentManagement
             NGUOITHUE ReCardDelete = context.NGUOITHUEs.FirstOrDefault(p => p.MaNguoiThue == txtTenantID.Text);
             if (ReCardDelete != null)
             {
-                DialogResult dg = MessageBox.Show($"Bạn có thực sự muốn xoá người thuê này {ReCardDelete.MaNguoiThue}",
-                    "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult dg = MessageBox.Show($"Are you sure to delete the tenant info? {ReCardDelete.MaNguoiThue}",
+                    "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dg == DialogResult.Yes)
                 {
                     context.NGUOITHUEs.Remove(ReCardDelete);
@@ -159,20 +178,38 @@ namespace HouseRentManagement
                     LoaddgvDSSV();
                     LoadForm();
 
-                    MessageBox.Show($"Xoá mã người thuê {ReCardDelete.MaNguoiThue} thành công!",
-                        "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"Deleted tennant ID {ReCardDelete.MaNguoiThue} successful!",
+                        "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
 
         }
-
+        
         private void btnUPDATE_Click(object sender, EventArgs e)
         {
             if (CheckNull())
             {
                 string tenantID = txtTenantID.Text;
+                string sdt = txtTenantContact.Text;
+                string cccd = txtTenantIdentify.Text;
+                if (sdt.Length != 10 || IsAllDigitsSame(sdt) || cccd.Length != 12 || IsAllDigitsSame(cccd))
+                {
+                    MessageBox.Show("Wrong format Employ Identify or Employee Contact!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                DateTime dob = dtpTenant.Value;
+                if (dob > DateTime.Now)
+                {
+                    MessageBox.Show("Invalid Date of Birth!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
                 NGUOITHUE updatedNguoiThue = context.NGUOITHUEs.FirstOrDefault(nt => nt.MaNguoiThue == tenantID);
-
+                if (updatedNguoiThue.CCCD != txtTenantIdentify.Text)
+                {
+                    MessageBox.Show("The Citizen Identification code cannot be changed!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtTenantIdentify.Text = updatedNguoiThue.CCCD;
+                    return;
+                }
                 if (updatedNguoiThue != null)
                 {
                     updatedNguoiThue.TenNguoiThue = txtTenantName.Text;
@@ -187,15 +224,38 @@ namespace HouseRentManagement
                     LoaddgvDSSV();
                     LoadForm();
 
-                    MessageBox.Show($"Cập nhật thông tin người thuê với mã {updatedNguoiThue.MaNguoiThue} thành công!",
-                        "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"Updated tennant {updatedNguoiThue.MaNguoiThue} successful!",
+                        "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show($"Không tìm thấy người thuê với mã {tenantID}!",
-                        "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("Tenant ID not found!",
+                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+        private bool CheckValidIdentification()
+        {
+            string identification = txtTenantIdentify.Text;
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                // Create a query to check if the ID card number exists
+                string query = "SELECT COUNT(*) FROM NGUOITHUE WHERE CCCD = @CCCD";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@CCCD", identification);
+
+                int count = (int)command.ExecuteScalar();
+
+                if (count > 0)
+                {
+                    MessageBox.Show("The Citizen Identification code already exists in the database!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
+            }
+            return true;
         }
         private void SetGenderToRadioButton(bool? gender)
         {
@@ -284,6 +344,53 @@ namespace HouseRentManagement
                                  nt.Email.Contains(searchText))
                     .ToList();
                 BindGrid(searchResults);
+            }
+        }
+        
+
+        private bool IsAllDigitsSame(string text)
+        {
+            for (int i = 1; i < text.Length; i++)
+            {
+                if (text[i] != text[0])
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        private void txtTenantIdentify_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                MessageBox.Show("Number only!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                e.Handled = true; // Từ chối ký tự không phải số
+            }
+
+            // Kiểm tra chiều dài có đủ 12 chữ số hay không
+            TextBox textBox = (TextBox)sender;
+            if (textBox.Text.Length >= 12 && !char.IsControl(e.KeyChar))
+            {
+                MessageBox.Show("Wrong format!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                e.Handled = true; // Từ chối thêm ký tự khi đạt đủ 12 chữ số
+            }
+        }
+
+        private void txtTenantContact_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                MessageBox.Show("Number only!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                e.Handled = true; // Từ chối ký tự không phải số
+            }
+
+            // Kiểm tra chiều dài có đủ 10 chữ số hay không
+            TextBox textBox = (TextBox)sender;
+            if (textBox.Text.Length >= 10 && !char.IsControl(e.KeyChar))
+            {
+                MessageBox.Show("Wrong format!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                e.Handled = true; // Từ chối thêm ký tự khi đạt đủ 10 chữ số
             }
         }
     }

@@ -26,12 +26,6 @@ namespace HouseRentManagement.HRMcontextDB
         [StringLength(20)]
         public string MaCanHo { get; set; }
 
-        [Required]
-        [StringLength(20)]
-        public string MaQL { get; set; }
-
-        public virtual BANQUANLY BANQUANLY { get; set; }
-
         public virtual CANHO CANHO { get; set; }
     }
 }

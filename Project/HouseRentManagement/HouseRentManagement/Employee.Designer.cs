@@ -232,7 +232,7 @@
             // 
             this.rbFemale.AutoSize = true;
             this.rbFemale.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbFemale.Location = new System.Drawing.Point(825, 179);
+            this.rbFemale.Location = new System.Drawing.Point(825, 200);
             this.rbFemale.Name = "rbFemale";
             this.rbFemale.Size = new System.Drawing.Size(95, 32);
             this.rbFemale.TabIndex = 57;
@@ -244,7 +244,7 @@
             // 
             this.rbMale.AutoSize = true;
             this.rbMale.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbMale.Location = new System.Drawing.Point(687, 177);
+            this.rbMale.Location = new System.Drawing.Point(687, 198);
             this.rbMale.Name = "rbMale";
             this.rbMale.Size = new System.Drawing.Size(76, 32);
             this.rbMale.TabIndex = 58;
@@ -517,6 +517,7 @@
             this.txtProofID.TextPlaceholder = "Enter Employee Identify";
             this.txtProofID.UseSystemPasswordChar = false;
             this.txtProofID.WordWrap = true;
+            this.txtProofID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtProofID_KeyPress);
             // 
             // txtEmail
             // 
@@ -582,7 +583,7 @@
             this.txtEmail.SelectionLength = 0;
             this.txtEmail.SelectionStart = 0;
             this.txtEmail.ShortcutsEnabled = true;
-            this.txtEmail.Size = new System.Drawing.Size(233, 50);
+            this.txtEmail.Size = new System.Drawing.Size(233, 52);
             this.txtEmail.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtEmail.TabIndex = 1;
             this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;

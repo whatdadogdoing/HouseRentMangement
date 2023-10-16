@@ -15,7 +15,6 @@ namespace HouseRentManagement.HRMcontextDB
         public virtual DbSet<ADMIN> ADMINS { get; set; }
         public virtual DbSet<BANGGIA> BANGGIAs { get; set; }
         public virtual DbSet<BANQUANLY> BANQUANLies { get; set; }
-        public virtual DbSet<BIENLAI> BIENLAIs { get; set; }
         public virtual DbSet<CANHO> CANHOes { get; set; }
         public virtual DbSet<CHUCVU> CHUCVUs { get; set; }
         public virtual DbSet<CHUSOHUU> CHUSOHUUs { get; set; }
@@ -32,7 +31,6 @@ namespace HouseRentManagement.HRMcontextDB
         public virtual DbSet<PHIEUPHAT> PHIEUPHATs { get; set; }
         public virtual DbSet<PHIEUSUACHUA> PHIEUSUACHUAs { get; set; }
         public virtual DbSet<PHIEUTHICONG> PHIEUTHICONGs { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<TANG> TANGs { get; set; }
         public virtual DbSet<THECUDAN> THECUDANs { get; set; }
         public virtual DbSet<THEXE> THEXEs { get; set; }
@@ -85,43 +83,6 @@ namespace HouseRentManagement.HRMcontextDB
             modelBuilder.Entity<BANQUANLY>()
                 .HasOptional(e => e.ADMIN)
                 .WithRequired(e => e.BANQUANLY);
-
-            modelBuilder.Entity<BANQUANLY>()
-                .HasMany(e => e.PHIEUCHUYENDOes)
-                .WithRequired(e => e.BANQUANLY)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<BANQUANLY>()
-                .HasMany(e => e.PHIEUPHANHOIs)
-                .WithRequired(e => e.BANQUANLY)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<BANQUANLY>()
-                .HasMany(e => e.PHIEUPHATs)
-                .WithRequired(e => e.BANQUANLY)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<BANQUANLY>()
-                .HasMany(e => e.PHIEUSUACHUAs)
-                .WithRequired(e => e.BANQUANLY)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<BANQUANLY>()
-                .HasMany(e => e.PHIEUTHICONGs)
-                .WithRequired(e => e.BANQUANLY)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<BIENLAI>()
-                .Property(e => e.SoBienLai)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<BIENLAI>()
-                .Property(e => e.TongTienThanhToan)
-                .HasPrecision(20, 3);
-
-            modelBuilder.Entity<BIENLAI>()
-                .Property(e => e.SoHoaDon)
-                .IsUnicode(false);
 
             modelBuilder.Entity<CANHO>()
                 .Property(e => e.MaCanHo)
@@ -264,11 +225,6 @@ namespace HouseRentManagement.HRMcontextDB
                 .IsUnicode(false);
 
             modelBuilder.Entity<HOADONTHANHTOAN>()
-                .HasMany(e => e.BIENLAIs)
-                .WithRequired(e => e.HOADONTHANHTOAN)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<HOADONTHANHTOAN>()
                 .HasMany(e => e.CTHDTTs)
                 .WithRequired(e => e.HOADONTHANHTOAN)
                 .WillCascadeOnDelete(false);
@@ -358,20 +314,12 @@ namespace HouseRentManagement.HRMcontextDB
                 .Property(e => e.MaCanHo)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<PHIEUCHUYENDO>()
-                .Property(e => e.MaQL)
-                .IsUnicode(false);
-
             modelBuilder.Entity<PHIEUPHANHOI>()
                 .Property(e => e.SoPhieuPhanHoi)
                 .IsUnicode(false);
 
             modelBuilder.Entity<PHIEUPHANHOI>()
                 .Property(e => e.MaCanHo)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<PHIEUPHANHOI>()
-                .Property(e => e.MaQL)
                 .IsUnicode(false);
 
             modelBuilder.Entity<PHIEUPHAT>()
@@ -386,10 +334,6 @@ namespace HouseRentManagement.HRMcontextDB
                 .Property(e => e.MaCanHo)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<PHIEUPHAT>()
-                .Property(e => e.MaQL)
-                .IsUnicode(false);
-
             modelBuilder.Entity<PHIEUSUACHUA>()
                 .Property(e => e.SoPhieuSuaChua)
                 .IsUnicode(false);
@@ -402,20 +346,12 @@ namespace HouseRentManagement.HRMcontextDB
                 .Property(e => e.MaCanHo)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<PHIEUSUACHUA>()
-                .Property(e => e.MaQL)
-                .IsUnicode(false);
-
             modelBuilder.Entity<PHIEUTHICONG>()
                 .Property(e => e.SoPhieuThiCong)
                 .IsUnicode(false);
 
             modelBuilder.Entity<PHIEUTHICONG>()
                 .Property(e => e.MaCanHo)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<PHIEUTHICONG>()
-                .Property(e => e.MaQL)
                 .IsUnicode(false);
 
             modelBuilder.Entity<TANG>()

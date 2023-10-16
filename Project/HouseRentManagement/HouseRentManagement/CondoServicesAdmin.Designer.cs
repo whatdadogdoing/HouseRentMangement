@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CondoServicesAdmin));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties29 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties30 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties31 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties32 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.txtFine = new System.Windows.Forms.TextBox();
             this.cbbFromStatus = new System.Windows.Forms.ComboBox();
             this.txtContent = new System.Windows.Forms.TextBox();
@@ -51,7 +51,9 @@
             this.txtBoxSearchAdmin = new Bunifu.UI.WinForms.BunifuTextBox();
             this.btnAC = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnAddAdmin = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnDe = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.cbbPhieu = new System.Windows.Forms.ComboBox();
             this.dgvCondoServicesAdmin = new System.Windows.Forms.DataGridView();
             this.clhMaCanHo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clhServiceName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,8 +64,6 @@
             this.clhFine = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clhMoneySpend = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clhTrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cbbPhieu = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.gbCondoService.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCondoServicesAdmin)).BeginInit();
             this.SuspendLayout();
@@ -75,13 +75,14 @@
             this.txtFine.Name = "txtFine";
             this.txtFine.Size = new System.Drawing.Size(182, 34);
             this.txtFine.TabIndex = 40;
+            this.txtFine.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFine_KeyPress);
             // 
             // cbbFromStatus
             // 
             this.cbbFromStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbFromStatus.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbFromStatus.FormattingEnabled = true;
-            this.cbbFromStatus.Location = new System.Drawing.Point(484, 67);
+            this.cbbFromStatus.Location = new System.Drawing.Point(484, 104);
             this.cbbFromStatus.Name = "cbbFromStatus";
             this.cbbFromStatus.Size = new System.Drawing.Size(174, 36);
             this.cbbFromStatus.TabIndex = 38;
@@ -89,10 +90,10 @@
             // txtContent
             // 
             this.txtContent.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContent.Location = new System.Drawing.Point(664, 54);
+            this.txtContent.Location = new System.Drawing.Point(664, 62);
             this.txtContent.Multiline = true;
             this.txtContent.Name = "txtContent";
-            this.txtContent.Size = new System.Drawing.Size(260, 112);
+            this.txtContent.Size = new System.Drawing.Size(260, 78);
             this.txtContent.TabIndex = 40;
             // 
             // txtConUnit
@@ -106,16 +107,17 @@
             // txtMoneySpend
             // 
             this.txtMoneySpend.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMoneySpend.Location = new System.Drawing.Point(484, 109);
+            this.txtMoneySpend.Location = new System.Drawing.Point(484, 146);
             this.txtMoneySpend.Name = "txtMoneySpend";
             this.txtMoneySpend.Size = new System.Drawing.Size(174, 34);
             this.txtMoneySpend.TabIndex = 40;
+            this.txtMoneySpend.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFine_KeyPress);
             // 
             // lblContent
             // 
             this.lblContent.AutoSize = true;
             this.lblContent.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContent.Location = new System.Drawing.Point(842, 23);
+            this.lblContent.Location = new System.Drawing.Point(659, 31);
             this.lblContent.Name = "lblContent";
             this.lblContent.Size = new System.Drawing.Size(82, 28);
             this.lblContent.TabIndex = 36;
@@ -126,7 +128,7 @@
             this.cbbCondoID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbCondoID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbCondoID.FormattingEnabled = true;
-            this.cbbCondoID.Location = new System.Drawing.Point(484, 25);
+            this.cbbCondoID.Location = new System.Drawing.Point(484, 62);
             this.cbbCondoID.Name = "cbbCondoID";
             this.cbbCondoID.Size = new System.Drawing.Size(174, 36);
             this.cbbCondoID.TabIndex = 38;
@@ -136,7 +138,7 @@
             // 
             this.lblConUnit.AutoSize = true;
             this.lblConUnit.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConUnit.Location = new System.Drawing.Point(7, 59);
+            this.lblConUnit.Location = new System.Drawing.Point(3, 59);
             this.lblConUnit.Name = "lblConUnit";
             this.lblConUnit.Size = new System.Drawing.Size(113, 28);
             this.lblConUnit.TabIndex = 36;
@@ -146,7 +148,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(77, 99);
+            this.label7.Location = new System.Drawing.Point(3, 99);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(48, 28);
             this.label7.TabIndex = 36;
@@ -156,7 +158,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(333, 112);
+            this.label6.Location = new System.Drawing.Point(335, 146);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(145, 28);
             this.label6.TabIndex = 36;
@@ -166,7 +168,7 @@
             // 
             this.lblFromStatus.AutoSize = true;
             this.lblFromStatus.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFromStatus.Location = new System.Drawing.Point(362, 67);
+            this.lblFromStatus.Location = new System.Drawing.Point(335, 101);
             this.lblFromStatus.Name = "lblFromStatus";
             this.lblFromStatus.Size = new System.Drawing.Size(116, 28);
             this.lblFromStatus.TabIndex = 44;
@@ -196,7 +198,7 @@
             // 
             this.lblCondoID.AutoSize = true;
             this.lblCondoID.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCondoID.Location = new System.Drawing.Point(388, 28);
+            this.lblCondoID.Location = new System.Drawing.Point(335, 62);
             this.lblCondoID.Name = "lblCondoID";
             this.lblCondoID.Size = new System.Drawing.Size(90, 28);
             this.lblCondoID.TabIndex = 46;
@@ -265,26 +267,26 @@
             this.txtBoxSearchAdmin.Modified = false;
             this.txtBoxSearchAdmin.Multiline = false;
             this.txtBoxSearchAdmin.Name = "txtBoxSearchAdmin";
-            stateProperties29.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties29.FillColor = System.Drawing.Color.Empty;
-            stateProperties29.ForeColor = System.Drawing.Color.Empty;
-            stateProperties29.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBoxSearchAdmin.OnActiveState = stateProperties29;
-            stateProperties30.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties30.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties30.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtBoxSearchAdmin.OnDisabledState = stateProperties30;
-            stateProperties31.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties31.FillColor = System.Drawing.Color.Empty;
-            stateProperties31.ForeColor = System.Drawing.Color.Empty;
-            stateProperties31.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBoxSearchAdmin.OnHoverState = stateProperties31;
-            stateProperties32.BorderColor = System.Drawing.Color.Silver;
-            stateProperties32.FillColor = System.Drawing.Color.White;
-            stateProperties32.ForeColor = System.Drawing.Color.Empty;
-            stateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBoxSearchAdmin.OnIdleState = stateProperties32;
+            stateProperties9.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties9.FillColor = System.Drawing.Color.Empty;
+            stateProperties9.ForeColor = System.Drawing.Color.Empty;
+            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBoxSearchAdmin.OnActiveState = stateProperties9;
+            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtBoxSearchAdmin.OnDisabledState = stateProperties10;
+            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties11.FillColor = System.Drawing.Color.Empty;
+            stateProperties11.ForeColor = System.Drawing.Color.Empty;
+            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBoxSearchAdmin.OnHoverState = stateProperties11;
+            stateProperties12.BorderColor = System.Drawing.Color.Silver;
+            stateProperties12.FillColor = System.Drawing.Color.White;
+            stateProperties12.ForeColor = System.Drawing.Color.Empty;
+            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBoxSearchAdmin.OnIdleState = stateProperties12;
             this.txtBoxSearchAdmin.Padding = new System.Windows.Forms.Padding(3);
             this.txtBoxSearchAdmin.PasswordChar = '\0';
             this.txtBoxSearchAdmin.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -360,6 +362,16 @@
             this.btnAddAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAddAdmin.Click += new System.EventHandler(this.btnAddAdmin_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 140);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 28);
+            this.label1.TabIndex = 46;
+            this.label1.Text = "Services";
+            // 
             // btnDe
             // 
             this.btnDe.ActiveBorderThickness = 1;
@@ -384,6 +396,17 @@
             this.btnDe.Size = new System.Drawing.Size(70, 40);
             this.btnDe.TabIndex = 35;
             this.btnDe.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cbbPhieu
+            // 
+            this.cbbPhieu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbPhieu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbPhieu.FormattingEnabled = true;
+            this.cbbPhieu.Location = new System.Drawing.Point(131, 139);
+            this.cbbPhieu.Name = "cbbPhieu";
+            this.cbbPhieu.Size = new System.Drawing.Size(182, 36);
+            this.cbbPhieu.TabIndex = 38;
+            this.cbbPhieu.SelectedIndexChanged += new System.EventHandler(this.cbbCondoID_SelectedIndexChanged);
             // 
             // dgvCondoServicesAdmin
             // 
@@ -482,27 +505,6 @@
             this.clhTrangThai.Name = "clhTrangThai";
             this.clhTrangThai.ReadOnly = true;
             this.clhTrangThai.Width = 125;
-            // 
-            // cbbPhieu
-            // 
-            this.cbbPhieu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbPhieu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbbPhieu.FormattingEnabled = true;
-            this.cbbPhieu.Location = new System.Drawing.Point(131, 139);
-            this.cbbPhieu.Name = "cbbPhieu";
-            this.cbbPhieu.Size = new System.Drawing.Size(182, 36);
-            this.cbbPhieu.TabIndex = 38;
-            this.cbbPhieu.SelectedIndexChanged += new System.EventHandler(this.cbbCondoID_SelectedIndexChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(35, 140);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 28);
-            this.label1.TabIndex = 46;
-            this.label1.Text = "Services";
             // 
             // CondoServicesAdmin
             // 

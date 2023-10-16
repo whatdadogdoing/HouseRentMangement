@@ -31,8 +31,9 @@ namespace HouseRentManagement
         private void FillcbbFromStatus()
         {
             cbbFromStatus.Items.Clear();
-            cbbFromStatus.Items.Add("Đang duyệt");
-            cbbFromStatus.Items.Add("Đã duyệt");
+            cbbFromStatus.Items.Add("Pending");
+            cbbFromStatus.Items.Add("Approved");
+            cbbFromStatus.SelectedIndex = 0;
         }
         private void FillcbbPhieu()
         {
@@ -42,6 +43,7 @@ namespace HouseRentManagement
             cbbPhieu.Items.Add("Fine Form");
             cbbPhieu.Items.Add("Fixing Form");
             cbbPhieu.Items.Add("Transfer Form");
+            cbbPhieu.SelectedIndex = 1;
         }
         private void BindGrid()
         {
@@ -87,6 +89,7 @@ namespace HouseRentManagement
                         }
                     }
                 }
+                cbbCondoID.SelectedIndex = 0;
             }
         }
 
@@ -474,6 +477,15 @@ WHERE c.MaCanHo = @SelectedCondoID
                 txtFine.Text = fine;
                 txtMoneySpend.Text = moneySpend;
                 cbbFromStatus.SelectedItem = formStatus;
+            }
+        }
+
+        private void txtFine_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                MessageBox.Show("Number only!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                e.Handled = true; // Từ chối ký tự không phải số
             }
         }
     }

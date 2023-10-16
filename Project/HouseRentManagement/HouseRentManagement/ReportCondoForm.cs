@@ -52,7 +52,7 @@ namespace HouseRentManagement
                     while (reader.Read())
                     {
                         TANG tang = new TANG();
-                        tang.Tang = reader["Tang"].ToString();
+                        tang.MaTang = reader["Tang"].ToString();
                         t.Add(tang);
                     }
                 }

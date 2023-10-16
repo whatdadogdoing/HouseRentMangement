@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Entity.Migrations;
+using System.Runtime.Remoting.Contexts;
 
 namespace HouseRentManagement
 {
@@ -63,60 +64,29 @@ namespace HouseRentManagement
             }
         }
 
-        private void dgvContract_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            try
-            {
-                if (e.RowIndex >= 0 && e.ColumnIndex >= 0 && dgvContract.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
-                {
-                    dgvContract.CurrentRow.Selected = true;
-
-                    bnfSoHopDong.Text = dgvContract.Rows[e.RowIndex].Cells[0].FormattedValue.ToString();
-                    bnfTienCoc.Text = dgvContract.Rows[e.RowIndex].Cells[1].FormattedValue.ToString();
-                    bnfTienThue.Text = dgvContract.Rows[e.RowIndex].Cells[2].FormattedValue.ToString();
-                    bnfTienCoc.Text = dgvContract.Rows[e.RowIndex].Cells[3].FormattedValue.ToString();
-                    gnfNgayBD.Text = dgvContract.Rows[e.RowIndex].Cells[5].FormattedValue.ToString();
-                    gnfNgayKT.Text = dgvContract.Rows[e.RowIndex].Cells[6].FormattedValue.ToString();
-                    gnlMaChuSoHuu.SelectedIndex = gnlMaChuSoHuu.FindString(dgvContract.Rows[e.RowIndex].Cells[7].FormattedValue.ToString());
-                    bnfMaNguoiThue.Text = dgvContract.Rows[e.RowIndex].Cells[8].FormattedValue.ToString();
-                    gnlMaCanHo.SelectedIndex = gnlMaCanHo.FindString(dgvContract.Rows[e.RowIndex].Cells[9].FormattedValue.ToString());
-
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Bạn đang chọn sai!", "Lỗi xảy ra",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
 
         private bool CheckNull()
         {
             if (bnfSoHopDong.Text == "" || bnfTienCoc.Text == "" || bnfTienThue.Text == "" || bnfMaNguoiThue.Text == "")
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin Hợp đồng!", "Thông Báo",
-                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Please complete all information!", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
             else if (bnfTienCoc.TextLength < 6)
             {
-                MessageBox.Show("Tiền cọc phải có 5 ký tự trở lên!", "Thông Báo",
-                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Employee ID must be longer than 5 characters!", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
             return true;
         }
 
-        private int CheckSoHopDong(string NewBienSoXe)
+        private bool CheckSoHopDong(string sohopdong)
         {
-            int length = dgvContract.Rows.Count;
-            for (int i = 0; i < length; i++)
-            {
-                if (dgvContract.Rows[i].Cells[1].Value != null)
-                    if (dgvContract.Rows[i].Cells[1].Value.ToString() == NewBienSoXe)
-                        return i;
-            }
-            return -1;
+            var check = dbChungCu.HOPDONGTHUEs.FirstOrDefault(id => id.SoHopDong.Equals(sohopdong));
+            if (check != null) return false;
+            return true;
         }
 
         private void LoaddgvHDT()
@@ -137,34 +107,59 @@ namespace HouseRentManagement
         {
             if (CheckNull())
             {
-                if (CheckSoHopDong(bnfSoHopDong.Text) == -1) // -1 để là số hợp đồng mới
+                if (CheckSoHopDong(bnfSoHopDong.Text))
                 {
+                    if (!IsValidContract())
+                        return;
+                    if (dtpCreateDate.Value > DateTime.Now)
+                    {
+                        MessageBox.Show("Invalid date created!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                    if (gnfNgayBD.Value.AddHours(12) < DateTime.Now)
+                    {
+                        MessageBox.Show("Invalid date Begin!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                    if (gnfNgayKT.Value < DateTime.Now || gnfNgayKT.Value < gnfNgayBD.Value)
+                    {
+                        MessageBox.Show("Invalid date End!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
                     HOPDONGTHUE newSoHopDongThue = new HOPDONGTHUE();
 
                     newSoHopDongThue.SoHopDong = bnfSoHopDong.Text;
                     newSoHopDongThue.TienCoc = Convert.ToDecimal(bnfTienCoc.Text);
                     newSoHopDongThue.TienThue = Convert.ToDecimal(bnfTienThue.Text);
-                    newSoHopDongThue.NgayLap = DateTime.Now;
-                    newSoHopDongThue.NgayBD = DateTime.Today;
-                    newSoHopDongThue.NgayKT = DateTime.UtcNow;
-                    newSoHopDongThue.MaChuSoHuu = gnlMaChuSoHuu.SelectedItem.ToString();
+                    newSoHopDongThue.NgayLap = dtpCreateDate.Value;
+                    newSoHopDongThue.NgayBD = gnfNgayBD.Value;
+                    newSoHopDongThue.NgayKT = gnfNgayKT.Value;
+                    newSoHopDongThue.MaChuSoHuu = gnlMaChuSoHuu.Text;
                     newSoHopDongThue.MaNguoiThue = bnfMaNguoiThue.Text;
-                    newSoHopDongThue.MaCanHo = gnlMaCanHo.SelectedItem.ToString();
-                    newSoHopDongThue.NoiDung = string.Empty;
+                    newSoHopDongThue.MaCanHo = gnlMaCanHo.Text;
+                    newSoHopDongThue.NoiDung = "";
 
-                    dbChungCu.HOPDONGTHUEs.AddOrUpdate(newSoHopDongThue);
-                    dbChungCu.SaveChanges();
+                    try
+                    {
+                        dbChungCu.HOPDONGTHUEs.AddOrUpdate(newSoHopDongThue);
+                        dbChungCu.SaveChanges();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                    
 
                     LoaddgvHDT();
                     LoadForm();
 
-                    MessageBox.Show($"Thêm hợp đồng mới vào danh sách thành công!",
-                         "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"Add Contract successful!",
+                         "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show($"Hợp đồng có số {bnfSoHopDong.Text} đã tồn tại!", "Thông báo",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"Contract ID {bnfSoHopDong.Text} already exist!", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -180,11 +175,13 @@ namespace HouseRentManagement
 
                 if (updateHopDong != null)
                 {
+                    if (!IsValidContract())
+                        return;
                     // Cập nhật thông tin hợp đồng
                     updateHopDong.TienCoc = Convert.ToDecimal(bnfTienCoc.Text);
                     updateHopDong.TienThue = Convert.ToDecimal(bnfTienThue.Text);
                     // Cập nhật MaChuSoHuu - Chúng ta giả sử MaChuSoHuu cũng là một thuộc tính của HOPDONGTHUE
-                    updateHopDong.MaChuSoHuu = gnlMaChuSoHuu.SelectedItem.ToString();
+                    updateHopDong.MaChuSoHuu = gnlMaChuSoHuu.Text;
                     updateHopDong.MaNguoiThue = bnfMaNguoiThue.Text;
                     // Cập nhật MaCanHo - Chúng ta giả sử MaCanHo cũng là một thuộc tính của HOPDONGTHUE
                     updateHopDong.MaCanHo = gnlMaCanHo.SelectedItem.ToString();
@@ -197,15 +194,66 @@ namespace HouseRentManagement
                     LoaddgvHDT();
                     LoadForm();
 
-                    MessageBox.Show($"Chỉnh sửa dữ liệu hợp đồng có số {updatedSoHopDong} thành công!",
-                        "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"Updated Contract ID {updatedSoHopDong} successful!",
+                        "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show($"Không tìm thấy hợp đồng có số {updatedSoHopDong} cần sửa!",
-                        "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show($"Contract ID not found!",
+                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+        private bool IsUnder18(DateTime dob)
+        {
+            DateTime nowDate = DateTime.Now;
+
+            // Tính tuổi chính xác
+            int age = nowDate.Year - dob.Year;
+
+            // Kiểm tra xem người dùng có đủ 18 tuổi hay không
+            if (nowDate < dob.AddYears(age))
+                age--;
+            if (age >= 18)
+                return true;
+            return false;
+        }
+        private bool IsValidContract()
+        {
+            float deposit = float.Parse(bnfTienCoc.Text);
+            float renFee = float.Parse(bnfTienThue.Text);
+            string tenantID = bnfMaNguoiThue.Text;
+            string condoID = gnlMaCanHo.Text;
+            if(deposit <= 0 || renFee <= 0)
+            {
+                MessageBox.Show("Invalid date Deposit or Ren Fee!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            //var isExistID = dbChungCu.HOPDONGTHUEs.FirstOrDefault(id => id.MaNguoiThue.Equals(tenantID));
+            //if(isExistID != null)
+            //{
+            //    MessageBox.Show("Tenant ID already exists in Condo Contract!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    return false;
+            //}
+            var isFullCondo = dbChungCu.HOPDONGTHUEs.FirstOrDefault(id => id.MaCanHo.Equals(condoID));
+            if (isFullCondo != null)
+            {
+                MessageBox.Show("This Condo is full!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            NGUOITHUE tennant = dbChungCu.NGUOITHUEs.FirstOrDefault(id => id.MaNguoiThue.Equals(tenantID));
+            if (tennant == null) 
+            {
+                MessageBox.Show("Tenant ID not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            if(!IsUnder18(tennant.NgaySinh.Value))
+            {
+                MessageBox.Show("The contract owner must be at least 18 years old!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            
+            return true;
         }
 
         private void bnfDelete_Click(object sender, EventArgs e)
@@ -225,11 +273,11 @@ namespace HouseRentManagement
                 LoaddgvHDT();
                 LoadForm();
 
-                MessageBox.Show($"Xoá hợp đồng có số {deletedSoHopDong} thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show($"Deleted Contract ID {deletedSoHopDong} Successful!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show($"Không tìm thấy hợp đồng có số {deletedSoHopDong} cần xoá!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show($"Contract ID not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -254,5 +302,44 @@ namespace HouseRentManagement
             // Update the DataGridView with the filtered contracts
             BindGrid(filteredContracts);
         }
+
+        private void bnfTienCoc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                MessageBox.Show("Number only!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                e.Handled = true; // Từ chối ký tự không phải số
+            }
+        }
+
+       
+
+        private void dgvContract_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvContract.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = dgvContract.SelectedRows[0];
+                string maHD = selectedRow.Cells[0].Value.ToString();
+
+                // Tìm BANQUANLY tương ứng trong context
+                HOPDONGTHUE selected = dbChungCu.HOPDONGTHUEs.FirstOrDefault(bq => bq.SoHopDong == maHD);
+
+                if (selected != null)
+                {
+                    bnfSoHopDong.Text = selected.SoHopDong;
+                    dtpCreateDate.Value = selected.NgayLap.Value;
+                    bnfTienCoc.Text = selected.TienCoc.ToString();
+                    bnfTienThue.Text = selected.TienThue.ToString();
+                    gnfNgayBD.Value = selected.NgayBD.Value;
+                    gnfNgayKT.Value = selected.NgayKT.Value;
+                    gnlMaChuSoHuu.Text = selected.MaChuSoHuu;
+                    bnfMaNguoiThue.Text = selected.MaNguoiThue;
+                    gnlMaCanHo.Text = selected.MaCanHo;
+
+                }
+            }
+        }
+
+        
     }
 }
