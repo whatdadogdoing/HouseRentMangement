@@ -40,13 +40,13 @@
 ## 👨‍💻 Developer
 
 - Software Engineering Student
-- Roles: Main Developer, Tester
+- Roles: Developer
 
 ---
 
 ## 📬 Contact
 
-For any questions or feedback, please contact: **your.email@example.com**
+For any questions or feedback, please contact: ngqbinh456@gmail.com
 
 ---
 
